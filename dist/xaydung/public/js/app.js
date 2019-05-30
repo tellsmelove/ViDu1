@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/vidu1/js/app.js":
-/*!*****************************!*\
-  !*** ./src/vidu1/js/app.js ***!
-  \*****************************/
+/***/ "./src/xaydung/js/app.js":
+/*!*******************************!*\
+  !*** ./src/xaydung/js/app.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -97,10 +97,10 @@
 
 /***/ }),
 
-/***/ "./src/vidu1/sass/app.scss":
-/*!*********************************!*\
-  !*** ./src/vidu1/sass/app.scss ***!
-  \*********************************/
+/***/ "./src/xaydung/sass/app.scss":
+/*!***********************************!*\
+  !*** ./src/xaydung/sass/app.scss ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -109,14 +109,14 @@
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./src/vidu1/js/app.js ./src/vidu1/sass/app.scss ***!
-  \*************************************************************/
+/*!*****************************************************************!*\
+  !*** multi ./src/xaydung/js/app.js ./src/xaydung/sass/app.scss ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kimtrong/learning/projects/ViDu1/src/vidu1/js/app.js */"./src/vidu1/js/app.js");
-module.exports = __webpack_require__(/*! /home/kimtrong/learning/projects/ViDu1/src/vidu1/sass/app.scss */"./src/vidu1/sass/app.scss");
+__webpack_require__(/*! /home/kimtrong/learning/projects/Projects1/src/xaydung/js/app.js */"./src/xaydung/js/app.js");
+module.exports = __webpack_require__(/*! /home/kimtrong/learning/projects/Projects1/src/xaydung/sass/app.scss */"./src/xaydung/sass/app.scss");
 
 
 /***/ })
