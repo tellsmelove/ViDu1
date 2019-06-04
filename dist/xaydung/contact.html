@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/swiper.min.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=2046573405635669&autoLogAppEvents=1">
+    </script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <section class="">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1">
+                <div class="logo bg-white d-inline-block">
+                    <a href="#" class="d-block py-1">
+                        <img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t31.0-8/12087114_927590583945450_2608510323676211343_o.jpg?_nc_cat=108&_nc_oc=AQlWnFhzKmgB8nH04JzJz-VL3pr02OANFdZl-9ASGso1IowVHjFUiyN1yMLbQ6un3eI&_nc_ht=scontent.fsgn2-3.fna&oh=5fb1049607a802089a42d7f7bb65a808&oe=5D8661C6" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="topBar text-right pb-2 d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        class="items-nav text-dark ">
+                        Thay đổi ngôn ngữ
+                    </a>
+                    <div class="dropdown-menu bg-light" style="z-index: 10000;">
+                        <div class="p-2">
+                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                type="submit">VN</button>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                type="submit">ENG</button>
+                        </div>
+                    </div>
+                </div>
+                <form method="get" action="">
+                    <div class="d-flex flex-direction-row justify-content-center">
+                        <div class="searchbar">
+                            <input class="search_input rounded px-2" type="text" name="" placeholder="Search..."
+                                style="border: 1px solid #ddd">
+                            <button class="search_icon btn-sm border-0 btn-info" type="submit"
+                                style="line-height: 1.4;">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="toggle" class="d-block d-md-none text-right p-2">
+                    <a href="#" data-menu class="text-dark">
+                        <i class="fa fa-lg fa-bars"></i>
+                        <span>Menu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header id="header">
+    <div class="container">
+        <div class="sticky">
+            <div class="row align-items-center">
+                <div class="col-md-12 h-100">
+                    <nav id="navbar" class="nav-header">
+                        <ul class="nolist d-flex flex-wrap">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li>
+                                <a href="#">Giới thiệu
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="#">Tin Tức
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Dự Án
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="#">Tuyển Dụng
+                                </a>
+                            </li>
+                            <li><a href="">Liên Hệ</a></li>
+                            <li class="d-block d-md-none ">
+                                <div class="topBar pb-2 ">
+                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        class="items-nav text-white">
+                                        Thay đổi ngôn ngữ
+                                    </a>
+                                    <div class="dropdown-menu bg-light" style="z-index: 10000;">
+                                        <div class="p-2">
+                                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                                type="submit">VN</button>
+                                        </div>
+                                        <div class="p-2">
+                                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                                type="submit">ENG</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<style>
+    .dropdown-menu a {
+        padding: 8px 15px;
+        display: block;
+    }
+
+    .sub-menu {
+        position: absolute;
+        visibility: hidden;
+        will-change: transform;
+        top: 100%;
+        transform-origin: top;
+        transform: scale(1, 0);
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sub-menu-parent:hover>.sub-menu {
+        transform: scale(1, 1);
+        visibility: visible;
+        transition-delay: 0s, 0s, 0.3s;
+        z-index: 2;
+    }
+
+    .sub-menu-parent .sub-menu-parent__link::after {
+        content: '\f0dd';
+        font-family: FontAwesome;
+        color: #fff;
+    }
+</style>
+    
+<section class="contact">
+    <div class="container animated fadeIn">
+        <div class="row">
+            <div class="col-md-12 p-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <!-- //Home -->
+                            <li><span>Liên Hệ</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 py-3">
+                <h1 class="header-title text-warning">Liên Hệ</h1>
+                <hr>
+            </div>
+            <div class="col-12" id="parent">
+                <div class="row">
+                    <div class="col-md-6 order-1 order-md-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.573190031049!2d107.09900765043832!3d10.375970669258114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317571c9cb02e367%3A0xc59432ef2c3de9ea!2zQ8O0bmcgdHkgQ-G7lSBwaOG6p24gxJDhuqd1IHTGsCB2w6AgWMOieSBs4bqvcCAzODggKDM4OCBJQyk!5e0!3m2!1svi!2s!4v1559637020249!5m2!1svi!2s"
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 order-0 order-md-1">
+                        <form action="" class="contact-form" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control w-100 mr-0" id="name" name="nm" placeholder="Họ và tên"
+                                    required="" autofocus="">
+                            </div>
+                            <div class="form-group form_left">
+                                <input type="email" class="form-control w-100 mr-0" id="email" name="em" placeholder="Email"
+                                    required="">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control w-100 mr-0" id="phone" 
+                                    placeholder="Số điện thoại" required="">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control textarea-contact" rows="3" id="comment" name="FB"
+                                    placeholder="Nội dung" required=""></textarea>
+                            </div>
+                            <button class="btn btn-info btn-send my-3 my-md-0"> <span class="glyphicon glyphicon-send"></span>
+                                Gửi
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+    <footer id="footer">
+    <div class="bg-footer" style="background-image: url('http://www.coteccons.vn/images/bgfooter.png')">
+        <div class="container">
+            <div class="company">
+                <div class="d-flex flex-wrap title-descript pt-3">
+                    <div class="flex-grow-1">
+                        <h3 class="text-uppercase">Đối tác chiến lược</h3>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap py-3">
+                    <ul class="nolist company-list">
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo3.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo4.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo5.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo6.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo7.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo8.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="d-flex flex-wrap">
+                    <div class="col-md-8">
+                        <div class="footer-title">
+                            <h4>Thông tin công ty</h4>
+                        </div>
+                        <div class="footer-body">
+                            <ul class="nolist">
+                                <li>
+                                    <span><u>Văn Phòng Đại Diện:</u></span>
+                                    <span>No 20A – Pham Van Dinh Street – Thang Nhat Ward – Vung Tau City – Ba Ria Vung Tau Province.</span>
+                                </li>
+                                <li>
+                                    <span><u>Trụ Sở Chính:</u></span>
+                                    <span>No 2/14 - Bao Phuc Street – Dang Hai Ward - Ngo Quyen Dist - Hai Phong City</span>
+                                </li>
+                                <li>
+                                    <span><u>Số điện thoại:</u></span>
+                                    <span> +84 2253 722 126</span>
+                                </li>
+                                <li>
+                                    <span><u>Hotline:</u></span>
+                                    <span> +84 313 851 266</span>
+                                </li>
+                                <li>
+                                    <span><u>Email:</u></span>
+                                    <span>admin@388ic.com.vn</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-title">
+                            <h4>Fanpage</h4>
+                        </div>
+                        <div class="footer-body">
+                            <div class="fb-page"
+                                data-href="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs"
+                                data-tabs="timeline" data-width="" data-height="200" data-small-header="false" data-adapt-container-width="true"
+                                data-hide-cover="false" data-show-facepile="true">
+                                <blockquote
+                                    cite="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs"
+                                    class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs">Công
+                                        ty Cổ phần Đầu tư và Xây lắp 388 - 388IC</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="text-white">Copyright &copy; 2019 388ic Group.</span>
+                    <span class="text-dark">Design by <a href="#" class="text-dark">TiHon Company</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-top">
+            <a href="#" class="smooth-scroll">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                Top
+            </a>
+        </div>
+
+    </div>
+</footer>
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/swiper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/app.js"></script>
+    
+</body>
+
+</html>

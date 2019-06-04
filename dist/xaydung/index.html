@@ -9,20 +9,746 @@
     <link rel="stylesheet" href="./public/css/font-awesome.css">
     <link rel="stylesheet" href="./public/css/swiper.min.css">
     <link rel="stylesheet" href="./public/css/app.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=2046573405635669&autoLogAppEvents=1">
+    </script>
     <title>Homepage</title>
 </head>
 
 <body>
-    <header id="header"></header>
+    <section class="">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1">
+                <div class="logo bg-white d-inline-block">
+                    <a href="#" class="d-block py-1">
+                        <img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t31.0-8/12087114_927590583945450_2608510323676211343_o.jpg?_nc_cat=108&_nc_oc=AQlWnFhzKmgB8nH04JzJz-VL3pr02OANFdZl-9ASGso1IowVHjFUiyN1yMLbQ6un3eI&_nc_ht=scontent.fsgn2-3.fna&oh=5fb1049607a802089a42d7f7bb65a808&oe=5D8661C6" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="topBar text-right pb-2 d-none d-md-block">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        class="items-nav text-dark ">
+                        Thay đổi ngôn ngữ
+                    </a>
+                    <div class="dropdown-menu bg-light" style="z-index: 10000;">
+                        <div class="p-2">
+                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                type="submit">VN</button>
+                        </div>
+                        <div class="p-2">
+                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                type="submit">ENG</button>
+                        </div>
+                    </div>
+                </div>
+                <form method="get" action="">
+                    <div class="d-flex flex-direction-row justify-content-center">
+                        <div class="searchbar">
+                            <input class="search_input rounded px-2" type="text" name="" placeholder="Search..."
+                                style="border: 1px solid #ddd">
+                            <button class="search_icon btn-sm border-0 btn-info" type="submit"
+                                style="line-height: 1.4;">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="toggle" class="d-block d-md-none text-right p-2">
+                    <a href="#" data-menu class="text-dark">
+                        <i class="fa fa-lg fa-bars"></i>
+                        <span>Menu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header id="header">
+    <div class="container">
+        <div class="sticky">
+            <div class="row align-items-center">
+                <div class="col-md-12 h-100">
+                    <nav id="navbar" class="nav-header">
+                        <ul class="nolist d-flex flex-wrap">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li>
+                                <a href="#">Giới thiệu
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="#">Tin Tức
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Dự Án
+                                </a>
+                            </li>
+                            <li>
+                                <a class="" href="#">Tuyển Dụng
+                                </a>
+                            </li>
+                            <li><a href="">Liên Hệ</a></li>
+                            <li class="d-block d-md-none ">
+                                <div class="topBar pb-2 ">
+                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        class="items-nav text-white">
+                                        Thay đổi ngôn ngữ
+                                    </a>
+                                    <div class="dropdown-menu bg-light" style="z-index: 10000;">
+                                        <div class="p-2">
+                                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                                type="submit">VN</button>
+                                        </div>
+                                        <div class="p-2">
+                                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
+                                                type="submit">ENG</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<style>
+    .dropdown-menu a {
+        padding: 8px 15px;
+        display: block;
+    }
+
+    .sub-menu {
+        position: absolute;
+        visibility: hidden;
+        will-change: transform;
+        top: 100%;
+        transform-origin: top;
+        transform: scale(1, 0);
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sub-menu-parent:hover>.sub-menu {
+        transform: scale(1, 1);
+        visibility: visible;
+        transition-delay: 0s, 0s, 0.3s;
+        z-index: 2;
+    }
+
+    .sub-menu-parent .sub-menu-parent__link::after {
+        content: '\f0dd';
+        font-family: FontAwesome;
+        color: #fff;
+    }
+</style>
     
+<section class="slide-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bg-main" style="overflow: hidden">
+                    <div class=" slide-items">
+                        <img src="http://www.coteccons.vn/app/uploads/2018/02/11/z1378426370986_9140a3b1e8caf43d5d64bc9aa7b6c68f.jpg"
+                            alt="">
+                        <article class="slide-items-content">
+                            <h5 class="m-0">Giá xăng tăng cao thời điểm cực hotdasdasdsadsa</h5>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-3">
+    <div class="container">
+        <div class="d-flex flex-wrap title-descript">
+            <div class="flex-grow-1">
+                <h3 class="text-uppercase">Dự án tiêu biểu</h3>
+            </div>
+            <div class="other-project">
+                <ul class="nolist d-flex">
+                    <li>
+                        <a href="">Thiết kế và thi công</a>
+                    </li>
+                    <li>
+                        <a href="">Dân dụng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-12">
+                <div class="swiper-container swiper-product">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card card-hover">
+                            <div class="card-top">
+                                <a href="#"><img
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="products-title">
+                                    <a href="#">Timberland ManWah</a>
+                                </div>
+                                <div class="products-content">
+                                    <span>Dự án dân dụng có quy mô lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-hover">
+                            <div class="card-top">
+                                <a href="#"><img
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="products-title">
+                                    <a href="#">Timberland ManWah</a>
+                                </div>
+                                <div class="products-content">
+                                    <span>Dự án dân dụng có quy mô lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-hover">
+                            <div class="card-top">
+                                <a href="#"><img
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="products-title">
+                                    <a href="#">Timberland ManWah</a>
+                                </div>
+                                <div class="products-content">
+                                    <span>Dự án dân dụng có quy mô lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-hover">
+                            <div class="card-top">
+                                <a href="#"><img
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="products-title">
+                                    <a href="#">Timberland ManWah</a>
+                                </div>
+                                <div class="products-content">
+                                    <span>Dự án dân dụng có quy mô lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-hover">
+                            <div class="card-top">
+                                <a href="#"><img
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="products-title">
+                                    <a href="#">Timberland ManWah</a>
+                                </div>
+                                <div class="products-content">
+                                    <span>Dự án dân dụng có quy mô lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-hover">
+                            <div class="card-top">
+                                <a href="#"><img
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="products-title">
+                                    <a href="#">Timberland ManWah</a>
+                                </div>
+                                <div class="products-content">
+                                    <span>Dự án dân dụng có quy mô lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-hover">
+                            <div class="card-top">
+                                <a href="#"><img
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="products-title">
+                                    <a href="#">Timberland ManWah</a>
+                                </div>
+                                <div class="products-content">
+                                    <span>Dự án dân dụng có quy mô lớn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-3">
+    <div class="container">
+        <div class="d-flex flex-wrap bg-news">
+            <div class="col-md-12 py-3">
+                <div class="row title-descript px-3">
+                    <h3 class="text-leftd-md-inline-block col">TIN MỚI NHẤT</h3>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="article-news">
+                    <a href="#" class="d-block">
+                        <img class="img-product-st"
+                            src="https://media.vutaweb.com/uploads/trongnuyen/2019-05-20/o-nhiem-khong-khi_size_660x440.jpg"
+                            alt="">
+                    </a>
+                    <a href="#">Giá xăng tăng cao thời điểm cực hotdas</a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="article-thumb">
+                    <div class="card-top-news">
+                        <a href="#">
+                            <img src="https://media.vutaweb.com/uploads/trongnuyen/2019-05-17/thum_size_960x538.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="card-body-news">
+                        <a href="#">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            Giá xăng tăng cao thời điểm cực hot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="article-thumb">
+                    <div class="card-top-news">
+                        <a href="#">
+                            <img src="https://media.vutaweb.com/uploads/trongnuyen/2019-05-17/thum_size_960x538.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="card-body-news">
+                        <a href="#">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            Giá xăng tăng cao thời điểm cực hot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="article-thumb">
+                    <div class="card-top-news">
+                        <a href="#">
+                            <img src="https://media.vutaweb.com/uploads/trongnuyen/2019-05-17/thum_size_960x538.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="card-body-news">
+                        <a href="#">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            Giá xăng tăng cao thời điểm cực hot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="article-thumb">
+                    <div class="card-top-news">
+                        <a href="#">
+                            <img src="https://media.vutaweb.com/uploads/trongnuyen/2019-05-17/thum_size_960x538.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="card-body-news">
+                        <a href="#">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            Giá xăng tăng cao thời điểm cực hot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="article-thumb">
+                    <div class="card-top-news">
+                        <a href="#">
+                            <img src="https://media.vutaweb.com/uploads/trongnuyen/2019-05-17/thum_size_960x538.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="card-body-news">
+                        <a href="#">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            Giá xăng tăng cao thời điểm cực hot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="article-thumb">
+                    <div class="card-top-news">
+                        <a href="#">
+                            <img src="https://media.vutaweb.com/uploads/trongnuyen/2019-05-17/thum_size_960x538.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="card-body-news">
+                        <a href="#">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            Giá xăng tăng cao thời điểm cực hot
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-md-8">
+                <div class="d-flex flex-wrap title-descript mb-3">
+                    <div class="flex-grow-1">
+                        <h3 class="text-uppercase">Tuyển Dụng</h3>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="recruit col-md-6 mb-3">
+                        <div class="row">
+                            <div class="col-md-4 col-5">
+                                <a href="#" class="d-block">
+                                    <img src="http://www.coteccons.vn/app/uploads/2019/05/30/paperwork.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-8 pl-0 col-7">
+                                <a href="#" class="recruit-title">
+                                    Tuyển dụng 50 công nhân cơ khí hàn làm việc vũng tàu
+                                </a>
+                                <div class="recruit-content">
+                                    <label>
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                        5 - 10 triệu
+                                    </label>
+                                    <label>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        30/6/2019
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recruit col-md-6 mb-3">
+                        <div class="row">
+                            <div class="col-md-4 col-5">
+                                <a href="#" class="d-block">
+                                    <img src="http://www.coteccons.vn/app/uploads/2019/05/30/paperwork.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-8 pl-0 col-7">
+                                <a href="#" class="recruit-title">
+                                    Tuyển dụng 50 công nhân cơ khí hàn làm việc vũng tàu
+                                </a>
+                                <div class="recruit-content">
+                                    <label>
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                        5 - 10 triệu
+                                    </label>
+                                    <label>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        30/6/2019
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recruit col-md-6 mb-3">
+                        <div class="row">
+                            <div class="col-md-4 col-5">
+                                <a href="#" class="d-block">
+                                    <img src="http://www.coteccons.vn/app/uploads/2019/05/30/paperwork.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-8 pl-0 col-7">
+                                <a href="#" class="recruit-title">
+                                    Tuyển dụng 50 công nhân cơ khí hàn làm việc vũng tàu
+                                </a>
+                                <div class="recruit-content">
+                                    <label>
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                        5 - 10 triệu
+                                    </label>
+                                    <label>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        30/6/2019
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recruit col-md-6 mb-3">
+                        <div class="row">
+                            <div class="col-md-4 col-5">
+                                <a href="#" class="d-block">
+                                    <img src="http://www.coteccons.vn/app/uploads/2019/05/30/paperwork.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-8 pl-0 col-7">
+                                <a href="#" class="recruit-title">
+                                    Tuyển dụng 50 công nhân cơ khí hàn làm việc vũng tàu
+                                </a>
+                                <div class="recruit-content">
+                                    <label>
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                        5 - 10 triệu
+                                    </label>
+                                    <label>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        30/6/2019
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recruit col-md-6 mb-3">
+                        <div class="row">
+                            <div class="col-md-4 col-5">
+                                <a href="#" class="d-block">
+                                    <img src="http://www.coteccons.vn/app/uploads/2019/05/30/paperwork.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-8 pl-0 col-7">
+                                <a href="#" class="recruit-title">
+                                    Tuyển dụng 50 công nhân cơ khí hàn làm việc vũng tàu
+                                </a>
+                                <div class="recruit-content">
+                                    <label>
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                        5 - 10 triệu
+                                    </label>
+                                    <label>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        30/6/2019
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recruit col-md-6 mb-3">
+                        <div class="row">
+                            <div class="col-md-4 col-5">
+                                <a href="#" class="d-block">
+                                    <img src="http://www.coteccons.vn/app/uploads/2019/05/30/paperwork.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-8 pl-0 col-7">
+                                <a href="#" class="recruit-title">
+                                    Tuyển dụng 50 công nhân cơ khí hàn làm việc vũng tàu
+                                </a>
+                                <div class="recruit-content">
+                                    <label>
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                        5 - 10 triệu
+                                    </label>
+                                    <label>
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        30/6/2019
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="operate">
+                    <div class="title-right">
+                        <h4>HỢP TÁC CÙNG 388</h4>
+                    </div>
+                    <div class="py-2 px-3">
+                        <span>Nhấp chuột vào link liên kết để liên hệ với 388</span>
+                    </div>
+                    <div class="d-flex py-2">
+                        <a href="#" class="btn-sm font-weight-bold text-center btn-warning w-50 mx-2 text-white">Facebook</a>
+                        <a href="#" class="btn-sm font-weight-bold text-center btn-warning w-50 mx-2 text-white">Zalo</a>
+                    </div>
+                    <div class="d-flex py-2 text-right align-items-center">
+                        <div class="flex-grow-1 pr-3">
+                            <h5>0909 090 922</h5>
+                            <span>HOTLINE</span>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-warning d-inline-block text-center align-items-center">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="recruit py-3">
+                    <div class="title-right">
+                        <h4>TIN THỊ TRƯỜNG</h4>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <ul class="nolist">
+                            <li>
+                                <a href="#">Landmark 81 kỳ vĩ như thế nào?</a>
+                            </li>
+                            <li>
+                                <a href="#">Vì sao Coteccons quyết định chi 500 - 700 tỷ đồng mua cổ phiếu quỹ?</a>
+                            </li>
+                            <li>
+                                <a href="#">Tuyển dụng 50 công nhân cơ khí</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
 
+    <footer id="footer">
+    <div class="bg-footer" style="background-image: url('http://www.coteccons.vn/images/bgfooter.png')">
+        <div class="container">
+            <div class="company">
+                <div class="d-flex flex-wrap title-descript pt-3">
+                    <div class="flex-grow-1">
+                        <h3 class="text-uppercase">Đối tác chiến lược</h3>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap py-3">
+                    <ul class="nolist company-list">
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo1.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo3.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo4.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo5.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo6.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo7.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./public/images/logo8.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="d-flex flex-wrap">
+                    <div class="col-md-8">
+                        <div class="footer-title">
+                            <h4>Thông tin công ty</h4>
+                        </div>
+                        <div class="footer-body">
+                            <ul class="nolist">
+                                <li>
+                                    <span><u>Văn Phòng Đại Diện:</u></span>
+                                    <span>No 20A – Pham Van Dinh Street – Thang Nhat Ward – Vung Tau City – Ba Ria Vung Tau Province.</span>
+                                </li>
+                                <li>
+                                    <span><u>Trụ Sở Chính:</u></span>
+                                    <span>No 2/14 - Bao Phuc Street – Dang Hai Ward - Ngo Quyen Dist - Hai Phong City</span>
+                                </li>
+                                <li>
+                                    <span><u>Số điện thoại:</u></span>
+                                    <span> +84 2253 722 126</span>
+                                </li>
+                                <li>
+                                    <span><u>Hotline:</u></span>
+                                    <span> +84 313 851 266</span>
+                                </li>
+                                <li>
+                                    <span><u>Email:</u></span>
+                                    <span>admin@388ic.com.vn</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-title">
+                            <h4>Fanpage</h4>
+                        </div>
+                        <div class="footer-body">
+                            <div class="fb-page"
+                                data-href="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs"
+                                data-tabs="timeline" data-width="" data-height="200" data-small-header="false" data-adapt-container-width="true"
+                                data-hide-cover="false" data-show-facepile="true">
+                                <blockquote
+                                    cite="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs"
+                                    class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs">Công
+                                        ty Cổ phần Đầu tư và Xây lắp 388 - 388IC</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="text-white">Copyright &copy; 2019 388ic Group.</span>
+                    <span class="text-dark">Design by <a href="#" class="text-dark">TiHon Company</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-top">
+            <a href="#" class="smooth-scroll">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                Top
+            </a>
+        </div>
 
-    <footer id="footer"></footer>
+    </div>
+</footer>
     <script src="./public/js/jquery.min.js"></script>
     <script src="./public/js/popper.min.js"></script>
     <script src="./public/js/swiper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
     <script src="./public/js/app.js"></script>
+    
 </body>
 
 </html>

@@ -1,0 +1,36 @@
+#news {
+    h1{
+        font-size: 18pt;
+    }
+}
+.header-title {
+    font-size: 18pt;
+}
+.post-title {
+    a {
+        color:  #000;
+        font-weight: 600;
+    }
+}
+.card-hover-primary {
+    transition: .3s ease-in-out all;
+    &:hover {
+        background-color: rgba(#ddd, .3);
+    }
+}
+.card-another-body {
+    a {
+        color: #000;
+    }
+}
+.recruit-title {
+    a {
+        color: #000;
+        font-size: 14pt;
+    }
+}
+.recruit-company {
+    span {
+        color: gray;
+    }
+}
