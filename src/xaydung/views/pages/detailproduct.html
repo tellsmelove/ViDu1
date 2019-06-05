@@ -1,0 +1,162 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}DetailProduct{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Dự án</a></li>
+                            <li><span>tên dự án</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="d-flex flex-wrap title-descript pt-3 mb-3">
+                    <div class="flex-grow-1">
+                        <h1 class="text-uppercase" style="font-size: 16pt;">Dự án abcxyz</h1>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="d-flex flex-column h-100">
+                        <div id="slider_product_detail" class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery1.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery2.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery3.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery4.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery4.png')}}" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                        <div id="slider_product_thumb" class="swiper-container gallery-thumbs small">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery1.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery2.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery3.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery4.png')}}" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{img('gallery4.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap title-descript pt-3 mb-3">
+                    <div class="flex-grow-1">
+                        <h3 class="text-uppercase" style="font-size: 13pt;">Chi tiết dự án</h3>
+                    </div>
+                </div>
+                <div class="content-products">
+                    <p>dự án abc</p>
+                    tổng chi phí abc
+                </div>
+                <div class="d-flex flex-wrap title-descript pt-3 mb-3">
+                    <div class="flex-grow-1">
+                        <h3 class="text-uppercase" style="font-size: 13pt;">Dự án liên quan</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="card border mb-2 card-hover-primary">
+                            <div class="card-another-top">
+                                <a href="#" class="w-100">
+                                    <img class="product-image w-100 p-2"
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-another-body text-center">
+                                <a href="#" class="text-uppercase p-2 d-block">Dự án abc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card border mb-2 card-hover-primary">
+                            <div class="card-another-top">
+                                <a href="#" class="w-100">
+                                    <img class="product-image w-100 p-2"
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-another-body text-center">
+                                <a href="#" class="text-uppercase p-2 d-block">Dự án abc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="card border mb-2 card-hover-primary">
+                            <div class="card-another-top">
+                                <a href="#" class="w-100">
+                                    <img class="product-image w-100 p-2"
+                                        src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="card-another-body text-center">
+                                <a href="#" class="text-uppercase p-2 d-block">Dự án abc</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="title-right">
+                    <h4>Theo năm</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nolist product-years">
+                            <li><a href="">2019</a></li>
+                            <li><a href="">2018</a></li>
+                            <li><a href="">2017</a></li>
+                            <li><a href="">2016</a></li>
+                            <li><a href="">2015</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="title-right">
+                    <h4>Theo tiến độ</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nolist product-years">
+                            <li><a href="">Đã thi công</a></li>
+                            <li><a href="">Đang thi công</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

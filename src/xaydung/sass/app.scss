@@ -5,6 +5,10 @@
 @import './cardproducts';
 @import './breadcrumb';
 @import './news';
+@import './newpost';
+@import './product';
+@import './about';
+@import './detailproduct';
 html {
 	scroll-behavior: smooth;
 }
@@ -48,7 +52,7 @@ html {
     }
 }
 .bg-news{
-    background-color:#fffdb0;
+    background-color:#FFF8E1;
 }
 .article-thumb{
     position:relative;
@@ -85,9 +89,10 @@ html {
 }
 .title-right {
     position: relative;
-    background-color: #00a6d5;
+    background-color: #FFA726;
     color: #fff;
     padding: 6px 20px 6px 6px;
+    
     &::after {
         content: '';
         position: absolute;
@@ -99,8 +104,9 @@ html {
         border-left: 49px solid transparent;
     }
     h4 {
-        font-size: 12pt;
+        font-size: 13pt;
         margin: 0;
+        font-weight: 600;
     }
 }
 .recruit {

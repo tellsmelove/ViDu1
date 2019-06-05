@@ -4,26 +4,20 @@
             <div class="flex-grow-1">
                 <div class="logo bg-white d-inline-block">
                     <a href="#" class="d-block py-1">
-                        <img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t31.0-8/12087114_927590583945450_2608510323676211343_o.jpg?_nc_cat=108&_nc_oc=AQlWnFhzKmgB8nH04JzJz-VL3pr02OANFdZl-9ASGso1IowVHjFUiyN1yMLbQ6un3eI&_nc_ht=scontent.fsgn2-3.fna&oh=5fb1049607a802089a42d7f7bb65a808&oe=5D8661C6" alt="">
+                        <img src="{{img('logo.jpg')}}" alt="">
                     </a>
                 </div>
             </div>
             <div class="header-right">
-                <div class="topBar text-right pb-2 d-none d-md-block">
-                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        class="items-nav text-dark ">
-                        Thay đổi ngôn ngữ
+                <div class="topBar text-right p-2 d-none d-md-block">
+                    <a href="#" class="text-dark">
+                        <img class="flag" src="{{img('eng.jpg')}}" alt="">
+                        ENG
                     </a>
-                    <div class="dropdown-menu bg-light" style="z-index: 10000;">
-                        <div class="p-2">
-                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
-                                type="submit">VN</button>
-                        </div>
-                        <div class="p-2">
-                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
-                                type="submit">ENG</button>
-                        </div>
-                    </div>
+                    <a href="#" class="text-dark">
+                        <img class="flag" src="{{img('vietnam.jpg')}}" alt="">
+                        VI
+                    </a>
                 </div>
                 <form method="get" action="">
                     <div class="d-flex flex-direction-row justify-content-center">
@@ -73,21 +67,15 @@
                             </li>
                             <li><a href="">Liên Hệ</a></li>
                             <li class="d-block d-md-none ">
-                                <div class="topBar pb-2 ">
-                                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                        class="items-nav text-white">
-                                        Thay đổi ngôn ngữ
+                                <div class="topBar pb-2 d-flex">
+                                    <a href="#" class="text-dark">
+                                        <img class="flag" src="{{img('eng.jpg')}}" alt="">
+                                        ENG
                                     </a>
-                                    <div class="dropdown-menu bg-light" style="z-index: 10000;">
-                                        <div class="p-2">
-                                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
-                                                type="submit">VN</button>
-                                        </div>
-                                        <div class="p-2">
-                                            <button class="btn btn-info form-control btn-sm text-white font-weight-bold"
-                                                type="submit">ENG</button>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="text-dark">
+                                        <img class="flag" src="{{img('vietnam.jpg')}}" alt="">
+                                        VI
+                                    </a>
                                 </div>
                             </li>
                         </ul>

@@ -1,0 +1,15 @@
+.product-years {
+    li a {
+        display: block;
+        color: #666;
+        padding: 4px;
+        &::before {
+            content: '\f0da';
+            font-family: FontAwesome;
+            margin-right: 4px;
+        }
+        &:hover {
+            color: #0088ee;
+        }
+    }
+}

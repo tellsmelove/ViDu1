@@ -34,3 +34,10 @@
         color: gray;
     }
 }
+.recruit-items__hover {
+    transition: .3s ease all;
+    border: 1px dashed #fff;
+    &:hover {
+        border: 1px dashed #ddd;
+    }
+}

@@ -1,0 +1,128 @@
+.img-main {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+.about-box {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(#fff, .5);
+    left: 50%;
+    top: 50%;
+    opacity: 0.1;
+    transform: translate(-50%, 50%);
+    animation: loadPage 1.7s .5s ease forwards;
+
+    @keyframes loadPage {
+        to{
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+    @include max-xl {
+            width: 90%;
+            
+        }
+    @include max-sm {
+            width: 90%;
+            height: 87%;
+        }
+    &_title {
+        position: absolute;
+        display: inline-block;
+        background-color: #FF9800;
+        color: #fff;
+        font-weight: bold;
+        top: 0;
+        left: 50%;
+        font-size: 16pt;
+        transform: translate(-50%, -50%);
+        padding: 10px 10px;
+        border-radius: 5px;
+        // width: 50%;
+        @include max-sm {
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+.about-title {
+    color: #FF9800;
+}
+.about-content {
+    background-color: #ffeb81;
+    h1 {
+        font-weight: bold;
+        color: #da0000;
+        margin: 24px 0px;
+    }
+    .story-content {
+        font-size: 1.25rem;
+    }
+}
+.gallery-about {
+    img {
+        height: 250px;
+        width: 100%;
+
+    }
+
+}
+.img-left {
+    flex: 0 0 50%;
+    img {
+        height: 300px;
+        width: 100%;
+        @include max-sm {
+            height: auto;
+        }
+    }
+    @include max-sm {
+        flex: 0 0 100%;
+    }
+}
+.content-right {
+    flex: 0 0 50%;
+    padding: 8px;
+    @include max-sm {
+        flex: 0 0 100%;
+        padding: 20px;
+    }
+    .content-boxs{
+        position: relative;
+        padding: 16px;
+        background-color: #fff; 
+        
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0px 0px  15px rgba(#fff, .5);
+        @include max-sm{
+        }
+        span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            font-size: 14pt;
+            width: 60%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            background-color: rgba(#FF9800, .8);
+            border-radius: 10px;
+            font-weight: 600;
+            padding: 4px;
+            color: #fff;
+            @include max-xl {
+                width: 80%;
+            }
+            @include max-sm {
+                width: 80%;
+            }
+        }
+    }
+}
