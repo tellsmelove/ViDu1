@@ -84,41 +84,17 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./src/tmdt/js/app.js":
-/*!****************************!*\
-  !*** ./src/tmdt/js/app.js ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/home/kimtrong/learning/projects/Projects1/src/tmdt/js/app.js'");
-
-/***/ }),
-
-/***/ "./src/tmdt/sass/app.scss":
-/*!********************************!*\
-  !*** ./src/tmdt/sass/app.scss ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nError: ENOENT: no such file or directory, open '/home/kimtrong/learning/projects/Projects1/src/tmdt/sass/app.scss'\n    at runLoaders (/home/kimtrong/learning/projects/Projects1/node_modules/webpack/lib/NormalModule.js:301:20)\n    at /home/kimtrong/learning/projects/Projects1/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /home/kimtrong/learning/projects/Projects1/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at process.nextTick (/home/kimtrong/learning/projects/Projects1/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:73:15)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
-
-/***/ }),
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /*!***********************************************************!*\
   !*** multi ./src/tmdt/js/app.js ./src/tmdt/sass/app.scss ***!
   \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kimtrong/learning/projects/Projects1/src/tmdt/js/app.js */"./src/tmdt/js/app.js");
-module.exports = __webpack_require__(/*! /home/kimtrong/learning/projects/Projects1/src/tmdt/sass/app.scss */"./src/tmdt/sass/app.scss");
+!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/kimtrong/learning/projects/Projects1/src/tmdt/js/app.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/kimtrong/learning/projects/Projects1/src/tmdt/sass/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 /***/ })
-
-/******/ });
+/******/ ]);
