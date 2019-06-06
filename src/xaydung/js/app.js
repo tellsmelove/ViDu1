@@ -16,6 +16,7 @@ $(document).ready(() => {
     var swiper = new Swiper('.swiper-product', {
         slidesPerView: 5,
         spaceBetween: 10,
+        loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
