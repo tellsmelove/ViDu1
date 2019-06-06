@@ -1,0 +1,56 @@
+#payment {
+    h4 {
+        font-size: 1.25rem;
+    }
+}
+.shipper{
+    justify-content: left!important;
+    
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+        border: 1px solid rgb(4, 31, 182);
+        cursor: pointer;
+        transition: .3s all ease;
+    }
+    &-logo {
+        padding: 15px;
+        img{
+            height: 45px;
+            width: 45px;
+        }
+    }
+    &-content {
+        flex: 2;
+        padding: 8px 15px;
+    }
+    &-desc {
+        color: dimgray;
+        font-size: 10pt;
+    }
+    &-title {
+        font-size: 11pt;
+        font-weight: 600;
+        color: #29d;
+    }
+    &-check {
+        flex: 1;
+        text-align: center;
+        padding: 15px;
+        .fa-check{
+            font-size: 2rem;
+        }
+    }
+}
+.checks {
+    justify-content: left!important;
+}
+.table {
+    th {
+        color: #666;
+        font-size: 90%;
+        border-bottom: 1px solid #ddd!important;
+    }
+}

@@ -1,0 +1,112 @@
+{% extends 'layouts/personal.html' %}
+
+{% block title %}Editlocal{% endblock %}
+
+{% block content %}
+{% from 'mixin/navbarlocal.html' import navbar %}
+{{ navbar('index') }}
+<section class="py-lg-5 py-3">
+    <div class="container">
+        <form action="" method="post">
+            <div class="row">
+                <div class="col-md-6 offset-md-3  p-3 box-login">
+                    <div class="text-center">
+                        <h1><i class="fa fa-cog" aria-hidden="true"></i> Chỉnh sửa địa chỉ</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Nhập họ tên:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="text" autocomplete="off"
+                                    placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập Lại Họ Tên</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Nhập Địa chỉ nhận hàng</span>
+                            </div>
+                            <div class="w-100 p-0">
+                                <textarea class="form-control" name="text"  cols="30" rows="2" placeholder="Nhập lại địa chỉ nhận hàng"></textarea>
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập lại địa chỉ nhận hàng</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Tỉnh/Thành phố</span>
+                            </div>
+                            <div class="w-100 p-0">
+                                <select class="form-control" name="text" id="">
+                                    <option value="1" selected disabled>Default</option>
+                                    <option value="1">BR-VT</option>
+                                    <option value="1">TPHCM</option>
+                                    <option value="1">Hà Nội</option>
+                                </select>
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Xin mời chọn</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Quận/Huyện</span>
+                            </div>
+                            <div class="w-100 p-0">
+                                <select class="form-control" name="text" id="">
+                                    <option value="1" selected disabled>Default</option>
+                                    <option value="1">BR-VT</option>
+                                    <option value="1">TPHCM</option>
+                                    <option value="1">Hà Nội</option>
+                                </select>
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Xin mời chọn</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Phường/Xã</span>
+                            </div>
+                            <div class="w-100 p-0">
+                                <select class="form-control" name="text" id="">
+                                    <option value="1" selected disabled>Default</option>
+                                    <option value="1">BR-VT</option>
+                                    <option value="1">TPHCM</option>
+                                    <option value="1">Hà Nội</option>
+                                </select>
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Xin mời chọn</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Số điện thoại:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="number" autocomplete="off" placeholder="Nhập số điện thoại...">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập Lại số điện thoại</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 text-center">
+                        <button type="submit" class="btn btn-success">
+                            <span class="glyphicon glyphicon-off">
+                            </span>
+                            Lưu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>  
+{% endblock %}

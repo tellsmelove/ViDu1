@@ -1,0 +1,30 @@
+.product-list-image {
+    height: 250px;
+    min-height: 150px;
+    @include max-lg {
+        height: 200px;
+    }
+    @include max-sm {
+        height: auto;
+    }
+}
+.card-body-product {
+    @include max-sm {
+        padding: 0;
+        margin: 5px 0px;
+    }
+}
+.product-items {
+    position: relative;
+    .product-sale {
+            position: absolute;
+            top: 3%;
+            left: 5%;
+            z-index: 99;
+            @include max-sm {
+                font-size: 9pt;
+                left: 6%;
+            }
+        }
+
+}

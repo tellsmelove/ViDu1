@@ -1,0 +1,141 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}newpost{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">danh mục</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="newpost">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <article class="col-md-9 newpost-article">
+                        <div class="row">
+                            <div class="col-12 py-3 ">
+                                <h1 class="title-post">Ùn tắc cửa ngõ Sài Gòn, trẻ em ôm gấu bông ngủ gục trong đêm</h1>
+                            </div>
+                            <div class="col-12 post-date text-secondary">
+                                <p class="la-text-normal">
+                                    <i aria-hidden="true" class="fa fa-calendar"></i>
+                                    <span>09-04-2019 09:54:13</span>
+                                </p>
+                            </div>
+                            <div class="col-12 post-title-small">
+                                <h2>Nhiều em nhỏ đi cùng người lớn trở lại TP.HCM sau dịp nghỉ lễ dài ngày không tránh
+                                    khỏi mệt mỏi khi phải chờ đợi cả
+                                    tiếng đồng hồ để lên phà Cát Lái, chiều tối 1/5.
+                                </h2>
+                                <div class="text-center py-3">
+                                    <img src="https://znews-photo.zadn.vn/w1024/Uploaded/ayhunwx/2019_05_02/ket_xe_Cat_lai_zing_13.jpg"
+                                        alt="">
+                                </div>
+                                <p>Anh Nguyễn Trọng Tường (Đồng Nai) cho biết: “Ngày lễ tắc đường nhưng bà muốn cháu ở
+                                    lại chơi lâu lâu nên 18h tôi mới đưa
+                                    con (bé Nguyễn Trọng Anh Tuấn) đi Sài Gòn. Bình thường tôi chỉ đi mất 1 tiếng, hôm
+                                    nay là 1 tiếng rưỡi rồi”.</p>
+                                <div class="text-center py-3">
+                                    <img src="https://znews-photo.zadn.vn/w1024/Uploaded/ayhunwx/2019_05_02/ket_xe_Cat_lai_zing_14.jpg"
+                                        alt="">
+                                </div>
+                                <p>
+                                    "Sang năm chắc tôi rút kinh nghiệm đi từ sáng sớm hoặc lên trước một ngày cho mấy
+                                    đứa nhỏ đỡ cực. Đi như thế này người
+                                    lớn còn cảm thấy mệt mỏi nữa là tụi nhỏ", anh Hoàng Thái chia sẻ.
+                                </p>
+                            </div>
+                            <div class="col-12 py-3 text-right">
+                                <small>Nguồn: Zing.vn</small>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="col-md-3">
+                        <div class="d-block text-center">
+                            <h4>Sản Phẩm Mới Nhất</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <div class="card border-0 mb-3 card-hover-primary ">
+                                    <div class="card-top border">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2" src="{{img('maychuphinh.jpg')}}"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="btn-sm btn-default rounded-0 product-sale d-inline-block">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Đặt hàng
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <a href="#" class="text-uppercase normal-product_name">Máy chụp hình</a>
+                                        <div class="d-block mb-2 font-weight-bold">
+                                            <span>1.250.000</span>
+                                            <span>VNĐ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="card border-0 mb-3 card-hover-primary ">
+                                    <div class="card-top border">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2" src="{{img('maychuphinh.jpg')}}"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="btn-sm btn-default rounded-0 product-sale d-inline-block">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Đặt hàng
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <a href="#" class="text-uppercase normal-product_name">Máy chụp hình</a>
+                                        <div class="d-block mb-2 font-weight-bold">
+                                            <span>1.250.000</span>
+                                            <span>VNĐ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="card border-0 mb-3 card-hover-primary ">
+                                    <div class="card-top border">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2" src="{{img('maychuphinh.jpg')}}"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="btn-sm btn-default rounded-0 product-sale d-inline-block">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Đặt hàng
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <a href="#" class="text-uppercase normal-product_name">Máy chụp hình</a>
+                                        <div class="d-block mb-2 font-weight-bold">
+                                            <span>1.250.000</span>
+                                            <span>VNĐ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock %}

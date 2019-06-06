@@ -1,0 +1,301 @@
+@import './mixin';
+@import './global';
+@import './carditems';
+@import './breadcrumb';
+@import './contact';
+@import './manager';
+@import './oder';
+@import './payment';
+@import './root';
+@import './about';
+@import './detailproduct';
+@import './cart';
+@import './news';
+@import './newpost';
+@import './product';
+// SECTION Global
+// #region Global
+body{
+    h1 {
+        font-size: 2.25rem;
+        @include max-lg {
+            font-size: 2.15rem;
+        }
+        @include max-sm {
+            font-size: 1.5rem;
+        }
+    }
+}
+#app{
+    min-height: 100vh;
+    overflow: hidden;
+}
+// #endregion
+
+// #region Header
+#header{
+    background-color: #e5101d;
+}
+.banner-top {
+    display: block;
+}
+#logo {
+    background-color: #fff;
+    border-radius: 8px;
+    img {
+        height: 70px;
+        width: 100%;
+    }
+}
+.tikicon.icon-tiki_short {
+    background-image: url('https://salt.tikicdn.com/desktop/img/sprite.png?v=1519811185467');
+    background-position: -137px -265px;
+    width: 50px;
+    height: 33px;
+}
+.form-search {
+    input {
+        padding: 20px 8px;
+    }
+}
+.form-email {
+    input {
+        padding: 16px 8px;
+    }
+}
+.header-link {
+    font-size: 11pt;
+    &-icons {
+        font-size: 20pt;
+        margin-right: 6px;
+    }
+}
+#cart {
+    position: absolute;
+    right: 0;
+    
+    #cart-number {
+        padding: 2px 4px;
+        color: #000;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+}
+.cart-items{
+    border: 1px dashed #fff;
+    padding: 2px;
+    border-radius: 6px;
+    &:hover {
+        background-color: rgba(#fff, .2);
+    }
+}
+.dropdown-menu {
+    min-width: 250px;
+    color: #000;
+}
+.main-navbar-toggle {
+    display: block;
+    padding: 8px 6px;
+}
+.topBar-user {
+    background-color: #B71C1C;
+}
+.sub-menu {
+    background-color: #B71C1C;
+    ul {
+        display: flex;
+        flex-direction: row;
+        li a {
+            display: block;
+            color: #fff;
+            padding: 8px 12px;
+            &:hover {
+                background-color: #034e7c;
+            }
+        }
+        .icons-menu{
+            font-size: 20pt;
+            padding: 8px 16px;
+            color: #fff;
+        }
+    }
+    .close-menu {
+        position: absolute;
+        font-size: 20pt;
+        right: 5px;
+        top: 16px;
+    }
+}
+.noti-items , .user-profile {
+    padding: 5px 10px;
+    &:hover {
+        background-color: rgba(#fff, .2);
+    }
+    
+}
+// #endregion
+
+// #region Menu-Aside
+#navbar{
+    background-color: #C62828;
+    display: block;
+    @include max-md{
+        position: fixed;
+        visibility: hidden;
+        z-index: -999;
+        left: -100%;
+        display: block;
+        background-color: #3440f0;
+        transition: .4s ease-out all;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+    }
+    @include max-sm{
+        width: 100vw!important;
+    }
+    &.active {
+        visibility: visible;
+        left: 0;
+        z-index: 9999;
+    }
+    @include max-md{
+        > .row{
+            margin: 0;
+        }
+    }
+}
+.sub-style {
+    @include max-sm {
+        border-bottom: 1px solid #fff;
+    }
+}
+#cate_menu{
+    #dropdown{
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        height: 0;
+        overflow: auto;
+        transition: .4s .1s ease-in-out height;
+        background-color: #fff;
+        box-shadow: 0 0 3px rgba(#333, .3);
+        ul{
+            max-height: 100%;
+        }
+        a{
+            display: block;
+            padding: 5px 15px;
+            border-bottom: 1px dashed #eee;
+            @include text-color(#333, #0088dd);
+        }
+    }
+    &:hover, &.index{
+        #dropdown{
+            height: 270px;
+            @include max-sm {
+                height: 100vh;
+            }
+        }
+    }
+}
+// #endregion
+
+
+// #region Slider
+#slider .swiper-container{
+    height: 270px;
+    @include max-md {
+        height: 150px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+// #endregion
+
+.product-list {
+    border-radius: 8px;
+    border: 1px dashed #ddd;
+    padding: 0 15px;
+    &--item{
+        padding: 0;
+        &:not(:last-child){
+            border-right: 1px dashed #ddd;
+        }
+        @include max-sm {
+            border-bottom: 1px dashed rgba(#000, .2);
+        }
+    }
+}
+
+
+// #region Gift-card
+.gift-card{
+    display: block;
+    border-radius: 17px;
+    overflow: hidden;
+    position: relative;
+    &:hover{
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000, .2);
+            top: 0;
+            left: 0;
+        }
+    }
+}
+// #endregion
+
+// #region footer
+#footer {
+    #logo-footer {
+        
+        img {
+            background-color: #fff;
+            max-width: 200px;
+            max-height: 80px;
+        }
+    }
+}
+// #region form
+.box-login {
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(#ddd , .5)
+}
+.form-title {
+    &::before {
+        content: '* ';
+        font-weight: bold;
+    }
+}
+// #endregion
+
+// #region menulocal
+.menulocal {
+    position: sticky;
+    z-index: 999;
+    margin: 0px 15px;
+    ul {
+        li a {
+            @include max-sm {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}
+// #endregion
+.footer-main {
+    background-color: #ecf6f9;
+    li a {
+        @include text-color(#333, #0088dd);
+    }
+    .footer-body {
+        flex-grow: 1;
+    }
+}
+// #endregion

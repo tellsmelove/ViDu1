@@ -1,0 +1,76 @@
+// Product Card
+$product-card_bg: #fff;
+
+// Product Link
+$product-card_link: #fff;
+$product-card_link_hover:  0 0 15px rgba(#eee , .6);;
+$product-card_link_focus:  0 0 15px rgba(#eee , .6);;
+
+// Product Price Color
+$product-card_price: #000;
+$product-card_price_old: rgba(gray, .8);
+$product-card_price_old_weight: 900;
+
+.card {
+    background-color: $product-card_bg;
+    transition: .4s ease-in-out all;
+    transform: scale(1, 1);
+    
+    &-title {
+        @include text-color(#333, #fff);
+        display: block;
+        padding: 5px 15px;
+    }
+    &-body{
+        padding: 15px 0;
+    }
+    &:hover{
+        transform: scale(1.03, 1.03);
+        .card-title{
+            background-color: #0088ff;
+            color: #fff;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+.card-top {
+    text-align: center;
+    margin-bottom: 10px;
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
+.card-top-news {
+    text-align: center;
+    margin-bottom: 10px;
+    a {
+        @include max-sm {
+            margin-left: 15px;
+        }
+    }
+    img {
+        height: 200px;
+        width: 200px;
+        @include max-lg {
+            height: auto!important;
+        }
+        @include max-sm {
+            height: auto!important;
+        }
+    }
+}
+.card-hover {
+    &:hover {
+        box-shadow: $product-card_link_hover;
+        z-index: 99;
+    }
+}
+.price {
+    color: $product-card_price;
+}
+.old-price {
+    color: $product-card_price_old;
+}

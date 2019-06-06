@@ -1,0 +1,103 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Registe{% endblock %}
+
+{% block content %}
+{% from 'mixin/navbarlocal.html' import navbar %}
+{{ navbar('index') }}
+<section class="py-lg-5 py-3">
+    <div class="container">
+        <form action="" method="post">
+            <div class="row">
+                <div class="col-md-6 offset-md-3  p-3 box-login">
+                    <div class="text-center">
+                        <h1><i class="fa fa-lock " aria-hidden="true"></i> Đăng Ký</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">First Name:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="text" autocomplete="off" placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập Lại Họ Tên</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Last Name:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="text" autocomplete="off" placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập Lại Họ Tên</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Địa chỉ email:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="email" autocomplete="off" placeholder="Nhập địa chỉ email">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập Lại Email</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Số điện thoại:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="number" autocomplete="off"
+                                    placeholder="Nhập số điện thoại...">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập Lại số điện thoại</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Mật khẩu:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="number" autocomplete="off"
+                                    placeholder="Password...">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập lại mật khẩu</small>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Nhập Lại Mật khẩu:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" type="number" autocomplete="off"
+                                    placeholder="Regen Password...">
+                            </div>
+                            <div class="text-left w-100 mx-2">
+                                <small class="text-danger">Nhập lại mật khẩu</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 text-center">
+                        <button type="submit" class="btn btn-success">
+                            <span
+                                class="glyphicon glyphicon-off">
+                            </span>
+                            Login
+                            </button>
+                    </div>
+                    <div class="footer py-3 text-center">
+                        <p>Đã có tài khoản? <a href="#">Đăng nhập</a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

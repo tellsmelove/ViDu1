@@ -1,0 +1,23 @@
+{% macro news(title = null, titleold = null, img = null) %}
+<div class="card card-hover border-0">
+    <div class="row">
+        <div class="card-top-news text-center pt-2 col-md-12 px-3 col-4">
+            {% if  img %}
+            <a href="#" class="d-block p-2">
+                <img src="{{ img }}" alt="Card image cap">
+            </a>
+            {% endif %}
+        </div>
+        <div class="card-body py-2 col-md-12 px-3 col-8">
+            {% if title %}
+            <a href="#" class="card-title px-3 font-weight-bold">{{title}}</a>
+            {% endif %}
+            <div class="box-title_old px-3 d-none d-lg-block">
+                {% if titleold %}
+                <span class="">{{titleold}}</span>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

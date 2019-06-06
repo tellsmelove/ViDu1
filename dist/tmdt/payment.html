@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/fontisto/fontisto.min.css">
+    <link rel="stylesheet" href="./public/css/swiper.min.css">
+
+    <link rel="stylesheet" href="./public/css/app.css">
+    <title>Payment</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- SECTION  Header -->
+        <div class="topBar-user">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1">
+
+            </div>
+            <div class="d-flex">
+                <div class="mr-2 text-white">
+                    <i class="fi fi-person" aria-hidden="true"></i>
+                </div>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                    
+                    <div class="text-white">
+                        Đăng nhập
+                    </div>
+                </a>
+                <div class="dropdown-menu bg-light">
+                    <div class="p-2">
+                        <a href="http://google.com" class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
+                            type="submit">Đăng Nhập</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="http://google.com" class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
+                            type="submit">Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center py-2">
+            <div class="col-md-2 col-6">
+                <div id="logo">
+                    <a href="#">
+                        <img src="https://vungtaucity.com.vn/img/logo_top00.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="toggle" class="col-6 text-right d-block d-md-none">
+                <a href="#" class="text-white main-navbar-toggle" data-menu>
+                    <i class="fi fi-nav-icon-a"></i>
+                    <span class="text-uppercase">Menu</span>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-10">
+                <div class="form-search">
+                    <form action="" method="post">
+                        <div class="form-group m-0 d-flex flex-row">
+                            <input class="form-control-sm border-0 rounded-0 flex-grow-1" type="text" name="search"
+                                placeholder="Tìm sản phẩm, danh mục ...">
+                            <button class="btn btn-sm btn-warning rounded-0 d-inline px-3" type="submit">
+                                <i class="fi fi-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="header-link d-flex flex-wrap text-white align-items-center">
+                    <a href="#" id="cart" class="col-md-5 text-white">
+                        <div class="d-flex align-items-center cart-items">
+                            <div class="header-link-icons">
+                                <i class="fi fi-shopping-basket"></i>
+                            </div>
+                            <div class="flex-grow-1 flex-row">
+                                <div>
+                                    Giỏ hàng
+                                </div>
+                            </div>
+                            <div class="">
+                                <label id="cart-number" class="bg-warning mb-0">0</label>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- SECTION  Body -->
+        <div id="body">
+            
+
+
+<nav id="navbar" class="">
+    <div class="row pl-md-3">
+        <div class="col-md-3 order-md-1 order-2">
+            <div id="cate_menu" class=' '>
+                <a href="#" class="text-white main-navbar-toggle">
+                    <i class="fi fi-nav-icon-a"></i>
+                    <span class="text-uppercase">Danh mục</span>
+                </a>
+                <aside id="dropdown">
+                    <ul class="nolist ">
+                        <li><a href="#">Điện Thoại - Tablet</a></li>
+                        <li><a href="#">Điện Tử - Điện Lạnh</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Phụ Kiện - Thiết Bị Số</a></li>
+                        <li><a href="#">Laptop - Thiết bị IT</a></li>
+                        <li><a href="#">Máy Ảnh - Quay Phim</a></li>
+                        <li><a href="#">Điện Gia Dụng</a></li>  
+                        <li><a href="#">Điện Gia Dụng</a></li>
+                        <li><a href="#">Điện Gia Dụng</a></li>
+                            
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="col-md-9 pl-md-0 order-md-2 order-1 sub-style">
+            <div class="sub-menu">
+                <ul class="nolist align-items-center">
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-home d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Trang Chủ</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-info d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Giới Thiệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-product-hunt d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Sản Phẩm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-phone d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Liên Hệ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fi fi-close-a close-menu text-warning d-block d-md-none"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="payment">
+    <div class="container py-4">
+        <form action="" method="post">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="d-flex align-items-center">
+                        <strong class="text-uppercase">Thông tin liên hệ</strong>
+                    </h4>
+                    <div clas="error">
+                        <div class="alert alert-danger rounded-0" hidden>
+                            Xin vui lòng nhập họ tên người liên hệ
+                        </div>
+                    </div>
+                    <div class="form-check-inline my-2 ">
+                        <label class="mr-5 form-check-label">
+                            <input class="form-check-input" type="radio" name="gender" checked>Ông
+                        </label>
+                        <label class="mr-5 form-check-label">
+                            <input class="form-check-input" type="radio" name="gender">Bà
+                        </label>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 my-2 my-md-0">
+                            <input class="form-control" type="text" name="fullname" placeholder="Họ và tên">
+                        </div>
+                        <div class="col-md-4 my-2 my-md-0">
+                            <input class="form-control" type="text" name="fullname" placeholder="Số điện thoại..">
+                        </div>
+                        <div class="col-md-4 my-2 my-md-0">
+                            <input class="form-control" type="text" name="fullname" placeholder="Email liên hệ">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 my-2 my-md-0">
+                            <input class="form-control" type="text" name="fullname" placeholder="Địa Chỉ">
+                        </div>
+                        <div class="col-md-6 my-2 my-md-0">
+                            <select class="form-control" name="province">
+                                <option value selected disabled>Tỉnh/Thành Phố</option>
+                                <option value="1">Hồ Chí Minh</option>
+                                <option value="2">Hà Nội</option>
+                                <option value="3">Bà Rịa Vũng Tàu</option>
+                                <option value="4">Đà Nẵng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 my-2 my-md-0">
+                            <select disabled="disabled" class="form-control bg-light" name="province">
+                                <option value selected disabled>Quận/Huyện</option>
+                                <option value="1">Hồ Chí Minh</option>
+                                <option value="2">Hà Nội</option>
+                                <option value="3">Bà Rịa Vũng Tàu</option>
+                                <option value="4">Đà Nẵng</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 my-2 my-md-0">
+                            <select disabled="disabled" class="form-control bg-light" name="province">
+                                <option value selected disabled>Phường/Xã</option>
+                                <option value="1">Hồ Chí Minh</option>
+                                <option value="2">Hà Nội</option>
+                                <option value="3">Bà Rịa Vũng Tàu</option>
+                                <option value="4">Đà Nẵng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h4 class="d-flex align-items-center mt-md-5 mt-3">
+                        <strong class="text-uppercase">Chọn đơn vị vận chuyển</strong>
+                    </h4>
+                    <div id="shipper">
+                        <div class="form-group row shipper">
+                            <div class="col-lg-6 col-md-8 shipper-company">
+                                <label class="shipper-box">
+                                    <div class="shipper-logo">
+                                        <img src="https://media.vutaweb.com/uploads/system/2019-04-05/giao-hang-nhanh-size-305x3051_size_305x305.png"
+                                            alt="">
+                                    </div>
+                                    <div class="shipper-content">
+                                        <div class="shipper-desc">Vận chuyển bởi</div>
+                                        <div class="shipper-title">Giao Hàng Nhanh</div>
+                                    </div>
+                                    <div class="shipper-check">
+                                        <i class="fa fa-check text-primary" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="d-flex align-items-center mt-md-5 mt-3">
+                        <strong class="text-uppercase">Thông tin nhận hàng</strong>
+                    </h4>
+                    <div class="form-group checks">
+                        <label>
+                            <input id="remember" name="remember" class="mr-2" type="checkbox" onclick="validate()"
+                                name="ship">Thông tin nhận hàng giống thông tin liên hệ
+                        </label>
+                    </div>
+                    <div class="shipper-info">
+                        <div class="form-check-inline">
+                            <label class="mr-5 form-check-label">
+                                <input class="form-check-input" type="radio" name="gender" checked>Ông
+                            </label>
+                            <label class="mr-5 form-check-label">
+                                <input class="form-check-input" type="radio" name="gender">Bà
+                            </label>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4 my-2 my-md-0">
+                                <input class="form-control" type="text" name="fullname" placeholder="Họ và tên">
+                            </div>
+                            <div class="col-md-4 my-2 my-md-0">
+                                <input class="form-control" type="text" name="fullname" placeholder="Số điện thoại..">
+                            </div>
+                            <div class="col-md-4 my-2 my-md-0">
+                                <input class="form-control" type="text" name="fullname" placeholder="Email liên hệ">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6 my-2 my-md-0">
+                                <input class="form-control" type="text" name="fullname" placeholder="Địa Chỉ">
+                            </div>
+                            <div class="col-md-6 my-2 my-md-0">
+                                <select class="form-control" name="province">
+                                    <option value selected disabled>Tỉnh/Thành Phố</option>
+                                    <option value="1">Hồ Chí Minh</option>
+                                    <option value="2">Hà Nội</option>
+                                    <option value="3">Bà Rịa Vũng Tàu</option>
+                                    <option value="4">Đà Nẵng</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6 my-2 my-md-0">
+                                <select disabled="disabled" class="form-control bg-light" name="province">
+                                    <option value selected disabled>Quận/Huyện</option>
+                                    <option value="1">Hồ Chí Minh</option>
+                                    <option value="2">Hà Nội</option>
+                                    <option value="3">Bà Rịa Vũng Tàu</option>
+                                    <option value="4">Đà Nẵng</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 my-2 my-md-0">
+                                <select disabled="disabled" class="form-control bg-light" name="province">
+                                    <option value selected disabled>Phường/Xã</option>
+                                    <option value="1">Hồ Chí Minh</option>
+                                    <option value="2">Hà Nội</option>
+                                    <option value="3">Bà Rịa Vũng Tàu</option>
+                                    <option value="4">Đà Nẵng</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="payment-method">
+                        <h4 class="d-flex align-items-center mt-md-5 mt-3">
+                            <strong class="text-uppercase">Phương thức thanh toán</strong>
+                        </h4>
+                        <div class="form-group row shipper payment-method">
+                            <div class="col-md-12 shipper-company">
+                                <label class="shipper-box">
+                                    <div class="shipper-logo">
+                                        <img src="https://media.vutaweb.com/uploads/system/2019-04-05/cod-size-305x3051_size_305x305.png"
+                                            alt="">
+                                    </div>
+                                    <div class="shipper-content">
+                                        <div class="shipper-title">Thanh Toán COD</div>
+                                        <div class="shipper-desc">Thanh Toán COD</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coupon">
+                        <h4 class="d-flex align-items-center">
+                            <strong class="text-uppercase">COUPON</strong>
+                        </h4>
+                        <input class="form-control" type="text" name="coupon" id="coupon"
+                            placeholder="Nhập mã giảm giá">
+                        <div class="coupon-notifi" >
+                            <small class="text-success coupon-success">Nhập mã thành công</small>
+                            <small hidden class="text-danger coupon-danger">Nhập mã không thành công</small>
+                        </div>
+                        <div class="coupon-submit py-2 text-center">
+                            <button class="btn btn-warning rounded-0 w-100 text-white" type="submit">Nhập</button>
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase btn btn-primary d-block rounded-0">Đơn hàng(1 sản phẩm)</h6>
+                    <div class="overflow-auto">
+                        <table class="table table-middle table-small w-100">
+                            <thead style="font-size: 10pt">
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b class="la-text-normal">Nước hoa nam chính hãng</b>
+                                    </td>
+                                    <td class="text-center">1</td>
+                                    <td class="text-danger la-text-normal text-right">1,000,000đ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-block border border-muted py-4 px-3 bg-light" style="font-size: 10pt;">
+                        <div class="row py-2">
+                            <div class="col-6">
+                                Tổng trọng lượng:
+                            </div>
+                            <div class="col-6 text-danger text-right">
+                                <span class="font-weight-bold">500 Gram</span>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-6">
+                                Tạm tính:
+                            </div>
+                            <div class="col-6 text-danger text-right">
+                                <span class="font-weight-bold">1,000,000đ</span>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-6">
+                                Phí vận chuyển:
+                            </div>
+                            <div class="col-6 text-danger text-right">
+                                <span class="font-weight-bold">0đ</span>
+                            </div>
+                        </div>
+                        <div class="row py-2">
+                            <div class="col-6">
+                                Tổng tiền:
+                            </div>
+                            <div class="col-6 text-danger text-right">
+                                <span class="font-weight-bold la-text-large">1,000,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 text-center">
+                        <div class="col-md-6 text-md-left text-center py-3 py-md-0">
+                            <a href="#" class="backlink">
+                                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                                Tiếp tục mua hàng
+                            </a>
+                        </div>
+                        <div class="col-md-6 text-md-right text-center">
+                            <button type="submit" href="#" class="btn border-0 btn-danger">
+                                Thanh Toán
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+        </div>
+        <!-- SECTION  Footer -->
+        <footer id="footer" class="pt-lg-4">
+    <div class="px-3">
+        <div class="row align-items-center py-3">
+            <div class="col-md-2 col-3">
+                <img src="https://www.kingstonwritersfest.ca/wp-content/uploads/email-icon.png" alt="">
+            </div>
+            <div class="col-md-4 col-9">
+                <strong>Đăng ký nhận bản tin Shop</strong><br>
+                <span class="text-small">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</span>
+            </div>
+            <div class="col-md-4">
+                <div class="form-email">
+                    <form action="" method="post">
+                        <div class="form-group m-0 d-flex flex-row">
+                            <input class="form-control-sm flex-grow-1 mr-3" type="text" name="search"
+                                placeholder="Địa chỉ email của ban...">
+                            <button class="btn btn-sm btn-warning d-inline px-3" type="submit">
+                                Đăng ký
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-main px-3 py-4">
+            <div class="col-md-3">
+                <div id="logo-footer">
+                    <a href="#">
+                        <img src="https://lavima.vn/wp-content/uploads/2018/08/logo-tiki.png" alt="">
+                    </a>
+                </div>
+                <div class="py-2">
+                    <span class="text-small">
+                        Website chúng tôi chuyên cung cấp các sản phẩm chính hãng với đầy đủ các loại sản phẩm cơ điện lạnh, điện gia dụng,...
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row pb-3 pb-md-0">
+                    <div class="col-md-6 col-6">
+                        <ul class="nolist">
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <ul class="nolist">
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="fanpage">
+                    <div class="fb-page footer-body" data-href="https://www.facebook.com/zillmaphongba/" data-tabs="timeline"
+                        data-width="500" data-height="180" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/zillmaphongba/" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/zillmaphongba/">Live
+                                Game mobile</a></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white text-center py-3">
+            <div class="copyright text-xnomal">
+                @Bản quyền thuộc về shopxyz.com | Thiết kế và phát triển bởi VUTAWEB.COM
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+    </div>
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/swiper.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=2046573405635669&autoLogAppEvents=1"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+
+</html>

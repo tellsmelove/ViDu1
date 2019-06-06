@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/fontisto/fontisto.min.css">
+    <link rel="stylesheet" href="./public/css/swiper.min.css">
+
+    <link rel="stylesheet" href="./public/css/app.css">
+    <title>newpost</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- SECTION  Header -->
+        <div class="topBar-user">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1">
+
+            </div>
+            <div class="d-flex">
+                <div class="mr-2 text-white">
+                    <i class="fi fi-person" aria-hidden="true"></i>
+                </div>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                    
+                    <div class="text-white">
+                        Đăng nhập
+                    </div>
+                </a>
+                <div class="dropdown-menu bg-light">
+                    <div class="p-2">
+                        <a href="http://google.com" class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
+                            type="submit">Đăng Nhập</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="http://google.com" class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
+                            type="submit">Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center py-2">
+            <div class="col-md-2 col-6">
+                <div id="logo">
+                    <a href="#">
+                        <img src="https://vungtaucity.com.vn/img/logo_top00.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="toggle" class="col-6 text-right d-block d-md-none">
+                <a href="#" class="text-white main-navbar-toggle" data-menu>
+                    <i class="fi fi-nav-icon-a"></i>
+                    <span class="text-uppercase">Menu</span>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-10">
+                <div class="form-search">
+                    <form action="" method="post">
+                        <div class="form-group m-0 d-flex flex-row">
+                            <input class="form-control-sm border-0 rounded-0 flex-grow-1" type="text" name="search"
+                                placeholder="Tìm sản phẩm, danh mục ...">
+                            <button class="btn btn-sm btn-warning rounded-0 d-inline px-3" type="submit">
+                                <i class="fi fi-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="header-link d-flex flex-wrap text-white align-items-center">
+                    <a href="#" id="cart" class="col-md-5 text-white">
+                        <div class="d-flex align-items-center cart-items">
+                            <div class="header-link-icons">
+                                <i class="fi fi-shopping-basket"></i>
+                            </div>
+                            <div class="flex-grow-1 flex-row">
+                                <div>
+                                    Giỏ hàng
+                                </div>
+                            </div>
+                            <div class="">
+                                <label id="cart-number" class="bg-warning mb-0">0</label>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- SECTION  Body -->
+        <div id="body">
+            
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">danh mục</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="newpost">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <article class="col-md-9 newpost-article">
+                        <div class="row">
+                            <div class="col-12 py-3 ">
+                                <h1 class="title-post">Ùn tắc cửa ngõ Sài Gòn, trẻ em ôm gấu bông ngủ gục trong đêm</h1>
+                            </div>
+                            <div class="col-12 post-date text-secondary">
+                                <p class="la-text-normal">
+                                    <i aria-hidden="true" class="fa fa-calendar"></i>
+                                    <span>09-04-2019 09:54:13</span>
+                                </p>
+                            </div>
+                            <div class="col-12 post-title-small">
+                                <h2>Nhiều em nhỏ đi cùng người lớn trở lại TP.HCM sau dịp nghỉ lễ dài ngày không tránh
+                                    khỏi mệt mỏi khi phải chờ đợi cả
+                                    tiếng đồng hồ để lên phà Cát Lái, chiều tối 1/5.
+                                </h2>
+                                <div class="text-center py-3">
+                                    <img src="https://znews-photo.zadn.vn/w1024/Uploaded/ayhunwx/2019_05_02/ket_xe_Cat_lai_zing_13.jpg"
+                                        alt="">
+                                </div>
+                                <p>Anh Nguyễn Trọng Tường (Đồng Nai) cho biết: “Ngày lễ tắc đường nhưng bà muốn cháu ở
+                                    lại chơi lâu lâu nên 18h tôi mới đưa
+                                    con (bé Nguyễn Trọng Anh Tuấn) đi Sài Gòn. Bình thường tôi chỉ đi mất 1 tiếng, hôm
+                                    nay là 1 tiếng rưỡi rồi”.</p>
+                                <div class="text-center py-3">
+                                    <img src="https://znews-photo.zadn.vn/w1024/Uploaded/ayhunwx/2019_05_02/ket_xe_Cat_lai_zing_14.jpg"
+                                        alt="">
+                                </div>
+                                <p>
+                                    "Sang năm chắc tôi rút kinh nghiệm đi từ sáng sớm hoặc lên trước một ngày cho mấy
+                                    đứa nhỏ đỡ cực. Đi như thế này người
+                                    lớn còn cảm thấy mệt mỏi nữa là tụi nhỏ", anh Hoàng Thái chia sẻ.
+                                </p>
+                            </div>
+                            <div class="col-12 py-3 text-right">
+                                <small>Nguồn: Zing.vn</small>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="col-md-3">
+                        <div class="d-block text-center">
+                            <h4>Sản Phẩm Mới Nhất</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <div class="card border-0 mb-3 card-hover-primary ">
+                                    <div class="card-top border">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2" src="./public/images/maychuphinh.jpg"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="btn-sm btn-default rounded-0 product-sale d-inline-block">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Đặt hàng
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <a href="#" class="text-uppercase normal-product_name">Máy chụp hình</a>
+                                        <div class="d-block mb-2 font-weight-bold">
+                                            <span>1.250.000</span>
+                                            <span>VNĐ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="card border-0 mb-3 card-hover-primary ">
+                                    <div class="card-top border">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2" src="./public/images/maychuphinh.jpg"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="btn-sm btn-default rounded-0 product-sale d-inline-block">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Đặt hàng
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <a href="#" class="text-uppercase normal-product_name">Máy chụp hình</a>
+                                        <div class="d-block mb-2 font-weight-bold">
+                                            <span>1.250.000</span>
+                                            <span>VNĐ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="card border-0 mb-3 card-hover-primary ">
+                                    <div class="card-top border">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2" src="./public/images/maychuphinh.jpg"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="btn-sm btn-default rounded-0 product-sale d-inline-block">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Đặt hàng
+                                        </a>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <a href="#" class="text-uppercase normal-product_name">Máy chụp hình</a>
+                                        <div class="d-block mb-2 font-weight-bold">
+                                            <span>1.250.000</span>
+                                            <span>VNĐ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+        </div>
+        <!-- SECTION  Footer -->
+        <footer id="footer" class="pt-lg-4">
+    <div class="px-3">
+        <div class="row align-items-center py-3">
+            <div class="col-md-2 col-3">
+                <img src="https://www.kingstonwritersfest.ca/wp-content/uploads/email-icon.png" alt="">
+            </div>
+            <div class="col-md-4 col-9">
+                <strong>Đăng ký nhận bản tin Shop</strong><br>
+                <span class="text-small">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</span>
+            </div>
+            <div class="col-md-4">
+                <div class="form-email">
+                    <form action="" method="post">
+                        <div class="form-group m-0 d-flex flex-row">
+                            <input class="form-control-sm flex-grow-1 mr-3" type="text" name="search"
+                                placeholder="Địa chỉ email của ban...">
+                            <button class="btn btn-sm btn-warning d-inline px-3" type="submit">
+                                Đăng ký
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-main px-3 py-4">
+            <div class="col-md-3">
+                <div id="logo-footer">
+                    <a href="#">
+                        <img src="https://lavima.vn/wp-content/uploads/2018/08/logo-tiki.png" alt="">
+                    </a>
+                </div>
+                <div class="py-2">
+                    <span class="text-small">
+                        Website chúng tôi chuyên cung cấp các sản phẩm chính hãng với đầy đủ các loại sản phẩm cơ điện lạnh, điện gia dụng,...
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row pb-3 pb-md-0">
+                    <div class="col-md-6 col-6">
+                        <ul class="nolist">
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <ul class="nolist">
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="fanpage">
+                    <div class="fb-page footer-body" data-href="https://www.facebook.com/zillmaphongba/" data-tabs="timeline"
+                        data-width="500" data-height="180" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/zillmaphongba/" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/zillmaphongba/">Live
+                                Game mobile</a></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white text-center py-3">
+            <div class="copyright text-xnomal">
+                @Bản quyền thuộc về shopxyz.com | Thiết kế và phát triển bởi VUTAWEB.COM
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+    </div>
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/swiper.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=2046573405635669&autoLogAppEvents=1"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+
+</html>

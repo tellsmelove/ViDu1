@@ -1,0 +1,122 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+{% from 'mixin/navbar.html' import navbar %}
+{% from "components/itemproduct.html" import product %}
+{% from "components/cardnews.html" import news %}
+{{ navbar('index') }}
+<section id="slider" class="bg-light">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-md-9">
+                <div class="swiper-container swiper-main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://media3.scdn.vn/img3/2019/5_4/tNwAVX.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://media3.scdn.vn/img3/2019/6_5/6MCTLJ.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pair-banner py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-6 mb-3 mb-md-0">
+                <a href="#" class="gift-card">
+                    <img src="https://salt.tikicdn.com/ts/banner/7f/16/77/74c956f139391e36752b7544f8a0bc92.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-6 mb-3 mb-md-0">
+                <a href="#" class="gift-card">
+                    <img src="https://salt.tikicdn.com/ts/banner/d3/b1/3e/7cc52fa7aaa4d30a92889dae45d44623.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-6 mb-3 mb-md-0">
+                <a href="#" class="gift-card">
+                    <img src="https://salt.tikicdn.com/ts/banner/b7/02/38/116c2bf4940cfbb332df6ebcf4f33a98.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-6 mb-3 mb-md-0">
+                <a href="#" class="gift-card">
+                    <img src="https://salt.tikicdn.com/ts/banner/b9/6e/7e/5e31590b55f2025ef4df8eefdb958a73.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-6 mb-3 mb-md-0">
+                <a href="#" class="gift-card">
+                    <img src="https://salt.tikicdn.com/ts/banner/b9/6e/7e/5e31590b55f2025ef4df8eefdb958a73.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-6 mb-3 mb-md-0">
+                <a href="#" class="gift-card">
+                    <img src="https://salt.tikicdn.com/ts/banner/b9/6e/7e/5e31590b55f2025ef4df8eefdb958a73.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="recenly-product">
+    <div class="px-3 bg-light py-3">
+        <h4 class="text-uppercase py-3 mb-0">Sản Phẩm Bạn Đã Xem</h4>
+        <div class="product-list">
+            <div class="row">
+                <div class="col-md-3 product-list--item col-6">
+                    {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                </div>
+                <div class="col-md-3 product-list--item col-6">
+                    {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="product">
+    <div class="px-3 bg-white py-3">
+        <h4 class="text-uppercase py-3 mb-0">Sản Phẩm Hot</h4>
+        <div class="product-list">
+            <div class="row">
+                <div class="col-md-3 col-6 product-list--item">
+                    {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                </div>
+                <div class="col-md-3 col-6 product-list--item">
+                    {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                </div>
+                <div class="col-md-3 col-6 product-list--item">
+                    {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                </div>
+                <div class="col-md-3 col-6 product-list--item">
+                    {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="news">
+    <div class="px-3 bg-light py-3">
+        <h4 class="text-uppercase py-3 mb-0">Tin Tức Mới Nhất</h4>
+        <div class="product-list">
+            <div class="row">
+                <div class="col-md-3 product-list--item">
+                    {{ news('Du lịch lễ 30-4 đông đúc kẹt xe tình trạng chặt chém', 'Hiện nay tại một số địa bàn tỉnh BR-VT', './public/images/news1.jpg') }}
+                </div>
+                <div class="col-md-3 product-list--item">
+                    {{ news('Du lịch lễ 30-4 đông đúc kẹt xe tình trạng chặt chém', 'Hiện nay tại một số địa bàn tỉnh BR-VT', './public/images/news1.jpg') }}
+                </div>
+                <div class="col-md-3 product-list--item">
+                    {{ news('Du lịch lễ 30-4 đông đúc kẹt xe tình trạng chặt chém', 'Hiện nay tại một số địa bàn tỉnh BR-VT', './public/images/news1.jpg') }}
+                </div>
+                <div class="col-md-3 product-list--item">
+                    {{ news('Du lịch lễ 30-4 đông đúc kẹt xe tình trạng chặt chém', 'Hiện nay tại một số địa bàn tỉnh BR-VT', './public/images/news1.jpg') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% macro product(name = null, price = null, oldprice = null, percen = null,  img = null) %}
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        {% if  img %}
+        <a href="#">
+            <img src="{{ img }}"
+                alt="Card image cap">
+        </a>
+        {% endif %}
+    </div>
+    <div class="card-body py-2">
+        {% if name %}
+        <a href="#" class="card-title px-3">{{name}}</a>
+        {% endif %}
+        <div class="box-price px-3">
+            {% if price %}
+            <span class="price">579.000 đ</span>
+            {% endif %}
+            {% if percen %}
+            <span class="text-secondary text-small">-28%</span>
+            {% endif %}
+        </div>
+        <div class="box-price px-3">
+            {% if oldprice %}
+            <s class="old-price text-small">799.000 đ</s>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endmacro %}

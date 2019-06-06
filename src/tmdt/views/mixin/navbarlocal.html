@@ -1,0 +1,62 @@
+{% macro navbar(index = 'null') %}
+<nav id="navbar" class="">
+    <div class="row pl-md-3">
+        <div class="col-md-3 order-md-1 order-2">
+            <div id="cate_menu" class=' '>
+                <a href="#" class="text-white main-navbar-toggle">
+                    <i class="fi fi-nav-icon-a"></i>
+                    <span class="text-uppercase">Danh mục</span>
+                </a>
+                <aside id="dropdown">
+                    <ul class="nolist ">
+                        <li><a href="#">Điện Thoại - Tablet</a></li>
+                        <li><a href="#">Điện Tử - Điện Lạnh</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Phụ Kiện - Thiết Bị Số</a></li>
+                        <li><a href="#">Laptop - Thiết bị IT</a></li>
+                        <li><a href="#">Máy Ảnh - Quay Phim</a></li>
+                        <li><a href="#">Điện Gia Dụng</a></li>  
+                        <li><a href="#">Điện Gia Dụng</a></li>
+                        <li><a href="#">Điện Gia Dụng</a></li>
+                            
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="col-md-9 pl-md-0 order-md-2 order-1 sub-style">
+            <div class="sub-menu">
+                <ul class="nolist align-items-center">
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-home d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Trang Chủ</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-info d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Giới Thiệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-product-hunt d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Sản Phẩm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-phone d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Liên Hệ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fi fi-close-a close-menu text-warning d-block d-md-none"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+{% endmacro %}

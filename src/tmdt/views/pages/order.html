@@ -1,0 +1,166 @@
+{% extends 'layouts/personal.html' %}
+
+{% block title %}order{% endblock %}
+
+{% block content %}
+{% from 'mixin/navbarlocal.html' import navbar %}
+{{ navbar('index') }}
+<section class="py-lg-4 py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Chi tiết đơn hàng</h1>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>Đơn hàng</span>
+                        <span class="code-order">001233</span>
+                        <span>- Giao dịch thành công</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <span>Ngày đặt hàng:</span>
+                        <span>4/9/2019</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 py-3">
+                <div class="d-flex flex-wrap">
+                    <div class="col-md-6 offset-md-3 bg-white p-3 rounded">
+                        <h4>Thông Báo</h4>
+                        <ul class="timeline">
+                            <li>
+                                <h5 class="text-danger mb-2">4/15/2019</h5>
+                                <p>
+                                    Đơn hàng đã được xác nhận
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="text-danger mb-2">4/17/2019</h5>
+                                <p>
+                                    Đơn hàng đã được giao cho bộ phận giao hàng
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="text-danger mb-2">4/19/2019</h5>
+                                <p>Đơn hàng đã được giao</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 py-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="title-porfolio">Địa chỉ người nhận</h5>
+                        <div class="box-porfolio p-3">
+                            <div class="box-porfolio-fullname">
+                                <span class="font-weight-bold">Nguyễn Kim Trọng</span>
+                            </div>
+                            <div class="box-porfolio-email">
+                                <span>24 nguyễn viết xuân , P8, TP Vũng Tàu</span><br>
+                                <span>Bà Rịa Vũng Tàu - Thành Phố Vũng Tàu - Phường 8</span><br>
+                                <span>0961996170</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="title-porfolio">Hình thức giao hàng</h5>
+                        <div class="box-porfolio p-3">
+                            <p>Giao hàng tiêu chuẩn (Dự kiến giao hàng Thứ 5 4/14/2019)</p>
+                            <p>Phí vận chuyển: <span>18,000 đ</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="title-porfolio">Hình thức thanh toán</h5>
+                        <div class="box-porfolio p-3">
+                            <p>Thanh toán tiền mặt khi nhận hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 pt-3">
+                <div class="overflow-auto bg-white">
+                    <table class="w-100 table-divider" style="min-width: 700px;">
+                        <thead>
+                            <tr>
+                                <th>Sản Phẩm</th>
+                                <th></th>
+                                <th>Số Lượng</th>
+                                <th>Đơn Giá</th>
+                                <th class="text-md-right">Thành Tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img class="img-thumbnail" src="{{img('maydanhtrung.jpg')}}" width="70px" alt="">
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <b class="d-block la-text-normal">Máy đánh trứng</b>
+                                    </a>
+                                    <div class="d-block la-text-normal">
+                                        Trọng lượng:
+                                        <b>1000g</b>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="input-group spinner">
+                                        <input type="number" class="form-control-sm border-0 form-control-style rounded-0" value="1"
+                                            min="1" max="99" style="width: 50px;">
+                                        <div class="input-group-btn-vertical">
+                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-danger la-text-normal money">
+                                    400.000đ
+                                </td>
+                                <td class="text-danger la-text-normal text-right">
+                                    400.000đ
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-12 pb-3 ">
+                <div class="total bg-white border-top p-3">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-8">
+                            <div class="row">
+                                <div class="col-md-6 col-6">
+                                    Tổng tạm tính 
+                                </div>
+                                <div class="col-md-6 text-right col-6">
+                                    <span class="moneyreturn">
+                                        400.000 đ
+                                    </span>
+                                </div>
+                                <div class="col-md-6 col-6">
+                                    Phí vận chuyển
+                                </div>
+                                <div class="col-md-6 text-right col-6">
+                                    <span>
+                                        18.000 đ
+                                    </span>
+                                </div>
+                                <div class="col-md-6 col-6">
+                                    Tổng cộng
+                                </div>
+                                <div class="col-md-6 text-right col-6">
+                                    <span class="result text-danger">
+                                        418.000 đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

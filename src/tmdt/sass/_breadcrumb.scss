@@ -1,0 +1,33 @@
+.be-breadcrumb {
+    li:not(:last-child) {
+        a {
+            display: inline-block;
+            font-size: .875rem;
+            color: #999;
+            @include max-sm {
+                font-size: .675rem;
+            }
+        }
+    }
+    li:last-child {
+        a {
+            display: inline-block;
+            font-size: .875rem;
+            color: rgb(0, 0, 0);
+            @include max-sm {
+                font-size: .675rem;
+            }
+        }
+    }
+    li:not(:first-child) {
+        &::before {
+            content: "\f105";
+            font-family: Fontawesome;
+            font-size: 10pt;
+            margin: 0 10px;
+            @include max-sm {
+                margin: 0 6px;
+            }
+        }
+    }
+}

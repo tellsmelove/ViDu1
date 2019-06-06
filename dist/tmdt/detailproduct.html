@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/fontisto/fontisto.min.css">
+    <link rel="stylesheet" href="./public/css/swiper.min.css">
+
+    <link rel="stylesheet" href="./public/css/app.css">
+    <title>DetailProduct</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- SECTION  Header -->
+        <div class="topBar-user">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1">
+
+            </div>
+            <div class="d-flex">
+                <div class="mr-2 text-white">
+                    <i class="fi fi-person" aria-hidden="true"></i>
+                </div>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                    
+                    <div class="text-white">
+                        Đăng nhập
+                    </div>
+                </a>
+                <div class="dropdown-menu bg-light">
+                    <div class="p-2">
+                        <a href="http://google.com" class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
+                            type="submit">Đăng Nhập</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="http://google.com" class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
+                            type="submit">Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center py-2">
+            <div class="col-md-2 col-6">
+                <div id="logo">
+                    <a href="#">
+                        <img src="https://vungtaucity.com.vn/img/logo_top00.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="toggle" class="col-6 text-right d-block d-md-none">
+                <a href="#" class="text-white main-navbar-toggle" data-menu>
+                    <i class="fi fi-nav-icon-a"></i>
+                    <span class="text-uppercase">Menu</span>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-10">
+                <div class="form-search">
+                    <form action="" method="post">
+                        <div class="form-group m-0 d-flex flex-row">
+                            <input class="form-control-sm border-0 rounded-0 flex-grow-1" type="text" name="search"
+                                placeholder="Tìm sản phẩm, danh mục ...">
+                            <button class="btn btn-sm btn-warning rounded-0 d-inline px-3" type="submit">
+                                <i class="fi fi-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="header-link d-flex flex-wrap text-white align-items-center">
+                    <a href="#" id="cart" class="col-md-5 text-white">
+                        <div class="d-flex align-items-center cart-items">
+                            <div class="header-link-icons">
+                                <i class="fi fi-shopping-basket"></i>
+                            </div>
+                            <div class="flex-grow-1 flex-row">
+                                <div>
+                                    Giỏ hàng
+                                </div>
+                            </div>
+                            <div class="">
+                                <label id="cart-number" class="bg-warning mb-0">0</label>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- SECTION  Body -->
+        <div id="body">
+            
+
+
+<nav id="navbar" class="">
+    <div class="row pl-md-3">
+        <div class="col-md-3 order-md-1 order-2">
+            <div id="cate_menu" class=' '>
+                <a href="#" class="text-white main-navbar-toggle">
+                    <i class="fi fi-nav-icon-a"></i>
+                    <span class="text-uppercase">Danh mục</span>
+                </a>
+                <aside id="dropdown">
+                    <ul class="nolist ">
+                        <li><a href="#">Điện Thoại - Tablet</a></li>
+                        <li><a href="#">Điện Tử - Điện Lạnh</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Phụ Kiện - Thiết Bị Số</a></li>
+                        <li><a href="#">Laptop - Thiết bị IT</a></li>
+                        <li><a href="#">Máy Ảnh - Quay Phim</a></li>
+                        <li><a href="#">Điện Gia Dụng</a></li>  
+                        <li><a href="#">Điện Gia Dụng</a></li>
+                        <li><a href="#">Điện Gia Dụng</a></li>
+                            
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="col-md-9 pl-md-0 order-md-2 order-1 sub-style">
+            <div class="sub-menu">
+                <ul class="nolist align-items-center">
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-home d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Trang Chủ</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-info d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Giới Thiệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-product-hunt d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Sản Phẩm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fi icons-menu fi-phone d-block d-md-none"></i>
+                            <span class="d-none d-md-block">Liên Hệ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fi fi-close-a close-menu text-warning d-block d-md-none"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Máy đánh trứng</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="swiper-container swiper-product gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide product-slide" style="background-image:url(./public/images/maydanhtrung.jpg)">
+                                </div>
+                                <div class="swiper-slide product-slide" style="background-image:url(./public/images/ocung.jpg)">
+                                </div>
+                                <div class="swiper-slide product-slide" style="background-image:url(./public/images/maychuphinh.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container swiper-thumbs gallery-thumbs">
+                            <div class="swiper-wrapper justify-content-center">
+                                <div class="swiper-slide product-slide" style="background-image:url(./public/images/maydanhtrung.jpg)">
+                                </div>
+                                <div class="swiper-slide product-slide" style="background-image:url(./public/images/ocung.jpg)">
+                                </div>
+                                <div class="swiper-slide product-slide" style="background-image:url(./public/images/maychuphinh.jpg)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <form action="" method="post">
+                            <div class="detail-product ">
+                                <h1 class="title-product py-2 py-md-0">
+                                    Máy đánh trứng<span class="be-text-small text-danger ml-2">(-10%)</span>
+                                </h1>
+                                <div class="price be-text-large border p-3 text-danger border-muted">
+                                    <span class="text-dark be-text-normal">Giá:</span>
+                                    450,000<small>đ</small>
+                                    <s class="be-text-small text-secondary" data-price="đ" data-price-right>500.000</s>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="mr-3">Số lượng còn:</span>
+                                    5 sản phẩm
+                                </div>
+                                <div class="mt-3">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            Màu:
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="switch-field">
+                                                <input type="radio" id="radio-three" name="switch-two" value="yes" checked />
+                                                <label for="radio-three">Đen</label>
+                                                <input type="radio" id="radio-four" name="switch-two" value="maybe" />
+                                                <label for="radio-four">Đỏ</label>
+                                                <input type="radio" id="radio-five" name="switch-two" value="no" />
+                                                <label for="radio-five">Trắng</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            Size:
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="switch-field">
+                                                <input type="radio" id="radio-s" name="switch-2" value="yes" checked />
+                                                <label for="radio-s">S</label>
+                                                <input type="radio" id="radio-m" name="switch-2" value="maybe" />
+                                                <label for="radio-m">M</label>
+                                                <input type="radio" id="radio-l" name="switch-2" value="no" />
+                                                <label for="radio-l">L</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quantily-select mt-3">
+                                    <div class="row input-group number-spinner">
+                                        <div class="col-md-3">
+                                            <label for="id-quanlity">Số lượng:</label>
+                                        </div>
+                                        <div class="d-inline-block col-md-9">
+                                            <div class="d-inline-flex">
+                                                <span class="input-group-btn ml-1">
+                                                    <button class="btn-sm border-0 bg-light h-100" data-dir="dwn"><span
+                                                            class="glyphicon glyphicon-minus">-</span></button>
+                                                </span>
+                                                <input id="id-quanlity" type="text" class="form-control-sm border text-center" value="1"
+                                                    style="width:60px">
+                                                <span class="input-group-btn">
+                                                    <button class="btn-sm border-0 bg-light h-100" data-dir="up"><span
+                                                            class="glyphicon glyphicon-plus">+</span></button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 row flex-md-row flex-comlumn">
+                                    <div class="col-xl-6 col-md-12 mb-2 mb-xl-0">
+                                        <button class="be-submit font-weight-bold btn btn-primary d-inline-block w-100" type="submit"
+                                            name="submit">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Thêm vào giỏ hàng
+                                        </button>
+                                    </div>
+                                    <div class="col-xl-6 col-md-12 mb-2 mb-xl-0">
+                                        <button class="be-submit font-weight-bold btn btn-warning text-light d-inline-block w-100"
+                                            type="submit" name="submit">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            MUA NGAY
+                                        </button>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-12 px-md-3 px-0">
+                <div class="bg-light p-3">
+                    <h6 class="m-0 font-weight-bold text-uppercase pb-2">Sản phẩm tương tự</h6>
+                    <ul class="nolist d-block w-100 widget-product">
+                        <li class="row align-items-center mb-3 position-relative px-3">
+                            <a href="#" class="col-lg-4 col-3 border border-muted px-0">
+                                <img src="./public/images/maydanhtrung.jpg" alt="">
+                            </a>
+                            <div class="col-lg-8 col-9">
+                                <a href="#" class="widget-product__title">Máy đánh trứng</a>
+                                <small class="btn-sm btn-danger rounded-0  d-inline-block">Đang khuyến mãi</small>
+                                <h6 class="text-danger d-block">
+                                    200,000
+                                    <span>đ</span>
+                                    <s class="be-text-small text-secondary" data-price="đ" data-price-right>500.000</s>
+                                </h6>
+                            </div>
+
+                        </li>
+                        <li class="row align-items-center mb-3 position-relative px-3">
+                            <a href="#" class="col-lg-4 col-3 border border-muted px-0">
+                                <img src="./public/images/ocung.jpg" alt="">
+                            </a>
+                            <div class="col-lg-8 col-9">
+                                <a href="#" class="widget-product__title">Ổ cứng di động</a>
+                                <small class="btn-sm btn-danger rounded-0  d-inline-block">Đang khuyến mãi</small>
+                                <h6 class="text-danger d-block">
+                                    200,000
+                                    <span>đ</span>
+                                    <s class="be-text-small text-secondary" data-price="đ" data-price-right>500.000</s>
+                                </h6>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="py-3">
+                    <div class="pt-1 d-inline-flex align-items-center">
+                        <strong class="text-uppercase">Chi tiết sản phẩm</strong>
+                    </div>
+                    <hr>
+                    <div class="col-md-12 product-desciptions">
+                        Công suất lớn với 6 tốc độ<br>
+                        Chất liệu cao cấp<br>
+                        Vận hành êm ái<br>
+                        Thiết kế hiện đại
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="py-3">
+                    <div class="pt-1 d-inline-flex align-items-center">
+                        <strong class="text-uppercase">Bình luận sản phẩm</strong>
+                    </div>
+                    <hr>
+                    <div class="be-facebook">
+                        <div class="fb-comments"
+                            data-href="https://www.facebook.com/zuck?__tn__=%2CdC-R-R&amp;eid=ARBQQoU6kIH0N3ZC_tWNJZC2uhklmuxN0M9UcqIngUtOvFMtch4c1pRkpZR2hlN1tPlzrXVCLgbL_CKM&amp;hc_ref=ARQ167e0IdgK2Vud7BOuvzHSmAqqYTzi05XdbQm41KAMc7mDSWX5C73-JBZVi01c0_0&amp;fref=nf"
+                            data-numposts="5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        </div>
+        <!-- SECTION  Footer -->
+        <footer id="footer" class="pt-lg-4">
+    <div class="px-3">
+        <div class="row align-items-center py-3">
+            <div class="col-md-2 col-3">
+                <img src="https://www.kingstonwritersfest.ca/wp-content/uploads/email-icon.png" alt="">
+            </div>
+            <div class="col-md-4 col-9">
+                <strong>Đăng ký nhận bản tin Shop</strong><br>
+                <span class="text-small">Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</span>
+            </div>
+            <div class="col-md-4">
+                <div class="form-email">
+                    <form action="" method="post">
+                        <div class="form-group m-0 d-flex flex-row">
+                            <input class="form-control-sm flex-grow-1 mr-3" type="text" name="search"
+                                placeholder="Địa chỉ email của ban...">
+                            <button class="btn btn-sm btn-warning d-inline px-3" type="submit">
+                                Đăng ký
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-main px-3 py-4">
+            <div class="col-md-3">
+                <div id="logo-footer">
+                    <a href="#">
+                        <img src="https://lavima.vn/wp-content/uploads/2018/08/logo-tiki.png" alt="">
+                    </a>
+                </div>
+                <div class="py-2">
+                    <span class="text-small">
+                        Website chúng tôi chuyên cung cấp các sản phẩm chính hãng với đầy đủ các loại sản phẩm cơ điện lạnh, điện gia dụng,...
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row pb-3 pb-md-0">
+                    <div class="col-md-6 col-6">
+                        <ul class="nolist">
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-6">
+                        <ul class="nolist">
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                            <li><a href="#">Menu-footer1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="fanpage">
+                    <div class="fb-page footer-body" data-href="https://www.facebook.com/zillmaphongba/" data-tabs="timeline"
+                        data-width="500" data-height="180" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/zillmaphongba/" class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/zillmaphongba/">Live
+                                Game mobile</a></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white text-center py-3">
+            <div class="copyright text-xnomal">
+                @Bản quyền thuộc về shopxyz.com | Thiết kế và phát triển bởi VUTAWEB.COM
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+    </div>
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/swiper.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=2046573405635669&autoLogAppEvents=1"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+
+</html>

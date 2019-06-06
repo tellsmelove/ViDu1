@@ -1,0 +1,79 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}Product{% endblock %}
+
+{% block content %}
+{% from "components/itemproduct.html" import product %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Đàm ngủ sexy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large text-uppercase d-md-inline-block d-block">
+                        Đầm ngủ sexy
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <div class="product-list">
+                    <div class="row">
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 py-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
