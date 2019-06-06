@@ -10,6 +10,9 @@
 @import './about';
 @import './detailproduct';
 @import './detailrecruit';
+body {
+    position: relative;
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -154,4 +157,10 @@ html {
         color: rgba(rgb(43, 43, 43) , .7);
         font-size: 10pt;
     }
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
 }

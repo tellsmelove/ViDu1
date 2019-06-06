@@ -92,3 +92,15 @@ $(document).ready(() => {
     });
 })
 
+$(window).scroll(function () {
+
+    var height = $(window).scrollTop();
+
+    if (height >= 300) {
+        $('.scroll-top').addClass('show');
+    } else {
+        $('.scroll-top').removeClass('show');
+    }
+
+});
+$(".append").append("This" + height + "is!");

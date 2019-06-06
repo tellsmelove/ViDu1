@@ -16,9 +16,15 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 
-<body>
+<body class="append">
     {% include 'components/header.html' %}
-    {% block content %}{% endblock %}
+    {% block content %}
+    {% endblock %}
+    <div class="scroll-top">
+        <a href="#" class="smooth-scroll">
+            <i class="fa fa-caret-up" aria-hidden="true" style="font-size: 18pt;"></i>
+        </a>
+    </div>
     {% include 'components/footer.html' %}
     <script src="{{ js('jquery.min.js') }}"></script>
     <script src="{{ js('popper.min.js') }}"></script>
