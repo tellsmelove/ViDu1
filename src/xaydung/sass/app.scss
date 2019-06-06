@@ -130,7 +130,7 @@ html {
 .img-product-st {
     height: 300px;
     width: 100%;
-    @include max-sm {
+    @include max-lg {
         height: auto!important;
     }
 }

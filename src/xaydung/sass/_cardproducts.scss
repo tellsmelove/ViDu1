@@ -6,12 +6,16 @@
     img{
         transition: .3s ease-out all;
         object-fit: cover;
+        min-height: 160px;
     }
     &:hover {
         img {
             transform: scale(1.3);
         }
     }
+}
+.products-img {
+    min-height: 190px!important;
 }
 .products-title {
     h4 {
@@ -22,5 +26,14 @@
 .products-content {
     span {
         font-size: 9pt;
+    }
+}
+.recruit-link {
+    img {
+        height: 65px;
+        width: 100%;
+        @include max-md {
+            height: auto;
+        }
     }
 }
