@@ -71,9 +71,7 @@ body{
     }
 }
 #cart {
-    position: absolute;
     right: 0;
-    
     #cart-number {
         padding: 2px 4px;
         color: #000;
@@ -192,7 +190,10 @@ body{
     }
     &:hover, &.index{
         #dropdown{
-            height: 270px;
+            height: 300px;
+            @include max-lg {
+                height: 250px;
+            }
             @include max-sm {
                 height: 100vh;
             }
@@ -204,7 +205,10 @@ body{
 
 // #region Slider
 #slider .swiper-container{
-    height: 270px;
+    height: 300px;
+    @include max-lg {
+        height: 250px;
+    }
     @include max-md {
         height: 150px;
     }

@@ -797,7 +797,6 @@ body h1 {
 }
 
 #cart {
-  position: absolute;
   right: 0;
 }
 #cart #cart-number {
@@ -900,11 +899,11 @@ body h1 {
   color: #0088dd;
 }
 #cate_menu:hover #dropdown, #cate_menu.index #dropdown {
-  height: 270px;
+  height: 300px;
 }
 
 #slider .swiper-container {
-  height: 270px;
+  height: 300px;
 }
 #slider .swiper-container img {
   width: 100%;
@@ -1044,6 +1043,12 @@ body h1 {
   }
   body h1 {
     font-size: 2.15rem;
+  }
+  #cate_menu:hover #dropdown, #cate_menu.index #dropdown {
+    height: 250px;
+  }
+  #slider .swiper-container {
+    height: 250px;
   }
 }
 @media only screen and (max-width: 768px) {
