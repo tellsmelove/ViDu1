@@ -23,7 +23,7 @@ $(document).ready(() => {
         },
         breakpoints: {
             1025: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 20,
                 simulateTouch: true,
                 autoplay: {
@@ -104,3 +104,4 @@ $(window).scroll(function () {
 
 });
 $(".append").append("This" + height + "is!");
+

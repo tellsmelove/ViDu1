@@ -308,7 +308,7 @@
 </section>
 
     <div class="scroll-top">
-        <a href="#" class="smooth-scroll">
+        <a class="smooth-scroll">
             <i class="fa fa-caret-up" aria-hidden="true" style="font-size: 18pt;"></i>
         </a>
     </div>
@@ -434,7 +434,11 @@
     <script src="./public/js/swiper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
     <script src="./public/js/app.js"></script>
-    
+    <script>
+        $('.scroll-top').on("click", function () {
+                $(window).scrollTop(0);
+            });
+    </script>
 </body>
 
 </html>
