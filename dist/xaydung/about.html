@@ -15,16 +15,26 @@
     </script>
     <title>About</title>
 </head>
-
+<style>
+    .card-body {
+        padding: 12px!important;
+    }
+    .be-breadcrumb li {
+        display: inline-block;
+    }
+</style>
 <body class="append">
     <section class="">
     <div class="container">
         <div class="d-flex flex-wrap">
-            <div class="flex-grow-1">
-                <div class="logo bg-white d-inline-block">
+            <div class="flex-grow-1 py-1">
+                <div class="logo bg-white d-inline-block d-flex align-items-center">
                     <a href="#" class="d-block py-1">
-                        <img src="./public/images/logo.jpg" alt="">
+                        <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.15752-9/62554421_630126250731819_8742832618828988416_n.png?_nc_cat=109&_nc_oc=AQmnZ1arH09mMbH8yLZpG6-BnpvxNtTjUQpkDeVfs_Dm6pgpUPtLLZ82V0zAXiOjruw&_nc_ht=scontent.fsgn5-6.fna&oh=65920320f226566be20f200332531abe&oe=5D916037" alt="">
                     </a>
+                    <div class="logo-name d-none d-md-block ml-2">
+                        388 INVESTMENT & CONSTRUCTION<br>JOINT STOCK COMPANY</span>
+                    </div>
                 </div>
             </div>
             <div class="header-right">
@@ -69,8 +79,13 @@
                         <ul class="nolist d-flex flex-wrap">
                             <li><a href="#">Trang chủ</a></li>
                             <li>
-                                <a href="#">Giới thiệu
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giới thiệu
                                 </a>
+                                <div class="dropdown-menu bg-light p-0 m-0" style="z-index: 10000;">
+                                    <ul class="nolist">
+                                        <li><a href="#">ABC</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <a class="" href="#">Tin Tức
@@ -79,6 +94,16 @@
                             <li>
                                 <a href="#">Dự Án
                                 </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Chứng Chỉ
+                                </a>
+                                <div class="dropdown-menu bg-light p-0 m-0" style="z-index: 10000;">
+                                    <ul class="nolist">
+                                        <li><a href="#">ABC</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <a class="" href="#">Tuyển Dụng
@@ -250,48 +275,37 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap py-3">
-                    <ul class="nolist company-list">
-                        <li>
-                            <a href="#">
+                    <div class="swiper-container swiper-logo">
+                        <div class="swiper-wrapper logo-list">
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo1.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo2.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo3.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo4.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo5.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo6.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo7.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            </div>
+                            <div class="swiper-slide">
                                 <img src="./public/images/logo8.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
             <div class="footer-main">
@@ -302,10 +316,6 @@
                         </div>
                         <div class="footer-body">
                             <ul class="nolist">
-                                <li>
-                                    <span><u>Văn Phòng Đại Diện:</u></span>
-                                    <span>No 20A – Pham Van Dinh Street – Thang Nhat Ward – Vung Tau City – Ba Ria Vung Tau Province.</span>
-                                </li>
                                 <li>
                                     <span><u>Trụ Sở Chính:</u></span>
                                     <span>No 2/14 - Bao Phuc Street – Dang Hai Ward - Ngo Quyen Dist - Hai Phong City</span>
@@ -321,6 +331,9 @@
                                 <li>
                                     <span><u>Email:</u></span>
                                     <span>admin@388ic.com.vn</span>
+                                </li>
+                                <li>
+                                    <a href="http://mail.388ic.com.vn/Mondo/lang/sys/Login.aspx?Version=Desktop" target="_blank" class="text-white"><u>Webmail</u></a>
                                 </li>
                             </ul>
                         </div>
@@ -350,7 +363,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span class="text-white">Copyright &copy; 2019 388ic Group.</span>
+                    <span class="text-white">Copyright &copy; 2019 388IC</span>
                     <span class="text-dark">Design by <a href="#" class="text-dark">TyHon Company</a></span>
                 </div>
             </div>

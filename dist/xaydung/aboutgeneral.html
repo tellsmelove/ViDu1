@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/swiper.min.css">
+    <link rel="stylesheet" href="./public/css/app.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3&appId=2046573405635669&autoLogAppEvents=1">
+    </script>
+    <title>Aboutgeneral</title>
+</head>
+<style>
+    .card-body {
+        padding: 12px!important;
+    }
+    .be-breadcrumb li {
+        display: inline-block;
+    }
+</style>
+<body class="append">
+    <section class="">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1 py-1">
+                <div class="logo bg-white d-inline-block d-flex align-items-center">
+                    <a href="#" class="d-block py-1">
+                        <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.15752-9/62554421_630126250731819_8742832618828988416_n.png?_nc_cat=109&_nc_oc=AQmnZ1arH09mMbH8yLZpG6-BnpvxNtTjUQpkDeVfs_Dm6pgpUPtLLZ82V0zAXiOjruw&_nc_ht=scontent.fsgn5-6.fna&oh=65920320f226566be20f200332531abe&oe=5D916037" alt="">
+                    </a>
+                    <div class="logo-name d-none d-md-block ml-2">
+                        388 INVESTMENT & CONSTRUCTION<br>JOINT STOCK COMPANY</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="topBar text-right p-2 d-none d-md-block">
+                    <a href="#" class="text-dark">
+                        <img class="flag" src="./public/images/eng.jpg" alt="">
+                        ENG
+                    </a>
+                    <a href="#" class="text-dark">
+                        <img class="flag" src="./public/images/vietnam.jpg" alt="">
+                        VI
+                    </a>
+                </div>
+                <form method="get" action="">
+                    <div class="d-flex flex-direction-row justify-content-center">
+                        <div class="searchbar">
+                            <input class="search_input rounded px-2" type="text" name="" placeholder="Search..."
+                                style="border: 1px solid #ddd">
+                            <button class="search_icon btn-sm border-0 btn-info" type="submit"
+                                style="line-height: 1.4;">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="toggle" class="d-block d-md-none text-right p-2">
+                    <a href="#" data-menu class="text-dark">
+                        <i class="fa fa-lg fa-bars"></i>
+                        <span>Menu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<header id="header">
+    <div class="container">
+        <div class="sticky">
+            <div class="row align-items-center">
+                <div class="col-md-12 h-100">
+                    <nav id="navbar" class="nav-header">
+                        <ul class="nolist d-flex flex-wrap">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giới thiệu
+                                </a>
+                                <div class="dropdown-menu bg-light p-0 m-0" style="z-index: 10000;">
+                                    <ul class="nolist">
+                                        <li><a href="#">ABC</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Tin Tức
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Dự Án
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Chứng Chỉ
+                                </a>
+                                <div class="dropdown-menu bg-light p-0 m-0" style="z-index: 10000;">
+                                    <ul class="nolist">
+                                        <li><a href="#">ABC</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="" href="#">Tuyển Dụng
+                                </a>
+                            </li>
+                            <li><a href="">Liên Hệ</a></li>
+                            <li class="d-block d-md-none ">
+                                <div class="topBar pb-2 d-flex">
+                                    <a href="#" class="text-dark">
+                                        <img class="flag" src="./public/images/eng.jpg" alt="">
+                                        ENG
+                                    </a>
+                                    <a href="#" class="text-dark">
+                                        <img class="flag" src="./public/images/vietnam.jpg" alt="">
+                                        VI
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<style>
+    .dropdown-menu a {
+        padding: 8px 15px;
+        display: block;
+    }
+
+    .sub-menu {
+        position: absolute;
+        visibility: hidden;
+        will-change: transform;
+        top: 100%;
+        transform-origin: top;
+        transform: scale(1, 0);
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sub-menu-parent:hover>.sub-menu {
+        transform: scale(1, 1);
+        visibility: visible;
+        transition-delay: 0s, 0s, 0.3s;
+        z-index: 2;
+    }
+
+    .sub-menu-parent .sub-menu-parent__link::after {
+        content: '\f0dd';
+        font-family: FontAwesome;
+        color: #fff;
+    }
+</style>
+    
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 p-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><span>Tổng quan công ty</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-3">
+                <h1 class="header-title text-md-left text-uppercase text-center text-md-left">Tổng quan công ty</h1>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="overflow-auto bg-white">
+                                    <table class="w-100 table" style="min-width: 600px;">
+                                        <thead>
+                                            <tr>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    Tên đầy đủ
+                                                </td>
+                                                <td>
+                                                    <strong>Công ty Cổ phần Đầu tư và Xây lắp 388 - 388IC</strong>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Tên giao dịch
+                                                </td>
+                                                <td>
+                                                    <strong>388 INVESTMENT & CONSTRUCTION
+                                                    JOINT STOCK COMPANY</strong>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Tên viết tắt
+                                                </td>
+                                                <td>
+                                                    388IC
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Vốn điều lệ
+                                                </td>
+                                                <td>
+                                                    100,000,000 VNĐ (Một trăm tỷ đồng)
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Mã số thuế
+                                                </td>
+                                                <td>
+                                                    0303443233
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Trụ sở chính
+                                                </td>
+                                                <td>
+                                                    236/6 Điện Biên Phủ, Phường 17, Quận Bình Thạnh, Tp. Hồ Chí Minh
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Điện thoại
+                                                </td>
+                                                <td>
+                                                    097237273
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 py-3 py-md-0">
+                                <img src="https://scontent.fsgn5-2.fna.fbcdn.net/v/t1.15752-9/62876572_336854970340290_3041161695419432960_n.png?_nc_cat=107&_nc_oc=AQnA2rPeKfwBZt3nMqp8khCGZjx69tZepAqe7ky8Ha3HKwNBLdq8spDI5dcZbLD_084&_nc_ht=scontent.fsgn5-2.fna&oh=97a4865250584ea908e48a96bb0b490c&oe=5D52B1E6" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="d-block text-center">
+                            <h5>Dự Án Liên Quan</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <div class="card border mb-2 card-hover-primary">
+                                    <div class="card-another-top">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2"
+                                                src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-another-body text-center">
+                                        <a href="#" class="text-uppercase p-2 d-block">Dự án abc</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="card border mb-2 card-hover-primary">
+                                    <div class="card-another-top">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2"
+                                                src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-another-body text-center">
+                                        <a href="#" class="text-uppercase p-2 d-block">Dự án abc</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="card border mb-2 card-hover-primary">
+                                    <div class="card-another-top">
+                                        <a href="#" class="w-100">
+                                            <img class="product-image w-100 p-2"
+                                                src="http://www.coteccons.vn/app/uploads/2018/10/09/7893d2d022f8c2a69be9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-another-body text-center">
+                                        <a href="#" class="text-uppercase p-2 d-block">Dự án abc</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="scroll-top">
+        <a class="smooth-scroll">
+            <i class="fa fa-caret-up" aria-hidden="true" style="font-size: 18pt;"></i>
+        </a>
+    </div>
+    <footer id="footer">
+    <div class="bg-footer" style="background-image: url('http://www.coteccons.vn/images/bgfooter.png')">
+        <div class="container">
+            <div class="company">
+                <div class="d-flex flex-wrap title-descript pt-3">
+                    <div class="flex-grow-1">
+                        <h3 class="text-uppercase">Đối tác chiến lược</h3>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap py-3">
+                    <div class="swiper-container swiper-logo">
+                        <div class="swiper-wrapper logo-list">
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo5.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo6.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo7.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./public/images/logo8.png" alt="">
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="d-flex flex-wrap">
+                    <div class="col-md-8">
+                        <div class="footer-title">
+                            <h4>Thông tin công ty</h4>
+                        </div>
+                        <div class="footer-body">
+                            <ul class="nolist">
+                                <li>
+                                    <span><u>Trụ Sở Chính:</u></span>
+                                    <span>No 2/14 - Bao Phuc Street – Dang Hai Ward - Ngo Quyen Dist - Hai Phong City</span>
+                                </li>
+                                <li>
+                                    <span><u>Số điện thoại:</u></span>
+                                    <span> +84 2253 722 126</span>
+                                </li>
+                                <li>
+                                    <span><u>Hotline:</u></span>
+                                    <span> +84 313 851 266</span>
+                                </li>
+                                <li>
+                                    <span><u>Email:</u></span>
+                                    <span>admin@388ic.com.vn</span>
+                                </li>
+                                <li>
+                                    <a href="http://mail.388ic.com.vn/Mondo/lang/sys/Login.aspx?Version=Desktop" target="_blank" class="text-white"><u>Webmail</u></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-title">
+                            <h4>Fanpage</h4>
+                        </div>
+                        <div class="footer-body">
+                            <div class="fb-page"
+                                data-href="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs"
+                                data-tabs="timeline" data-width="" data-height="200" data-small-header="false" data-adapt-container-width="true"
+                                data-hide-cover="false" data-show-facepile="true">
+                                <blockquote
+                                    cite="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs"
+                                    class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/C%C3%B4ng-ty-C%E1%BB%95-ph%E1%BA%A7n-%C4%90%E1%BA%A7u-t%C6%B0-v%C3%A0-X%C3%A2y-l%E1%BA%AFp-388-388IC-320814771937085/?ref=br_rs">Công
+                                        ty Cổ phần Đầu tư và Xây lắp 388 - 388IC</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="text-white">Copyright &copy; 2019 388IC</span>
+                    <span class="text-dark">Design by <a href="#" class="text-dark">TyHon Company</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/swiper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/app.js"></script>
+    <script>
+        $('.scroll-top').on("click", function () {
+                $(window).scrollTop(0);
+            });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+table {
+    tr td:first-child {
+        width: 30%;
+        &::after {
+            content:':';
+        }
+    }
+    tr td {
+        padding: 6px 4px!important;
+    }
+}
+.tabs-link {
+    color: gray;
+    &.active {
+        color: #df9d10!important;
+    }
+    &:hover {
+        color: #df9d10!important;
+    }
+}
+.card-top-direc {
+    position: relative;
+    img {
+        width: 100%;
+        height: 300px;
+        @include max-sm {
+            height: auto;
+        }
+    }
+}
+.card-top-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(-180deg, #FF9800 0%, #616161 115%);
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+}
+.roll {
+    font-size: 10pt;
+}
+.logo-list {
+    .swiper-slide{
+        img {
+            height: 100px;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
