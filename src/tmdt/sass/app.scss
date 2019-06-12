@@ -237,20 +237,51 @@ body{
 
 // #region Gift-card
 .gift-card{
-    display: block;
+    display: flex;
+    align-items: center;
     border-radius: 17px;
     overflow: hidden;
     position: relative;
+    padding: 4px;
+    background-color: #fff;
     &:hover{
         &::before{
             content: '';
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: rgba(#000, .2);
             top: 0;
             left: 0;
         }
+        &::after {
+            content: '\f105';
+            font-family: FontAwesome;
+            position: absolute;
+            right: 6px;
+            font-size: 16pt;
+            color: red;
+        }
+        span {
+            color: #e5101d;
+        }
+    }
+}
+.card-channels-icon {
+    width: 32px;
+    height: 32px;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+    }
+}
+.card-channels-text {
+    span {
+        color: #000;
+        font-size: 14pt;
+        margin-left: 4px;
+        padding: 4px;
+        
     }
 }
 // #endregion
