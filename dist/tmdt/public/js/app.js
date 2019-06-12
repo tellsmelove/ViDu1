@@ -123,6 +123,27 @@ $(document).ready(function () {
       swiper: galleryThumbs
     }
   });
+  var swiper = new Swiper('.swiper-sale', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev'
+    },
+    autoplay: {
+      delay: 5000
+    },
+    breakpoints: {
+      769: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      575: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      }
+    }
+  });
 });
 var swiper = new Swiper('.swiper-main', {
   loop: true,
