@@ -76,3 +76,29 @@
     margin-bottom: 0px;
   }
 }
+.swiper-news-thumb {
+      width: 100%;
+      height: 300px!important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+    .gallery-top-new {
+      height: 80%;
+      width: 100%;
+    }
+    .gallery-thumbs-new {
+      height: 100%;
+      box-sizing: border-box;
+    }
+    .gallery-thumbs-new .swiper-slide {
+      width: 25%;
+      height: 20%;
+      opacity: 0.4;
+    }
+    .gallery-thumbs-new .swiper-slide-thumb-active {
+      opacity: 1;
+    }

@@ -10,6 +10,24 @@ $(document).ready(() => {
         e.preventDefault()
         $(navbar).toggleClass('active');
     });
+    var galleryThumbs = new Swiper('.gallery-thumbs-new', {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        slidesPerColumn: 4,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top-new', {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 4,
