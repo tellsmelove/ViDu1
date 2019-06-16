@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./public/css/swiper.min.css">
 
     <link rel="stylesheet" href="./public/css/app.css">
-    <title>About</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -111,154 +111,59 @@
         <!-- SECTION  Body -->
         <div id="body">
             
-
-
-<nav id="navbar" class="">
-    <div class="row pl-md-3">
-        <div class="col-md-3 order-md-1 order-2">
-            <div id="cate_menu" class=' '>
-                <a href="#" class="text-white main-navbar-toggle">
-                    <i class="fi fi-nav-icon-a"></i>
-                    <span class="text-uppercase">Danh mục</span>
-                </a>
-                <aside id="dropdown categlory-menu">
-                    <ul class="nolist">
-                        <li><a href="#">Điện Thoại - Tablet</a></li>
-                        <li><a href="#">Điện Tử - Điện Lạnh</a></li>
-                        <li><a href="#">Sản Phẩm</a></li>
-                        <li><a href="#">Phụ Kiện - Thiết Bị Số</a></li>
-                        <li><a href="#">Laptop - Thiết bị IT</a></li>
-                        <li><a href="#">Máy Ảnh - Quay Phim</a></li>
-                        <li><a href="#">Điện Gia Dụng</a></li>  
-                        <li><a href="#">Điện Gia Dụng</a></li>
-                        <li><a href="#">Điện Gia Dụng</a></li>
-                        <ul class="nolist">
-                            <li><a href="#">asdas</a></li>
-                        </ul>
-                    </ul>
-                </aside>
-            </div>
-        </div>
-        <div class="col-md-9 pl-md-0 order-md-2 order-1 sub-style">
-            <div class="sub-menu">
-                <ul class="nolist align-items-center">
-                    <li>
-                        <a href="#">
-                            <i class="fi icons-menu fi-home d-block d-md-none"></i>
-                            <span class="d-none d-md-block">Trang Chủ</span>
-                        </a>
-                        
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fi icons-menu fi-info d-block d-md-none"></i>
-                            <span class="d-none d-md-block">Giới Thiệu</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fi icons-menu fi-product-hunt d-block d-md-none"></i>
-                            <span class="d-none d-md-block">Sản Phẩm</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fi icons-menu fi-phone d-block d-md-none"></i>
-                            <span class="d-none d-md-block">Liên Hệ</span>
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fi fi-close-a close-menu text-warning d-block d-md-none"></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<section id="about">
-    <div class="main-about">
-        <img src="./public/images/banner2.jpg" alt="">
-    </div>
-    <article class="d-flex flex-column flex-md-row align-items-center pt-3">
-        <div class="w-100 w-md-50">
-            <div class="box">
-                <div class="feed px-3">
-                    <h2>Lịch Sử Hình Thành</h2>
-                    <p>Thương hiệu điện máy VUTA được thành lập từ tháng 3 năm 2010, là một trong       những thương hiệu thời trang nam uy tín
-                        hàng đầu Việt Nam. Với sự quản lý chặt chẽ, chuyên nghiệp của đội ngũ quản lý; Sự tận tâm của nhân viên bán hàng… là những yếu tố làm nên thương hiệu điện máy VUTA lớn mạnh như hiện
-                        nay.
-                    </p>
-                </div>
-            </div>  
-        </div>
-        <div class="w-100 w-md-50">
-            <div class="box">
-                <img src="https://goo.gl/xEOETU" alt="">
-            </div>
-        </div>
-    </article>
-    <article class="d-flex flex-column flex-md-row align-items-center">
-        <div class="w-100 w-md-50 order-1 order-md-0">
-            <div class="box">
-                <img src="https://goo.gl/xEOETU" alt="">
+<section class="py-4">
+    <div class="container">
         
+        <form action="" method="POST" enctype="multipart/form-data">
+            <h2>Bài viết tiếng việt</h2>
+            <div class="form-group">
+                <label>Tên bài viết</label>
+                <input type="text" name="name" class="form-control" placeholder="Nhập tên bài viết">
             </div>
-        </div>
-        <div class="w-100 w-md-50 order-0 order-md-1">
-            <div class="box">
-                <div class="feed px-3">
-                    <h2>Quan Niệm</h2>
-                    <p>VUTA luôn quan niệm thời trang là sự tìm tòi và sáng tạo nên những sản phẩm      của VUTA đều được thiết kế riêng với sự
-                        trẻ
-                        trung, hiện đại để mang lại guu thời trang hợp mốt nhất cho các bạn trẻ. Các dòng sản phẩm của VUTA không ngừng đa
-                        dạng, tất cả tạo nên vẻ đẹp hoàn hảo, hiện đại, phong cách cho phái mạnh
-                    </p>
-                </div>
+            <div class="form-group">
+                <label>Tóm tắt bài viết</label>
+                <textarea class="form-control editor" name="summary" id="editor" placeholder="Nhập tóm tắt bài viết"
+                    rows="4"></textarea>
             </div>
-        </div>
-    </article>
-    <article class="d-flex flex-column flex-md-row align-items-center">
-        <div class="w-100 w-md-50">
-            <div class="box">
-                <div class="feed px-3">
-                    <h2>Chất Lượng</h2>
-                    <p>Bên cạnh đó VUTA luôn đặt mình vào tâm lý và quyền lợi của khách hàng để         tung ra những sản phẩm thời trang chất lượng
-                        tốt nhất, mẫu mã cực đẹp, mới lạ nhưng với giá cả cực kì hấp dẫn, cạnh tranh nhất.
-                    </p>
-                </div>
+            <div class="form-group">
+                <label>Nội dung bài viết</label>
+                <textarea class="form-control editor" name="content" id="editor" placeholder="Nhập nội dung bài viết"
+                    rows="10"></textarea>
             </div>
-        </div>
-        <div class="w-100 w-md-50">
-            <div class="box">
-                <img src="https://timo.vn/wp-content/uploads/2018/04/POST_FB-04-1200x631.jpg" alt="">
+            <div class="form-group">
+                <label>hình ảnh bài viết</label>
+                <input type="file" name="image">
             </div>
-        </div>
-    </article>
-    <article class="d-flex flex-column flex-md-row align-items-center">
-        <div class="w-100 w-md-50 order-1 order-md-0">
-            <div class="box">
-                <img src="https://goo.gl/xEOETU" alt="">
+            <h2>Bài viết tiếng anh</h2>
+            <div class="form-group">
+                <label>Tên bài viết</label>
+                <input type="text" name="name" class="form-control" placeholder="Nhập tên bài viết">
+            </div>
+            <div class="form-group">
+                <label>Tóm tắt bài viết</label>
+                <textarea class="form-control editor" name="summary" id="editor" placeholder="Nhập tóm tắt bài viết"
+                    rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Nội dung bài viết</label>
+                <textarea class="form-control editor" name="content" id="editor" placeholder="Nhập nội dung bài viết"
+                    rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label>hình ảnh bài viết</label>
+                <input type="file" name="image">
+            </div>
+            <div class="form-group">
+                <label style="display: block;">Trạng thái bài viết</label>
+                <label class="radio-inline"><input type="radio" name="status" value="0" checked>Kích hoạt</label>
+                <label class="radio-inline"><input type="radio" name="status" value="1">Không kích hoạt</label>
     
             </div>
-        </div>
-        <div class="w-100 w-md-50 order-0 order-md-1">
-            <div class="box">
-                <div class="feed px-3">
-                    <h2>Tiện Ích</h2>
-                    <p>Hiện nay, thương hiệu thời trang nam VUTA phát triển ngày càng lớn mạnh  Đồng Nai và Vũng Tàu. Ngoài ra, nhằm tạo sự tiện lợi mua sắm tối đa cho khách hàng, VUTA phát triển hệ thống bán hàng online, giao hàng đến tận tay người tiêu dùng trên toàn quốc.</p>
-                </div>
-            </div>
-        </div>
-    </article>
-    <div class="about-footer text-center d-flex flex-column py-5">
-        <h2>Thank You So Much</h2>
-        <h4 class="px-md-5 px-3">If you only knew that I exist to love the rest of life left me in this very ostil place for
-            my love and so pleasing to
-            my eyes, the altarpiece of my most beautiful and even mysterious serious story.
-        </h4>
+            <button type="submit" class="btn btn-primary">Thêm bài viết</button>
+            <form>
     </div>
 </section>
+
 
         </div>
         <!-- SECTION  Footer -->

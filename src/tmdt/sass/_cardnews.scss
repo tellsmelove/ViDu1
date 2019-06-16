@@ -1,0 +1,24 @@
+.card-news {
+    display: flex;
+    flex-direction: column;
+}
+.top-img {
+    width: 100%;
+    height: 250px;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+.card-thumb-news {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.thumb-img {
+    flex: 0 0 20%;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

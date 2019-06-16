@@ -114,7 +114,9 @@ $(document).ready(function () {
   });
   var galleryTop = new Swiper('.gallery-top-new', {
     spaceBetween: 10,
-    loop: true,
+    autoplay: {
+      delay: 5000
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'

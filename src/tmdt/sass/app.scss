@@ -13,6 +13,7 @@
 @import './news';
 @import './newpost';
 @import './product';
+@import './cardnews';
 // SECTION Global
 // #region Global
 body{
@@ -197,6 +198,13 @@ body{
             @include max-sm {
                 height: 100vh;
             }
+        }
+    }
+}
+.categlory-menu {
+    li {
+        &:hover {
+            
         }
     }
 }

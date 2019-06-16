@@ -729,7 +729,7 @@ ul.timeline > li:before {
 .gallery-thumbs-new .swiper-slide {
   width: 25%;
   height: 20%;
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
 .gallery-thumbs-new .swiper-slide-thumb-active {
@@ -777,6 +777,40 @@ ul.timeline > li:before {
   top: 3%;
   left: 5%;
   z-index: 99;
+}
+
+.card-news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-img {
+  width: 100%;
+  height: 250px;
+}
+.top-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-thumb-news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.thumb-img {
+  flex: 0 0 20%;
+}
+.thumb-img img {
+  height: 100%;
+  width: 100%;
 }
 
 body h1 {
