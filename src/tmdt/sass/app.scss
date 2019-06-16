@@ -46,6 +46,9 @@ body{
     img {
         height: 70px;
         width: 100%;
+        @include max-sm {
+            height: 50px;
+        }
     }
 }
 .tikicon.icon-tiki_short {
@@ -78,12 +81,16 @@ body{
         color: #000;
         border-radius: 4px;
         font-weight: 600;
+        
     }
 }
 .cart-items{
     border: 1px dashed #fff;
     padding: 2px;
     border-radius: 6px;
+    @include max-sm {
+        padding: 0px 2px;
+    }
     &:hover {
         background-color: rgba(#fff, .2);
     }
@@ -109,7 +116,7 @@ body{
             color: #fff;
             padding: 8px 12px;
             &:hover {
-                background-color: #034e7c;
+                background-color: #7e050b;
             }
         }
         .icons-menu{
@@ -175,7 +182,7 @@ body{
         z-index: 99;
         width: 100%;
         height: 0;
-        overflow: auto;
+        // overflow: auto;
         transition: .4s .1s ease-in-out height;
         background-color: #fff;
         box-shadow: 0 0 3px rgba(#333, .3);
@@ -202,10 +209,22 @@ body{
     }
 }
 .categlory-menu {
-    li {
-        &:hover {
-            
+    position: relative;
+    &:hover {
+        .categlory-menu__lv1 {
+            visibility: visible;
         }
+    }
+    &__lv1 {
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        left: 285px;
+        height: 300px;
+        min-width: 200px;
+        background-color: #fff;
+        z-index: 3;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
     }
 }
 // #endregion
@@ -352,6 +371,11 @@ body{
     padding: 4px;
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(#666, .2);
+    @include max-sm {
+        text-align: center;
+        justify-content: center;
+        border-radius: 6px;
+    }
     &:hover{
         &::before{
             content: '';
@@ -382,6 +406,7 @@ body{
         height: 100%;
         border-radius: 16px;
     }
+    
 }
 .card-channels-text {
     span {

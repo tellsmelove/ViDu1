@@ -13,7 +13,7 @@ $product-card_price_old_weight: 900;
 
 .card {
     background-color: $product-card_bg;
-    transition: .4s ease-in-out all;
+    transition: .2s ease-in-out all;
     transform: scale(1, 1);
     
     &-title {

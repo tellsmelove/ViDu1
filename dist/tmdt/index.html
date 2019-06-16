@@ -60,20 +60,20 @@
 <header id="header">
     <div class="container">
         <div class="row align-items-center py-2">
-            <div class="col-md-2 col-6">
+            <div class="col-md-2 col-5">
                 <div id="logo">
                     <a href="#" class="d-block">
                         <img src="https://vungtaucity.com.vn/img/logo_top00.png" alt="">
                     </a>
                 </div>
             </div>
-            <div id="toggle" class="col-6 text-right d-block d-md-none">
+            <div id="toggle" class="col-7 text-right d-block d-md-none">
                 <a href="#" class="text-white main-navbar-toggle" data-menu>
                     <i class="fi fi-nav-icon-a"></i>
                     <span class="text-uppercase">Menu</span>
                 </a>
             </div>
-            <div class="col-lg-8 col-md-7 col-8 py-2 py-md-0">
+            <div class="col-lg-8 col-md-7 col-9 py-2 py-md-0">
                 <div class="form-search">
                     <form action="" method="post">
                         <div class="form-group m-0 d-flex flex-row">
@@ -86,17 +86,15 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-12 py-2 py-md-0">
+            <div class="col-lg-2 col-md-3 col-3 py-2 py-md-0">
                 <div class="header-link row text-white align-items-center">
                     <a href="#" id="cart" class="col-md-12 text-white">
                         <div class="d-flex align-items-center cart-items">
                             <div class="header-link-icons">
                                 <i class="fi fi-shopping-basket"></i>
                             </div>
-                            <div class="flex-grow-1 flex-row">
-                                <div>
-                                    Giỏ hàng
-                                </div>
+                            <div class="flex-grow-1 flex-row d-none d-md-block">
+                                Giỏ hàng
                             </div>
                             <div class="">
                                 <label id="cart-number" class="bg-warning mb-0">0</label>
@@ -124,7 +122,7 @@
                         <span class="text-uppercase">Danh mục</span>
                     </a>
                     <aside id="dropdown">
-                        <ul class="nolist ">
+                        <ul class="nolist categlory-menu">
                             <li><a href="#">Điện Thoại - Tablet</a></li>
                             <li><a href="#">Điện Tử - Điện Lạnh</a></li>
                             <li><a href="#">Sản Phẩm</a></li>
@@ -134,6 +132,10 @@
                             <li><a href="#">Điện Gia Dụng</a></li>
                             <li><a href="#">Điện Gia Dụng</a></li>
                             <li><a href="#">Điện Gia Dụng</a></li>
+                            <ul class="nolist categlory-menu__lv1">
+                                <li><a href="#">123dsadsa</a></li>
+                                <li><a href="#">123dsadsa</a></li>
+                            </ul>
                         </ul>
                     </aside>
                 </div>
@@ -176,7 +178,7 @@
     </div>
 </nav>
 
-<section id="slider" class="bg-light">
+<section id="slider" class="bg-light d-none d-md-block">
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-md-9">
@@ -197,43 +199,43 @@
 <section class="pair-banner bg-white py-4">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-6 mb-3 mb-md-0">
+            <div class="col-md-3 col-3 mb-3 mb-md-0">
                 <a href="#" class="gift-card">
                     <div class="card-channels-icon">
                         <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB1pXNxw7omBKNjSZFqXXXtqVXa.png" alt="">
                     </div>
-                    <div class="card-channels-text">
+                    <div class="card-channels-text d-none d-md-block">
                         <span>Mua Nhiều Nhất</span>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-6 mb-3 mb-md-0">
+            <div class="col-md-3 col-3 mb-3 mb-md-0">
                 <a href="#" class="gift-card">
                     <div class="card-channels-icon">
                         <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB1ZbXxw7omBKNjSZFqXXXtqVXa.png" alt="">
                     </div>
-                    <div class="card-channels-text">
+                    <div class="card-channels-text d-none d-md-block">
                         <span>Xem Nhiều Nhất</span>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-6 mb-3 mb-md-0">
+            <div class="col-md-3 col-3 mb-3 mb-md-0">
                 <a href="#" class="gift-card">
                     <div class="card-channels-icon">
                         <img src="https://cdn4.vectorstock.com/i/1000x1000/38/93/seal-icon-with-big-sale-text-vector-18823893.jpg"
                             alt="">
                     </div>
-                    <div class="card-channels-text">
+                    <div class="card-channels-text d-none d-md-block">
                         <span>Đồ Giảm Giá</span>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 col-6 mb-3 mb-md-0">
+            <div class="col-md-3 col-3 mb-3 mb-md-0">
                 <a href="#" class="gift-card">
                     <div class="card-channels-icon">
                         <img src="https://cdn1.iconfinder.com/data/icons/graph-1/100/07-512.png" alt="">
                     </div>
-                    <div class="card-channels-text">
+                    <div class="card-channels-text d-none d-md-block">
                         <span>Đồ Rẻ Nhất</span>
                     </div>
                 </a>
@@ -364,6 +366,134 @@
         <h4 class="text-uppercase py-3 mb-0">Sản Phẩm Mới Nhất</h4>
         <div class="product-list">
             <div class="row">
+                <div class="col-md-3 col-6 product-list--item">
+                    
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-3 col-6 product-list--item">
+                    
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-3 col-6 product-list--item">
+                    
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+                <div class="col-md-3 col-6 product-list--item">
+                    
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
                 <div class="col-md-3 col-6 product-list--item">
                     
 <div class="card card-hover border-0">
