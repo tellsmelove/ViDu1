@@ -105,9 +105,13 @@ $(document).ready(function () {
     e.preventDefault();
     $(navbar).toggleClass('active');
   });
+  $('.user-type-item input').click(function () {
+    $('.user_personal,.user_company').toggleClass('hidden');
+  });
   var galleryThumbs = new Swiper('.gallery-thumbs-new', {
     spaceBetween: 10,
     slidesPerView: 1,
+    simulateTouch: false,
     slidesPerColumn: 4,
     watchSlidesVisibility: true,
     watchSlidesProgress: true

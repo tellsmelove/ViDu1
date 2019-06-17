@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./public/css/swiper.min.css">
 
     <link rel="stylesheet" href="./public/css/app.css">
-    <title>Login</title>
+    <title>Registe</title>
 </head>
 
 <body>
@@ -212,36 +212,118 @@
     </div>
 </nav>
 
-<section id="login" class="py-lg-5 py-3">
+<section class="py-lg-5 py-3">
     <div class="container">
         <form action="" method="post">
             <div class="row">
-                <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3  p-3 box-login paper">
+                <div class="col-md-6 offset-md-3  p-3 box-login paper">
                     <div class="text-center">
-                        <h1><i class="fa fa-lock" aria-hidden="true"></i> Đăng Nhập</h1>
+                        <h1><i class="fa fa-registered" aria-hidden="true"></i></i> Đăng Ký Người Bán Hàng</h1>
                     </div>
-                    <div class="input-group py-2">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i style="font-size: 17pt;" class="fa fa-user"
-                                    aria-hidden="true"></i></span>
+                    <div class="row">
+                        <div class="col-lg-12 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Loại hình:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <div class="form-check-inline my-2">
+                                    <div class="user-type-item mr-2">
+                                        <input name="user" id="user_personal" type="radio" checked>
+                                        Cá Nhân
+                                    </div>
+                                    <div class="user-type-item">
+                                        <input name="user" id="user_company" type="radio">
+                                        Công ty
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <input type="email" name="email" class="form-control" placeholder="Nhập email" />
-                    </div>
-
-                    <div class="input-group py-2">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-key icon"></i></span>
+                        <div class="user_personal col-lg-12 hidden">
+                            <div class="row">
+                                <div class="col-lg-12 my-2">
+                                    <div class="text-left">
+                                        <span class="form-title">Tên gian hàng:</span>
+                                    </div>
+                                    <div class="col-lg-12 p-0">
+                                        <input class="form-control" name="email" type="email" autocomplete="off"
+                                            placeholder="Nhập tên gian hàng" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-2">
+                                    <div class="text-left">
+                                        <span class="form-title">Mã số thuế:</span>
+                                    </div>
+                                    <div class="col-lg-12 p-0">
+                                        <input class="form-control" name="email" type="email" autocomplete="off"
+                                            placeholder="Nhập mã số thuế" required>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <input type="password" name="password" class="form-control" placeholder="Nhập mật khẩu" />
+                        <div class="col-lg-12 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Địa chỉ kho:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" name="email" type="email" autocomplete="off" placeholder="Nhập địa chỉ kho"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Địa chỉ email:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" name="email" type="email" autocomplete="off"
+                                    placeholder="Nhập địa chỉ email" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Mật khẩu:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" name="password" type="password" autocomplete="off"
+                                    placeholder="nhập mật khẩu...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Nhập Lại Mật khẩu:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" name="password_confirmation" type="password"
+                                    autocomplete="off" placeholder="Nhập lại mật khẩu...">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Họ:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" name="first_name" type="text" autocomplete="off"
+                                    placeholder="Vui lòng nhập họ tên" required>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 my-2">
+                            <div class="text-left">
+                                <span class="form-title">Tên:</span>
+                            </div>
+                            <div class="col-lg-12 p-0">
+                                <input class="form-control" name="last_name" type="text" autocomplete="off"
+                                    placeholder="Vui lòng nhập họ tên" required>
+                            </div>
+                        </div>
                     </div>
                     <div class="py-3 text-center">
-                        <button type="submit" class="btn btn-info"><span
-                                class="glyphicon glyphicon-off"></span>Đăng nhập</button>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-off">
+                            </span>
+                            Đăng ký
+                        </button>
                     </div>
                     <div class="footer py-3 text-center">
-                        <p>Không có tài khoản <a href="#">Đăng ký ngay</a>
-                        </p>
-                        <p>Quên mật khẩu? <a href="#">Tìm Lại</a></p>
+                        <p>Đã có tài khoản? <a href="#">Đăng nhập</a></p>
                     </div>
                 </div>
             </div>
@@ -249,41 +331,9 @@
     </div>
 </section>
 <style>
-    @media screen and (max-width: 575px) {
-        #login {
-            height: auto !important;
-        }
-
-        .paper {
-            align-items: center;
-            margin: 2rem 0rem;
-        }
-    }
-
-    @media screen and (max-width: 769px) {
-        #login {
-            height: 80vh;
-        }
-
-        .paper {
-            align-items: center;
-            margin-top: 2rem;
-        }
-    }
-
-    @media screen and (max-width: 1025px) {
-        #login {
-            height: 80vh;
-        }
-
-        .paper {
-            align-items: center;
-            margin-top: 2rem;
-        }
-    }
-
     .paper {
         background: #fff;
+        padding: 30px;
         position: relative;
     }
 
@@ -324,7 +374,6 @@
         }
     }
 </style>
-
 
         </div>
         <!-- SECTION  Footer -->
