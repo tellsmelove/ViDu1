@@ -177,6 +177,7 @@
         </div>
     </div>
 </section>
+<div id="overlay"></div>
 <section>
     <div class="container">
         <div class="row">
@@ -184,61 +185,101 @@
                 <h1 class="header-title text-md-left text-uppercase text-center text-md-left">
                     Kho Hình Ảnh
                 </h1>
+                <hr>
             </div>
             <div class="col-12">
                 <div class="row">
                     <div class="col-md-9 py-3 py-md-0">
-                        <div class="slide">
-                            <div class="d-flex flex-column h-100">
-                                <div id="slider_product_detail" class="swiper-container gallery-top">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery1.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery2.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery3.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery4.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery4.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery4.png" alt="">
-                                        </div>
+                        <div class="title-album">
+                            <h2>Ảnh khai trương</h2>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-md-3 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+                                    data-caption="Some lovely red flowers"
+                                    data-image="./public/images/gallery1.png"
+                                    data-target="#image-gallery">
+                                    <img class="img-responsive album-img" src="./public/images/gallery1.png"
+                                        alt="Short alt text">
+                                </a>
+                            </div>
+                            <div class="col-md-3 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                    data-caption="Some lovely red flowers"
+                                    data-image="./public/images/gallery2.png"
+                                    data-target="#image-gallery">
+                                    <img class="img-responsive album-img" src="./public/images/gallery2.png"
+                                        alt="Short alt text">
+                                </a>
+                            </div>
+                            <div class="col-md-3 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                    data-caption="Some lovely red flowers"
+                                    data-image="./public/images/gallery4.png"
+                                    data-target="#image-gallery">
+                                    <img class="img-responsive album-img" src="./public/images/gallery4.png"
+                                        alt="Short alt text">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="title-album">
+                            <h2>Ảnh khai trương</h2>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-md-3 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" 
+                                    data-caption="Some lovely red flowers"
+                                    data-image="./public/images/gallery1.png"
+                                    data-target="#image-gallery">
+                                    <img class="img-responsive album-img" src="./public/images/gallery1.png"
+                                        alt="Short alt text">
+                                </a>
+                            </div>
+                            <div class="col-md-3 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                    data-caption="Some lovely red flowers"
+                                    data-image="./public/images/gallery3.png"
+                                    data-target="#image-gallery">
+                                    <img class="img-responsive album-img" src="./public/images/gallery3.png"
+                                        alt="Short alt text">
+                                </a>
+                            </div>
+                            <div class="col-md-3 thumb">
+                                <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                                    data-caption="Some lovely red flowers"
+                                    data-image="./public/images/gallery5.png"
+                                    data-target="#image-gallery">
+                                    <img class="img-responsive album-img" src="./public/images/gallery5.png"
+                                        alt="Short alt text">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                                                class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="image-gallery-title"></h4>
                                     </div>
-                                    <div class="swiper-button-next swiper-button-white"></div>
-                                    <div class="swiper-button-prev swiper-button-white"></div>
-                                </div>
-                                <div id="slider_product_thumb" class="swiper-container gallery-thumbs small">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery1.png" alt="">
+                                    <div class="modal-body">
+                                        <img id="image-gallery-image" class="img-responsive" src="">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="col-md-2 mr-3">
+                                            <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery2.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery3.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery4.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery4.png" alt="">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="./public/images/gallery4.png" alt="">
+                        
+                                        <div class="col-md-2">
+                                            <button type="button" id="show-next-image" class="btn btn-warning">Next</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3">
                         <div class="d-block text-center">
                             <h5>Dự Án Liên Quan</h5>
