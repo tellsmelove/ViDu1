@@ -105,7 +105,7 @@ $(document).ready(function () {
     e.preventDefault();
     $(navbar).toggleClass('active');
   });
-  $('.user-type-item input').click(function () {
+  $('.user-type-item input').change(function () {
     $('.user_personal,.user_company').toggleClass('hidden');
   });
   var galleryThumbs = new Swiper('.gallery-thumbs-new', {
