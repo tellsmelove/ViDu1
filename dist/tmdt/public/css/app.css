@@ -890,7 +890,7 @@ body h1 {
 }
 
 .dropdown-menu {
-  min-width: 250px;
+  min-width: 180px;
   color: #000;
 }
 
@@ -922,7 +922,7 @@ body h1 {
   background-color: #7e050b;
 }
 .sub-menu ul .icons-menu {
-  font-size: 20pt;
+  font-size: 16pt;
   padding: 8px 16px;
   color: #fff;
 }
@@ -1030,6 +1030,19 @@ body h1 {
 
 .categlory-menu__lv2 li:hover::after {
   content: "";
+}
+
+.res-link {
+  display: block;
+  background-color: #3440f0;
+  padding: 6px 8px;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+}
+.res-link:hover {
+  color: #fff;
+  background-color: #2932af;
 }
 
 #slider .swiper-container {
@@ -1225,8 +1238,12 @@ body h1 {
   padding: 4px;
 }
 
+#footer #logo-footer a {
+  display: inline-block;
+  background-color: #f1f1f2;
+  border-radius: 8px;
+}
 #footer #logo-footer img {
-  background-color: #fff;
   max-width: 200px;
   max-height: 80px;
 }
@@ -1248,9 +1265,6 @@ body h1 {
   margin: 0px 15px;
 }
 
-.footer-main {
-  background-color: #ecf6f9;
-}
 .footer-main li a {
   color: #333;
 }
@@ -1316,7 +1330,7 @@ body h1 {
     left: 0;
   }
   #cate_menu:hover #dropdown, #cate_menu.index #dropdown {
-    height: 100vh;
+    height: 100vh !important;
   }
   .categlory-menu li:hover .categlory-menu__lv1 {
     left: 0;
@@ -1358,8 +1372,17 @@ body h1 {
   body h1 {
     font-size: 2.15rem;
   }
+  #cate_menu #dropdown a {
+    font-size: 10pt;
+  }
+  #cate_menu:hover #dropdown, #cate_menu.index #dropdown {
+    height: 250px;
+  }
   #slider .swiper-container {
     height: 250px;
+  }
+  .card-channels-text span {
+    font-size: 10pt;
   }
 }
 @media only screen and (max-width: 768px) {

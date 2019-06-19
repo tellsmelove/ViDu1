@@ -96,7 +96,7 @@ body{
     }
 }
 .dropdown-menu {
-    min-width: 250px;
+    min-width: 180px;
     color: #000;
 }
 .main-navbar-toggle {
@@ -120,7 +120,7 @@ body{
             }
         }
         .icons-menu{
-            font-size: 20pt;
+            font-size: 16pt;
             padding: 8px 16px;
             color: #fff;
         }
@@ -195,14 +195,21 @@ body{
             display: block;
             padding: 4px 15px;
             @include text-color(#333, #0088dd);
+
+            @include max-lg {
+                font-size: 10pt;
+            }
         }
     }
     &:hover, &.index{
         #dropdown{
             height: 300px;
             visibility: visible;
+            @include max-lg {
+                height: 250px;
+            }
             @include max-sm {
-                height: 100vh;
+                height: 100vh!important;
             }
         }
     }
@@ -277,6 +284,18 @@ body{
 .categlory-menu__lv2 li:hover {
     &::after {
         content: '';
+    }
+}
+.res-link {
+    display: block;
+    background-color: #3440f0;
+    padding: 6px 8px;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    &:hover {
+        color: #fff;
+        background-color: #2932af;
     }
 }
 // #region Slider
@@ -463,6 +482,9 @@ body{
         font-size: 14pt;
         margin-left: 4px;
         padding: 4px;
+        @include max-lg {
+            font-size: 10pt;
+        }
         
     }
 }
@@ -471,10 +493,15 @@ body{
 // #region footer
 #footer {
     #logo-footer {
+        a {
+            display: inline-block;
+            background-color: #f1f1f2;
+            border-radius: 8px;
+        }
         img {
-            background-color: #fff;
             max-width: 200px;
             max-height: 80px;
+
         }
     }
 }
@@ -506,7 +533,6 @@ body{
 }
 // #endregion
 .footer-main {
-    background-color: #ecf6f9;
     li a {
         @include text-color(#333, #0088dd);
     }
