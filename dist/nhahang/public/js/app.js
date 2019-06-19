@@ -86,21 +86,54 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/vidu1/js/app.js":
-/*!*****************************!*\
-  !*** ./src/vidu1/js/app.js ***!
-  \*****************************/
+/***/ "./src/nhahang/js/app.js":
+/*!*******************************!*\
+  !*** ./src/nhahang/js/app.js ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var swiper = new Swiper('.swiper-main', {
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: '.swiper-pagination'
+  }
+});
+jQuery(function ($) {
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function doAnimations() {
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable'); // Unbind scroll handler if we have no animatables
 
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    } // Check all animatables and animate them if necessary
+
+
+    $animatables.each(function (i) {
+      var $animatable = $(this);
+
+      if ($animatable.offset().top + $animatable.height() - 20 < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+      }
+    });
+  }; // Hook doAnimations on scroll, and trigger a scroll
+
+
+  $(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+});
 
 /***/ }),
 
-/***/ "./src/vidu1/sass/app.scss":
-/*!*********************************!*\
-  !*** ./src/vidu1/sass/app.scss ***!
-  \*********************************/
+/***/ "./src/nhahang/sass/app.scss":
+/*!***********************************!*\
+  !*** ./src/nhahang/sass/app.scss ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -109,14 +142,14 @@
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./src/vidu1/js/app.js ./src/vidu1/sass/app.scss ***!
-  \*************************************************************/
+/*!*****************************************************************!*\
+  !*** multi ./src/nhahang/js/app.js ./src/nhahang/sass/app.scss ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/kimtrong/learning/projects/ViDu1/src/vidu1/js/app.js */"./src/vidu1/js/app.js");
-module.exports = __webpack_require__(/*! /home/kimtrong/learning/projects/ViDu1/src/vidu1/sass/app.scss */"./src/vidu1/sass/app.scss");
+__webpack_require__(/*! /home/kimtrong/learning/projects/Projects1/src/nhahang/js/app.js */"./src/nhahang/js/app.js");
+module.exports = __webpack_require__(/*! /home/kimtrong/learning/projects/Projects1/src/nhahang/sass/app.scss */"./src/nhahang/sass/app.scss");
 
 
 /***/ })

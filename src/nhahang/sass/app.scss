@@ -1,0 +1,135 @@
+@import './mixin';
+@import './global';
+@import './slider';
+@import './header';
+@import './animation';
+body {
+        font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+        font-family: 'Prata', serif;
+}
+.nav-link {
+    color: #000!important;
+    text-transform: uppercase;
+    font-size: 11pt;
+    font-weight: bold;
+
+}
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Playball', cursive!important;
+    color: #d90000;
+}
+.block-title {
+    h2 {
+        position: relative;
+        font-family: 'Prata', serif;
+        font-size: 2.5rem;
+        color: #d90000;
+        font-weight: 600;
+        padding-bottom: 2rem;
+        span {
+            margin-left: 8px;
+            color: #000;
+        }
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            content: '';
+            margin-left: -3.5rem;
+            border-bottom: 3px solid #333;
+            width: 7rem;
+            
+        }
+    }
+}
+.bg-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    box-shadow: 0px 0px 10px rgba(#666, .4);
+}
+.card-top {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    
+    span {
+        position: relative;
+        border: 4px dotted #000;
+        border-radius: 100%;
+        overflow: hidden;
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+        i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.card-body {
+    padding: 8px!important;
+}
+.card-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    padding: 6px;
+    &:hover {
+        color: #d90000;
+    }
+}
+.bg-special {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-special {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.1)!important; 
+    padding: 16px;
+    
+}
+.menu-food:not(:last-child) {
+    &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #666;
+        bottom: 0;
+    }
+}
+.menu-food {
+    position: relative;
+    padding: 8px 0px;
+}
+.menu-title {
+    color: #333;
+    font-weight: bold;
+    font-size: 14pt;
+    &:hover {
+        color: rgb(31, 28, 28);
+    }
+}
+.dashed {
+    border-bottom: 1px dashed rgb(85, 85, 85);
+    height: 1px;
+    width: 100%;
+    margin-top: 8px;
+}
+.price {
+    font-size: 15pt;
+}
