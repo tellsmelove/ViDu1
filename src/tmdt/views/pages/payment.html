@@ -98,61 +98,50 @@
                     </h4>
                     <div class="form-group checks">
                         <label>
-                            <input id="remember" name="remember" class="mr-2" type="checkbox" onclick="validate()"
+                            <input id="remember" name="ship_as_bill" class="mr-2" type="checkbox" onclick="validate()"
                                 name="ship">Thông tin nhận hàng giống thông tin liên hệ
                         </label>
                     </div>
-                    <div class="shipper-info">
+                    <div id="shipping_infomation" class="shipper-info">
                         <div class="form-check-inline">
-                            <label class="mr-5 form-check-label">
-                                <input class="form-check-input" type="radio" name="gender" checked>Ông
+                            <label class="mr-5">
+                                <input class="uk-radio" name="shipping[gender]" type="radio" checked required value="male"> Ông
                             </label>
-                            <label class="mr-5 form-check-label">
-                                <input class="form-check-input" type="radio" name="gender">Bà
+                            <label>
+                                <input class="uk-radio" name="shipping[gender]" type="radio" required value="female"> Bà
                             </label>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4 my-2 my-md-0">
-                                <input class="form-control" type="text" name="fullname" placeholder="Họ và tên">
+                                <input type="text" class="form-control" name="shipping[fullname]" placeholder="Họ và tên *" required>
                             </div>
                             <div class="col-md-4 my-2 my-md-0">
-                                <input class="form-control" type="text" name="fullname" placeholder="Số điện thoại..">
+                                <input class="form-control" placeholder="Số điện thoại*" type="tel" name="shipping[tel]" id="" required>
                             </div>
                             <div class="col-md-4 my-2 my-md-0">
-                                <input class="form-control" type="text" name="fullname" placeholder="Email liên hệ">
+                                <input class="form-control" placeholder="Email nhận thông báo đơn hàng" type="email" name="shipping[email]"
+                                    id="" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-6 my-2 my-md-0">
-                                <input class="form-control" type="text" name="fullname" placeholder="Địa Chỉ">
+                                <input type="text" class="form-control" placeholder="Địa Chỉ" required name="shipping[address]">
                             </div>
                             <div class="col-md-6 my-2 my-md-0">
-                                <select class="form-control" name="province">
-                                    <option value selected disabled>Tỉnh/Thành Phố</option>
-                                    <option value="1">Hồ Chí Minh</option>
-                                    <option value="2">Hà Nội</option>
-                                    <option value="3">Bà Rịa Vũng Tàu</option>
-                                    <option value="4">Đà Nẵng</option>
+                                <select name="shipping[province]" id="" class="form-control" required>
+                                    <option value="">Tỉnh/Thành phố</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-md-6 my-2 my-md-0">
-                                <select disabled="disabled" class="form-control bg-light" name="province">
-                                    <option value selected disabled>Quận/Huyện</option>
-                                    <option value="1">Hồ Chí Minh</option>
-                                    <option value="2">Hà Nội</option>
-                                    <option value="3">Bà Rịa Vũng Tàu</option>
-                                    <option value="4">Đà Nẵng</option>
+                                <select name="shipping[district]" id="" class="form-control" disabled required>
+                                    <option value="">Quận/Huyện</option>
                                 </select>
                             </div>
                             <div class="col-md-6 my-2 my-md-0">
-                                <select disabled="disabled" class="form-control bg-light" name="province">
-                                    <option value selected disabled>Phường/Xã</option>
-                                    <option value="1">Hồ Chí Minh</option>
-                                    <option value="2">Hà Nội</option>
-                                    <option value="3">Bà Rịa Vũng Tàu</option>
-                                    <option value="4">Đà Nẵng</option>
+                                <select name="shipping[ward]" id="" class="form-control" disabled required>
+                                    <option value="">Phường/Xã</option>
                                 </select>
                             </div>
                         </div>

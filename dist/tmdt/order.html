@@ -15,31 +15,61 @@
 </head>
 
 <body>
-    <div id="app" class="container px-0">
+    <div id="app">
         <!-- SECTION  Header -->
-        <header id="header">
-    <a href="#">
-        <div class="banner-top d-none d-md-block">
-            <img src="https://salt.tikicdn.com/ts/banner/5d/43/68/a6dac8067d16c6901e4eae2fa74d50ec.png" alt="">
+        <div class="topBar-user">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1">
+
+            </div>
+            <div class="d-flex">
+                <div class="mr-2 text-white">
+                    <i class="fi fi-person" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="mr-2">
+                    <div class="text-white">
+                        Đăng nhập
+                    </div>
+                </a>
+                <div class="mr-2 text-white">
+                    <i class="fi fi-player-settings"></i>
+                </div>
+
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-white">
+                        Đăng ký
+                    </div>
+                </a>
+                <div class="dropdown-menu bg-light">
+                    <div class="p-2">
+                        <a href="http://google.com" class="w-100 res-link font-weight-bold">Đăng ký nhà bán hàng</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="http://google.com" class="w-100 res-link font-weight-bold">Đăng ký thành viên</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </a>
-    <div class="px-3">
-        <div class="row align-items-center py-3">
-            <div class="col-md-2 col-6">
+    </div>
+</div>
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center py-2">
+            <div class="col-md-2 col-5">
                 <div id="logo">
-                    <a href="#">
-                        <img src="https://salt.tikicdn.com/ts/banner/33/ba/89/54c02d2475983f93a024c0cd13f238e4.png"
-                            alt="">
+                    <a href="#" class="d-block">
+                        <img src="https://vungtaucity.com.vn/img/logo_top00.png" alt="">
                     </a>
                 </div>
             </div>
-            <div id="toggle" class="col-6 text-right d-block d-md-none">
+            <div id="toggle" class="col-7 text-right d-block d-md-none">
                 <a href="#" class="text-white main-navbar-toggle" data-menu>
                     <i class="fi fi-nav-icon-a"></i>
                     <span class="text-uppercase">Menu</span>
                 </a>
             </div>
-            <div class="col-lg-5 col-md-10">
+            <div class="col-lg-8 col-md-7 col-9 py-2 py-md-0">
                 <div class="form-search">
                     <form action="" method="post">
                         <div class="form-group m-0 d-flex flex-row">
@@ -52,61 +82,15 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12">
-                <div class="header-link d-flex flex-wrap text-white align-items-center">
-
-                    <div class="user-profile col-md-4 col-6">
-                        <div class="d-flex align-items-center">
-                            <div class="header-link-icons">
-                                <i class="fi fi-person" aria-hidden="true"></i>
-                            </div>
-                            <div class="flex-grow-1 flex-column items-nav" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                <div class="text-left">
-                                    Xin Chào
-                                </div>
-                                <div class="text-left">
-                                    Trong Nguyen
-                                </div>
-                                <div class="dropdown-menu bg-light">
-                                    <div class="p-2">
-                                        <button
-                                            class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
-                                            type="submit">Quản Lí Tài Khoản</button>
-                                    </div>
-                                    <div class="p-2">
-                                        <button
-                                            class="btn btn-warning form-control btn-sm text-white font-weight-bold text-dark"
-                                            type="submit">Đăng Xuất</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="noti-items col-md-4 col-6">
-                        <div class="d-flex align-items-center">
-                            <div class="header-link-icons">
-                                <i class="fi fi-phone" aria-hidden="true"></i>
-                            </div>
-                            <div class="flex-grow-1 ">
-                                <div>
-                                    Hotline
-                                </div>
-                                <div>
-                                    1900 1506
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" id="cart" class="col-md-4 text-white">
-                        <div class="d-flex align-items-center">
+            <div class="col-lg-2 col-md-3 col-3 py-2 py-md-0">
+                <div class="header-link row text-white align-items-center">
+                    <a href="#" id="cart" class="col-md-12 text-white">
+                        <div class="d-flex align-items-center cart-items">
                             <div class="header-link-icons">
                                 <i class="fi fi-shopping-basket"></i>
                             </div>
-                            <div class="flex-grow-1 flex-row">
-                                <div>
-                                    Giỏ hàng
-                                </div>
+                            <div class="flex-grow-1 flex-row d-none d-md-block">
+                                Giỏ hàng
                             </div>
                             <div class="">
                                 <label id="cart-number" class="bg-warning mb-0">0</label>
@@ -245,7 +229,7 @@
             </div>
             <div class="col-md-12 py-3">
                 <div class="d-flex flex-wrap">
-                    <div class="col-md-6 offset-md-3 bg-white p-3 rounded">
+                    <div class="col-md-12 bg-white p-3 rounded">
                         <h4>Thông Báo</h4>
                         <ul class="timeline">
                             <li>
@@ -386,7 +370,7 @@
         </div>
         <!-- SECTION  Footer -->
         <footer id="footer">
-    <div class="footer-main py-4">
+    <div class="footer-main py-4" >
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
@@ -441,7 +425,7 @@
             </div>
         </div>
     </div>
-    <div class="bg-white text-center py-3">
+    <div class="bg-white bg-copyright text-center py-3">
         <div class="copyright text-xnomal">
             @Bản quyền thuộc về shopxyz.com | Thiết kế và phát triển bởi TYHON.VN
         </div>

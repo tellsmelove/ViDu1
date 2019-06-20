@@ -168,6 +168,23 @@ $(document).ready(function () {
       }
     }
   });
+  var cart_weight = "{{ $cart_weight }}";
+  $(document).on('click', '[name="ship_as_bill"]', function () {
+    var shipping_infomation = $('#shipping_infomation').find('input,select');
+    var form = $(this).closest('form');
+
+    if ($(this).prop('checked')) {
+      shipping_infomation.each(function () {
+        $(this).attr('disabled', true);
+      });
+      $('#shipping_infomation').attr('hidden', true);
+    } else {
+      shipping_infomation.each(function () {
+        $(this).attr('disabled', false);
+      });
+      $('#shipping_infomation').attr('hidden', false);
+    }
+  });
 });
 var swiper = new Swiper('.swiper-main', {
   loop: true,

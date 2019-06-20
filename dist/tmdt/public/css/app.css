@@ -353,9 +353,6 @@ input[type=number] {
   box-shadow: 0px 0px 25px 0px rgba(221, 221, 221, 0.5);
   min-height: 250px;
 }
-.box-porfolio h5::after {
-  content: " | ";
-}
 .box-porfolio-points_font {
   font-size: 17pt;
   font-weight: 600;
@@ -381,6 +378,64 @@ input[type=number] {
 
 .result {
   font-size: 15pt;
+}
+
+.profiles-icons {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+.profiles-icons img {
+  border-radius: 50%;
+}
+
+.point-icons {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu-dropdowns {
+  transition: 0.5s all ease-out;
+}
+.menu-dropdowns li i {
+  font-size: 16pt;
+  color: rgba(74, 74, 74, 0.8);
+  padding: 4px 6px;
+}
+.menu-dropdowns li a {
+  display: block;
+  margin-left: 4px;
+  color: #4a4a4a;
+}
+.menu-dropdowns li {
+  padding: 6px;
+}
+.menu-dropdowns li:hover {
+  background-color: rgba(165, 165, 165, 0.3);
+}
+.menu-dropdowns li:focus {
+  background-color: rgba(165, 165, 165, 0.3);
+}
+.menu-dropdowns li:visited {
+  background-color: rgba(165, 165, 165, 0.3);
+}
+
+.area-style {
+  border: 1px solid #dee2e6 !important;
+}
+
+.select-style {
+  border: 1px solid #dee2e6 !important;
+  text-align: center;
+  justify-content: center;
+}
+
+.form-user-title {
+  color: #4a4a4a;
 }
 
 ul.timeline {
@@ -1265,6 +1320,9 @@ body h1 {
   margin: 0px 15px;
 }
 
+.footer-main {
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.4);
+}
 .footer-main li a {
   color: #333;
 }

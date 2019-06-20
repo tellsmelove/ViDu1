@@ -2,11 +2,6 @@
     background-color: #fff;
     box-shadow: 0px 0px 25px 0px rgba(#ddd, 0.5);
     min-height: 250px;
-    h5 {
-        &::after {
-            content: ' | ';
-        }
-    }
     &-points {
         &_font {
             font-size: 17pt;
@@ -39,4 +34,61 @@
 }
 .result {
     font-size: 15pt;
+}
+.profiles {
+    &-icons {
+        width: 45px;
+        height: 45px;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+
+        img{
+            border-radius: 50%;
+        }
+    }
+}
+.point-icons {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+}
+
+.menu-dropdowns {
+    transition: .5s all ease-out;
+    li i {
+        font-size: 16pt;
+        color: rgba(#4a4a4a, 0.8);
+        padding:4px 6px;
+    }
+    li a {
+        display: block;
+        margin-left: 4px;
+        color: #4a4a4a;
+        
+    }
+    li {
+        padding: 6px;
+        &:hover{
+            background-color: rgba(165, 165, 165, .3);
+        }
+        &:focus{
+            background-color: rgba(165, 165, 165, .3);
+        }
+        &:visited{
+            background-color: rgba(165, 165, 165, .3);
+        }
+    }
+}
+.area-style {
+    border: 1px solid #dee2e6!important;
+}
+.select-style {
+    border: 1px solid #dee2e6!important;
+    text-align: center;
+    justify-content: center;
+}
+.form-user-title {
+    color: #4a4a4a;
 }

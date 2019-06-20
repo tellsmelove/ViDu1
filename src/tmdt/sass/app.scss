@@ -533,6 +533,7 @@ body{
 }
 // #endregion
 .footer-main {
+    box-shadow: 5px 0px 15px rgba(#000, .4);
     li a {
         @include text-color(#333, #0088dd);
     }
