@@ -1,0 +1,168 @@
+{% extends 'layouts/personal.html' %}
+
+{% block title %}Manager-Order{% endblock %}
+
+{% block content %}
+{% from 'mixin/navbarlocal.html' import navbar %}
+{{ navbar('index') }}
+<section class="py-lg-4 py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 position-sticky">
+                <div class=" menu-left d-flex flex-column ">
+                    <div class="profiles align-items-center">
+                        <div class="profiles-icons flex-grow-1">
+                            <img src="https://salt.tikicdn.com/desktop/img/avatar.png?v=3" alt="">
+                        </div>
+                        <div class="profiles-name d-inline-block">
+                            <span class="d-block text-small pt-1">Tài khoản của</span>
+                            <span class="">Trong Nguyen</span>
+                        </div>
+                        <div class="profiles-sort d-inline-block float-right mt-2 d-block d-md-none">
+                            <a href="#" class="text-dark login-toggle">
+                                <i class="fa fa-bars" aria-hidden="true" style="font-size: 16pt;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="narrow-results" class="narrow-results collapse">my content</div>
+                    <div class="menu-dropdowns d-none d-md-block" id="demo123">
+                        <ul class="nolist">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    Quản lý sản phẩm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý doanh thu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Đổi mật khẩu
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 mt-2 mt-md-0">
+                <div class="row">
+                    <div class="col-md-12 py-3">
+                        <div class="title-table">
+                            <div class="d-flex flex-wrap bg-white p-3 border-bottom">
+                                <h5 class="d-inline-block m-0 flex-grow-1">Sản phẩm đã đăng</h5>
+                                <div class="text-right">
+                                    <a class="btn btn-warning text-white font-weight-bold" href="#">Thêm sản phẩm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-auto bg-white manage-list-product">
+                            <table class="w-100 table-divider table-hover" style="min-width: 1000px;">
+                                <thead>
+                                    <tr>
+                                        <th>Mã sản phẩm</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Số lượng còn</th>
+                                        <th>Số lượng đã bán</th>
+                                        <th>Sửa</th>
+                                        <th>Xóa</th>
+                                        <th class="text-md-right"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>001233</span>
+                                        </td>
+                                        <td>
+                                            <span>Máy đánh trứng 01</span>
+                                        </td>
+                                        <td class="text-left">
+                                            <span>20</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            10
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="text-danger la-text-normal text-right">
+                                            <a class="text-uppercase" href="#">Chi tiết</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>002112</span>
+                                        </td>
+                                        <td>
+                                            <span>Máy đánh trứng 01</span>
+                                        </td>
+                                        <td class="text-left">
+                                            <span>20</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            10
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="text-danger la-text-normal text-right">
+                                            <a class="text-uppercase" href="#">Chi tiết</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>003332</span>
+                                        </td>
+                                        <td>
+                                            <span>Máy đánh trứng 01</span>
+                                        </td>
+                                        <td class="text-left">
+                                            <span>20</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            10
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td class="text-danger la-text-normal text-right">
+                                            <a class="text-uppercase" href="#">Chi tiết</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

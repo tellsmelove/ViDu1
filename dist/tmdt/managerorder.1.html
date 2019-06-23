@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/fontisto/fontisto.min.css">
     <link rel="stylesheet" href="./public/css/app.css">
-    <title>order</title>
+    <title>Manager-Order</title>
 </head>
 
 <body>
@@ -221,155 +221,145 @@
 <section class="py-lg-4 py-3 bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1>Chi tiết đơn hàng</h1>
-            </div>
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span>Đơn hàng</span>
-                        <span class="code-order">001233</span>
-                        <span>- Giao dịch thành công</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-right">
-                        <span>Ngày đặt hàng:</span>
-                        <span>4/9/2019</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 pt-3">
-                <div class="overflow-auto bg-white">
-                    <table class="w-100 table-divider" style="min-width: 700px;">
-                        <thead>
-                            <tr>
-                                <th>Sản Phẩm</th>
-                                <th></th>
-                                <th>Số Lượng</th>
-                                <th>Đơn Giá</th>
-                                <th class="text-md-right">Thành Tiền</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img class="img-thumbnail" src="http://i1.taimienphi.vn/tmp/cf/aut/hinh-anh-buon-co-don-tam-trang-100.jpg" width="70px" alt="">
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <b class="d-block la-text-normal">Máy đánh trứng</b>
-                                    </a>
-                                    <div class="d-block la-text-normal">
-                                        Trọng lượng:
-                                        <b>1000g</b>
-                                    </div>
-                                </td>
-                                <td class="text-center">
-                                    <div class="input-group spinner">
-                                        <input type="number" disabled class="border-0 form-control-style rounded-0" value="1"
-                                            min="1" max="99" style="width: 50px;">
-                                    </div>
-                                </td>
-                                <td class="text-danger la-text-normal money">
-                                    400.000đ
-                                </td>
-                                <td class="text-danger la-text-normal text-right">
-                                    400.000đ
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="col-md-12 pb-3 ">
-                <div class="total bg-white border-top p-3">
-                    <div class="row">
-                        <div class="col-md-4 offset-md-8">
-                            <div class="row">
-                                <div class="col-md-6 col-6">
-                                    Tổng tạm tính
-                                </div>
-                                <div class="col-md-6 text-right col-6">
-                                    <span class="moneyreturn">
-                                        400.000 đ
-                                    </span>
-                                </div>
-                                <div class="col-md-6 col-6">
-                                    Phí vận chuyển
-                                </div>
-                                <div class="col-md-6 text-right col-6">
-                                    <span>
-                                        18.000 đ
-                                    </span>
-                                </div>
-                                <div class="col-md-6 col-6">
-                                    Tổng cộng
-                                </div>
-                                <div class="col-md-6 text-right col-6">
-                                    <span class="result text-danger">
-                                        418.000 đ
-                                    </span>
-                                </div>
-                            </div>
+            <div class="col-lg-3 col-md-4 position-sticky">
+                <div class=" menu-left d-flex flex-column ">
+                    <div class="profiles align-items-center">
+                        <div class="profiles-icons flex-grow-1">
+                            <img src="https://salt.tikicdn.com/desktop/img/avatar.png?v=3" alt="">
+                        </div>
+                        <div class="profiles-name d-inline-block">
+                            <span class="d-block text-small pt-1">Tài khoản của</span>
+                            <span class="">Trong Nguyen</span>
+                        </div>
+                        <div class="profiles-sort d-inline-block float-right mt-2 d-block d-md-none">
+                            <a href="#" class="text-dark login-toggle">
+                                <i class="fa fa-bars" aria-hidden="true" style="font-size: 16pt;"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-12 py-3">
-                <div class="d-flex flex-wrap">
-                    <div class="col-md-12 bg-white p-3 rounded">
-                        <h4>Thông Báo</h4>
-                        <ul class="timeline">
+                    <div id="narrow-results" class="narrow-results collapse">my content</div>
+                    <div class="menu-dropdowns d-none d-md-block" id="demo123">
+                        <ul class="nolist">
                             <li>
-                                <h5 class="text-danger mb-2">4/15/2019</h5>
-                                <p>
-                                    Đơn hàng đã được xác nhận
-                                </p>
+                                <a href="#">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Thông tin tài khoản
+                                </a>
                             </li>
                             <li>
-                                <h5 class="text-danger mb-2">4/17/2019</h5>
-                                <p>
-                                    Đơn hàng đã được giao cho bộ phận giao hàng
-                                </p>
+                                <a href="#">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    Quản lý sản phẩm
+                                </a>
                             </li>
                             <li>
-                                <h5 class="text-danger mb-2">4/19/2019</h5>
-                                <p>Đơn hàng đã được giao</p>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý doanh thu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Đổi mật khẩu
+                                </a>
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
-            <div class="col-md-12 py-3">
+            <div class="col-lg-9 col-md-8 mt-2 mt-md-0">
                 <div class="row">
-                    <div class="col-md-4">
-                        <h5 class="title-porfolio">Địa chỉ người nhận</h5>
-                        <div class="box-porfolio p-3">
-                            <div class="box-porfolio-fullname">
-                                <span class="font-weight-bold">Nguyễn Kim Trọng</span>
-                            </div>
-                            <div class="box-porfolio-email">
-                                <span>24 nguyễn viết xuân , P8, TP Vũng Tàu</span><br>
-                                <span>Bà Rịa Vũng Tàu - Thành Phố Vũng Tàu - Phường 8</span><br>
-                                <span>0961996170</span>
+                    <div class="col-md-12 py-3">
+                        <div class="title-table">
+                            <div class="d-flex flex-wrap bg-white p-3 border-bottom">
+                                <h5 class="d-inline-block m-0 flex-grow-1">Sản phẩm đã đăng</h5>
+                                <div class="text-right">
+                                    <a class="btn btn-warning text-white font-weight-bold" href="#">Thêm sản phẩm</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="title-porfolio">Hình thức giao hàng</h5>
-                        <div class="box-porfolio p-3">
-                            <p>Giao hàng tiêu chuẩn (Dự kiến giao hàng Thứ 5 4/14/2019)</p>
-                            <p>Phí vận chuyển: <span>18,000 đ</span></p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="title-porfolio">Hình thức thanh toán</h5>
-                        <div class="box-porfolio p-3">
-                            <p>Thanh toán tiền mặt khi nhận hàng</p>
+                        <div class="overflow-auto bg-white manage-list-product">
+                            <table class="w-100 table-divider table-hover" style="min-width: 700px;">
+                                <thead>
+                                    <tr>
+                                        <th>Đơn hàng số #</th>
+                                        <th>Sản Phẩm</th>
+                                        <th>Ngày đặt hàng</th>
+                                        <th>Tổng cộng</th>
+                                        <th class="text-md-right"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>001233</span>
+                                        </td>
+                                        <td>
+                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
+                                                alt="">
+                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
+                                                alt="">
+                                        </td>
+                                        <td class="text-left">
+                                            <span>4/9/2019</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            400.000vnđ
+                                        </td>
+                                        <td class="text-danger la-text-normal text-right">
+                                            <a class="text-uppercase" href="#">Quản lý</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>002112</span>
+                                        </td>
+                                        <td>
+                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
+                                                alt="">
+                                        </td>
+                                        <td class="text-left">
+                                            <span>4/9/2019</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            400.000vnđ
+                                        </td>
+                                        <td class="text-danger la-text-normal text-right">
+                                            <a class="text-uppercase" href="#">Quản lý</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>003332</span>
+                                        </td>
+                                        <td>
+                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
+                                                alt="">
+                                        </td>
+                                        <td class="text-left">
+                                            <span>4/9/2019</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            400.000vnđ
+                                        </td>
+                                        <td class="text-danger la-text-normal text-right">
+                                            <a class="text-uppercase" href="#">Quản lý</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </section>

@@ -1,0 +1,175 @@
+{% extends 'layouts/personal.html' %}
+
+{% block title %}Manager-Master{% endblock %}
+
+{% block content %}
+{% from 'mixin/navbarlocal.html' import navbar %}
+{{ navbar('index') }}
+<section class="py-lg-4 py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 position-sticky">
+                <div class=" menu-left d-flex flex-column ">
+                    <div class="profiles align-items-center">
+                        <div class="profiles-icons flex-grow-1">
+                            <img src="https://salt.tikicdn.com/desktop/img/avatar.png?v=3" alt="">
+                        </div>
+                        <div class="profiles-name d-inline-block">
+                            <span class="d-block text-small pt-1">Tài khoản của</span>
+                            <span class="">Trong Nguyen</span>
+                        </div>
+                        <div class="profiles-sort d-inline-block float-right mt-2 d-block d-md-none">
+                            <a href="#" class="text-dark login-toggle">
+                                <i class="fa fa-bars" aria-hidden="true" style="font-size: 16pt;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="narrow-results" class="narrow-results collapse">my content</div>
+                    <div class="menu-dropdowns d-none d-md-block" id="demo123">
+                        <ul class="nolist">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    Quản lý sản phẩm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý doanh thu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Đổi mật khẩu
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 mt-2 mt-md-0">
+                <div class="row">
+                    <div class="col-md-12 mb-3 mb-md-0">
+                        <div class="box-porfolio p-3">
+                            <h5 class="d-inline-block m-0">Thêm sản phẩm</h5>
+                            <hr class="my-2">
+                            <form class="row" action="" method="post">
+                                <div class="col-lg-12 my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <span class="form-user-title">Tên sản phẩm:</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input class="form-control border" type="email" autocomplete="off" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <span class="form-user-title">Giá:</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input class="form-control border" type="email" autocomplete="off"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <span class="form-user-title">Giá khuyến mãi:</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input class="form-control border" type="email" autocomplete="off"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <span class="form-user-title">Màu:</span>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select class="form-control select-style bg-white form-check-inline">
+                                                <option selected>Màu</option>
+                                                <option value="1">Đen</option>
+                                                <option value="2">Vàng</option>
+                                                <option value="3">Xanh</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            <span class="form-user-title">Size:</span>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select class="form-control select-style bg-white form-check-inline">
+                                                <option selected>Size</option>
+                                                <option value="1">M</option>
+                                                <option value="2">L</option>
+                                                <option value="3">XL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-2">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <span class="form-user-title">Chi tiết sản phẩm:</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <textarea class="form-control rounded area-style" name="local" cols="30"
+                                                rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 my-2">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <span class="form-user-title">Hình ảnh sản phẩm:</span>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input class="py-2" type="file" name="pic" accept="image/*">
+                                            <input class="py-2" type="file" name="pic" accept="image/*">
+                                            <input class="py-2" type="file" name="pic" accept="image/*">
+                                            <input class="py-2" type="file" name="pic" accept="image/*">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 my-2">
+                                    <div class="row">
+                                        <div class="col-md-6 offset-md-3">
+                                            <button class="btn font-weight-bold btn-danger" type="submit">
+                                                Thêm
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

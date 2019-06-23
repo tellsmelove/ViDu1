@@ -893,6 +893,23 @@ body h1 {
   display: block;
 }
 
+.manager-box {
+  border-bottom: 1px solid #eee;
+}
+.manager-box a {
+  display: block;
+  color: #f89500;
+  padding: 6px;
+}
+.manager-box a:hover {
+  background-color: #f89500;
+  color: #fff;
+}
+
+.manager-username {
+  font-size: 11pt;
+}
+
 #logo {
   background-color: #fff;
   border-radius: 8px;
@@ -972,6 +989,7 @@ body h1 {
   display: block;
   color: #fff;
   padding: 8px 12px;
+  text-transform: uppercase;
 }
 .sub-menu ul li a:hover {
   background-color: #7e050b;
@@ -1241,6 +1259,22 @@ body h1 {
 
 .pair-banner {
   box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.2);
+}
+
+.gift-banner {
+  display: block;
+  border-radius: 17px;
+  overflow: hidden;
+  position: relative;
+}
+.gift-banner:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
 }
 
 .gift-card {
