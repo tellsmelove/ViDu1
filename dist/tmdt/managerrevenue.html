@@ -278,117 +278,81 @@
             <div class="col-lg-9 col-md-8 mt-2 mt-md-0">
                 <div class="row">
                     <div class="col-md-12 mb-3 mb-md-0">
-                        <div class="box-porfolio p-3">
-                            <h5 class="d-inline-block m-0">Thêm sản phẩm</h5>
+                        <div class="box-porfolio p-3" style="min-height:150px;">
+                            <h5 class="d-inline-block m-0">Quản lý doanh thu</h5>
                             <hr class="my-2">
-                            <form class="row" action="" method="post">
+                            <div class="row">
                                 <div class="col-lg-12 my-2">
                                     <div class="row align-items-center">
                                         <div class="col-md-3">
-                                            <span class="form-user-title">Tên sản phẩm:</span>
+                                            Tổng
+                                            <span>
+                                                20
+                                            </span>
+                                            đơn hàng 
                                         </div>
-                                        <div class="col-md-6">
-                                            <input class="form-control border" type="email" autocomplete="off" placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 my-2">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-3">
-                                            <span class="form-user-title">Giá:</span>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input class="form-control border" type="email" autocomplete="off"
-                                                placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 my-2">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-3">
-                                            <span class="form-user-title">Giá khuyến mãi:</span>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input class="form-control border" type="email" autocomplete="off"
-                                                placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 my-2">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-3">
-                                            <span class="form-user-title">Số lượng:</span>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <input class="form-control border" type="email" autocomplete="off"
-                                                placeholder="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 my-2">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-3">
-                                            <span class="form-user-title">Màu:</span>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <select class="form-control select-style bg-white form-check-inline">
-                                                <option selected>Màu</option>
-                                                <option value="1">Đen</option>
-                                                <option value="2">Vàng</option>
-                                                <option value="3">Xanh</option>
+                                        <div class="col-md-9">
+                                            <select class="form-control-sm select-style bg-white form-check-inline">
+                                                <option selected>Chọn</option>
+                                                <option value="1">Trong tuần</option>
+                                                <option value="2">Trong tháng</option>
+                                                <option value="3">Trong năm</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 my-2">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-3">
-                                            <span class="form-user-title">Size:</span>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <select class="form-control select-style bg-white form-check-inline">
-                                                <option selected>Size</option>
-                                                <option value="1">M</option>
-                                                <option value="2">L</option>
-                                                <option value="3">XL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 my-2">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <span class="form-user-title">Chi tiết sản phẩm:</span>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <textarea class="form-control rounded area-style" name="local" cols="30"
-                                                rows="4"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 my-2">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <span class="form-user-title">Hình ảnh sản phẩm:</span>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <input class="py-2" type="file" name="pic" accept="image/*">
-                                            <input class="py-2" type="file" name="pic" accept="image/*">
-                                            <input class="py-2" type="file" name="pic" accept="image/*">
-                                            <input class="py-2" type="file" name="pic" accept="image/*">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 my-2">
-                                    <div class="row">
-                                        <div class="col-md-6 offset-md-3">
-                                            <button class="btn font-weight-bold btn-danger" type="submit">
-                                                Thêm
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 py-3">
+                        <div class="overflow-auto bg-white manage-list-product">
+                            <table class="w-100 table-divider table-hover" style="min-width: 700px;">
+                                <thead>
+                                    <tr>
+                                        <th>stt</th>
+                                        <th>Mã sản phẩm #</th>
+                                        <th>số lượng còn</th>
+                                        <th>Số lượng hết</th>
+                                        <th>Tổng đơn hàng của sp</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>1</span>
+                                        </td>
+                                        <td>
+                                            0332211
+                                        </td>
+                                        <td class="text-left">
+                                            <span>20</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            10
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                           <span>30 </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>2</span>
+                                        </td>
+                                        <td>
+                                            03322
+                                        </td>
+                                        <td class="text-left">
+                                            <span>30</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            <span>30</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

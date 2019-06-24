@@ -105,6 +105,9 @@ $(document).ready(function () {
     e.preventDefault();
     $(navbar).toggleClass('active');
   });
+  $(".login-toggle").click(function (e) {
+    $("#demo123").toggleClass("d-none");
+  });
   $('.user-type-item input').change(function () {
     $('.user_personal,.user_company').toggleClass('hidden');
   });

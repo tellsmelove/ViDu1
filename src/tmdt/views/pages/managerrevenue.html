@@ -1,0 +1,150 @@
+{% extends 'layouts/personal.html' %}
+
+{% block title %}Manager-Master{% endblock %}
+
+{% block content %}
+{% from 'mixin/navbarlocal.html' import navbar %}
+{{ navbar('index') }}
+<section class="py-lg-4 py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 position-sticky">
+                <div class=" menu-left d-flex flex-column ">
+                    <div class="profiles align-items-center">
+                        <div class="profiles-icons flex-grow-1">
+                            <img src="https://salt.tikicdn.com/desktop/img/avatar.png?v=3" alt="">
+                        </div>
+                        <div class="profiles-name d-inline-block">
+                            <span class="d-block text-small pt-1">Tài khoản của</span>
+                            <span class="">Trong Nguyen</span>
+                        </div>
+                        <div class="profiles-sort d-inline-block float-right mt-2 d-block d-md-none">
+                            <a href="#" class="text-dark login-toggle">
+                                <i class="fa fa-bars" aria-hidden="true" style="font-size: 16pt;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="narrow-results" class="narrow-results collapse">my content</div>
+                    <div class="menu-dropdowns d-none d-md-block" id="demo123">
+                        <ul class="nolist">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    Quản lý sản phẩm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý doanh thu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Quản lý đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    Đổi mật khẩu
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 mt-2 mt-md-0">
+                <div class="row">
+                    <div class="col-md-12 mb-3 mb-md-0">
+                        <div class="box-porfolio p-3" style="min-height:150px;">
+                            <h5 class="d-inline-block m-0">Quản lý doanh thu</h5>
+                            <hr class="my-2">
+                            <div class="row">
+                                <div class="col-lg-12 my-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-3">
+                                            Tổng
+                                            <span>
+                                                20
+                                            </span>
+                                            đơn hàng 
+                                        </div>
+                                        <div class="col-md-9">
+                                            <select class="form-control-sm select-style bg-white form-check-inline">
+                                                <option selected>Chọn</option>
+                                                <option value="1">Trong tuần</option>
+                                                <option value="2">Trong tháng</option>
+                                                <option value="3">Trong năm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 py-3">
+                        <div class="overflow-auto bg-white manage-list-product">
+                            <table class="w-100 table-divider table-hover" style="min-width: 700px;">
+                                <thead>
+                                    <tr>
+                                        <th>stt</th>
+                                        <th>Mã sản phẩm #</th>
+                                        <th>số lượng còn</th>
+                                        <th>Số lượng hết</th>
+                                        <th>Tổng đơn hàng của sp</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>1</span>
+                                        </td>
+                                        <td>
+                                            0332211
+                                        </td>
+                                        <td class="text-left">
+                                            <span>20</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            10
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                           <span>30 </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>2</span>
+                                        </td>
+                                        <td>
+                                            03322
+                                        </td>
+                                        <td class="text-left">
+                                            <span>30</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="text-danger la-text-normal">
+                                            <span>30</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
