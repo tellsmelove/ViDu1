@@ -1,0 +1,15 @@
+.manager-order-style {
+    position: relative;
+    &__noti {
+        position: absolute;
+        top: 4px;
+        right: 0;
+        background-color: #e5101d;
+        padding: 2px 8px;
+        color: #fff;
+        border-radius: 10px;
+    }
+}
+.login-toggle {
+    cursor: pointer;
+}

@@ -80,6 +80,9 @@
             background-color: rgba(165, 165, 165, .3);
         }
     }
+    li:not(:last-child) {
+        border-bottom: 1px dashed #ddd;
+    }
 }
 .area-style {
     border: 1px solid #dee2e6!important;

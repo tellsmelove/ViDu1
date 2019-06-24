@@ -423,6 +423,9 @@ input[type=number] {
 .menu-dropdowns li:visited {
   background-color: rgba(165, 165, 165, 0.3);
 }
+.menu-dropdowns li:not(:last-child) {
+  border-bottom: 1px dashed #ddd;
+}
 
 .area-style {
   border: 1px solid #dee2e6 !important;
@@ -874,6 +877,23 @@ ul.timeline > li:before {
 .thumb-img img {
   height: 100%;
   width: 100%;
+}
+
+.manager-order-style {
+  position: relative;
+}
+.manager-order-style__noti {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-color: #e5101d;
+  padding: 2px 8px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.login-toggle {
+  cursor: pointer;
 }
 
 body h1 {
