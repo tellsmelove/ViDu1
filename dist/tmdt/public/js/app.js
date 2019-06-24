@@ -111,6 +111,7 @@ $(document).ready(function () {
   $('.user-type-item input').change(function () {
     $('.user_personal,.user_company').toggleClass('hidden');
   });
+  $('.money').simpleMoneyFormat();
   var galleryThumbs = new Swiper('.gallery-thumbs-new', {
     spaceBetween: 10,
     slidesPerView: 1,

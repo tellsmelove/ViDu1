@@ -280,20 +280,18 @@
                     <div class="col-md-12 py-3">
                         <div class="title-table">
                             <div class="d-flex flex-wrap bg-white p-3 border-bottom">
-                                <h5 class="d-inline-block m-0 flex-grow-1">Sản phẩm đã đăng</h5>
-                                <div class="text-right">
-                                    <a class="btn btn-warning text-white font-weight-bold" href="#">Thêm sản phẩm</a>
-                                </div>
+                                <h5 class="d-inline-block m-0 flex-grow-1">Quản lý đơn hàng</h5>
                             </div>
                         </div>
                         <div class="overflow-auto bg-white manage-list-product">
-                            <table class="w-100 table-divider table-hover" style="min-width: 700px;">
+                            <table class="w-100 table-divider table-hover" style="min-width: 1000px;">
                                 <thead>
                                     <tr>
-                                        <th>Đơn hàng số #</th>
-                                        <th>Sản Phẩm</th>
-                                        <th>Ngày đặt hàng</th>
-                                        <th>Tổng cộng</th>
+                                        <th>Mã sản phẩm</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Người mua hàng</th>
+                                        <th>Sửa</th>
+                                        <th>Xóa</th>
                                         <th class="text-md-right"></th>
                                     </tr>
                                 </thead>
@@ -303,19 +301,20 @@
                                             <span>001233</span>
                                         </td>
                                         <td>
-                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
-                                                alt="">
-                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
-                                                alt="">
+                                            <span>Máy đánh trứng 01</span>
                                         </td>
                                         <td class="text-left">
-                                            <span>4/9/2019</span>
+                                            <a href="#">Trong Nguyen</a>
                                         </td>
-                                        <td class="text-danger la-text-normal">
-                                            400.000vnđ
+                                        
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                         <td class="text-danger la-text-normal text-right">
-                                            <a class="text-uppercase" href="#">Quản lý</a>
+                                            <a class="text-uppercase" href="#">Chi tiết</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -323,17 +322,20 @@
                                             <span>002112</span>
                                         </td>
                                         <td>
-                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
-                                                alt="">
+                                            <span>Máy đánh trứng 01</span>
                                         </td>
                                         <td class="text-left">
-                                            <span>4/9/2019</span>
+                                            <a href="#">Trong Nguyen</a>
                                         </td>
-                                        <td class="text-danger la-text-normal">
-                                            400.000vnđ
+                                        
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                         <td class="text-danger la-text-normal text-right">
-                                            <a class="text-uppercase" href="#">Quản lý</a>
+                                            <a class="text-uppercase" href="#">Chi tiết</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -341,17 +343,20 @@
                                             <span>003332</span>
                                         </td>
                                         <td>
-                                            <img class="img-thumbnail" src="./public/images/maydanhtrung.jpg" width="70px"
-                                                alt="">
+                                            <span>Máy đánh trứng 01</span>
                                         </td>
                                         <td class="text-left">
-                                            <span>4/9/2019</span>
+                                            <a href="#">Trong Nguyen</a>
                                         </td>
-                                        <td class="text-danger la-text-normal">
-                                            400.000vnđ
+                                        
+                                        <td>
+                                            <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         </td>
                                         <td class="text-danger la-text-normal text-right">
-                                            <a class="text-uppercase" href="#">Quản lý</a>
+                                            <a class="text-uppercase" href="#">Chi tiết</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -430,6 +435,8 @@
 </footer>
     </div>
     <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/simple.money.format.js"></script>
+    <script src="simple.money.format.js"></script>
     <script src="./public/js/popper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
     <script src="./public/js/swiper.min.js"></script>
