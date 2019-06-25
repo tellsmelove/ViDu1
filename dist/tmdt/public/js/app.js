@@ -111,7 +111,6 @@ $(document).ready(function () {
   $('.user-type-item input').change(function () {
     $('.user_personal,.user_company').toggleClass('hidden');
   });
-  $('.money').simpleMoneyFormat();
   var galleryThumbs = new Swiper('.gallery-thumbs-new', {
     spaceBetween: 10,
     slidesPerView: 1,
@@ -194,7 +193,11 @@ var swiper = new Swiper('.swiper-main', {
   loop: true,
   height: 280,
   autoplay: {
-    delay: 5000
+    delay: 3000
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   }
 });
 $(function () {
@@ -237,6 +240,7 @@ $(document).on('click', '.number-spinner button', function (e) {
 
   btn.closest('.number-spinner').find('input').val(newVal);
 });
+$('.money').simpleMoneyFormat();
 
 /***/ }),
 
