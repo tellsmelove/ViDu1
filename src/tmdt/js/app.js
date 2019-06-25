@@ -17,7 +17,6 @@ $(document).ready(() => {
         $('.user_personal,.user_company').toggleClass('hidden');
 
     });
-    
     var galleryThumbs = new Swiper('.gallery-thumbs-new', {
         spaceBetween: 10,
         slidesPerView: 1,

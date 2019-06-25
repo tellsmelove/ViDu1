@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="./public/css/font-awesome.css">
     <link rel="stylesheet" href="./public/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -325,32 +326,105 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 my-2">
-                                    <div class="row align-items-center">
+                                    <div class="row">
                                         <div class="col-md-3">
                                             <span class="form-user-title">Màu:</span>
                                         </div>
-                                        <div class="col-md-3">
-                                            <select class="form-control select-style bg-white form-check-inline">
-                                                <option selected>Màu</option>
-                                                <option value="1">Đen</option>
-                                                <option value="2">Vàng</option>
-                                                <option value="3">Xanh</option>
-                                            </select>
+                                        <div class="col-md-6">
+                                            <div class="p-3 form-box-filter">
+                                                <ul id="xyz" class="nolist border form-check p-3">
+                                                    <li>
+                                                        <input id="career-1" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                            for="career-1"><span>Màu đen</span></label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="career-2" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                            for="career-2"><span>Màu vàng</span></label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="career-3" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                            for="career-3"><span>Màu đỏ</span></label>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 my-2">
-                                    <div class="row align-items-center">
+                                    <div class="row">
                                         <div class="col-md-3">
                                             <span class="form-user-title">Size:</span>
                                         </div>
-                                        <div class="col-md-3">
-                                            <select class="form-control select-style bg-white form-check-inline">
-                                                <option selected>Size</option>
-                                                <option value="1">M</option>
-                                                <option value="2">L</option>
-                                                <option value="3">XL</option>
-                                            </select>
+                                        <div class="col-md-6">
+                                            <div class="sample">
+                                                <div class="form-check">
+                                                    <input class="form-check-input ciaoyu-toggle" type="radio" name="exampleRadios" id="example1" value="option1">
+                                                    <label class="form-check-label" for="example1">
+                                                        Chọn size số
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input ciaoyu-toggle" type="radio" name="exampleRadios" id="example2" value="option2">
+                                                    <label class="form-check-label" for="example2">
+                                                        Chọn size chữ
+                                                    </label>
+                                                </div>
+                                                <hr>
+                                                <div class="result">
+                                                    <div class="row">
+                                                        <div class="col w-50 h-100" data-ciaoyu-toggle="example1">
+                                                            <div class="p-3 form-box-filter">
+                                                                <ul id="xyz" class="nolist border form-check p-3">
+                                                                    <li>
+                                                                        <input id="36" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="36"><span>36dsa</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input id="37" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="37"><span>37</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input id="38" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="38"><span>38</span></label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col w-50 h-100" data-ciaoyu-toggle="example2">
+                                                            <div class="p-3 form-box-filter">
+                                                                <ul id="xyz" class="nolist border form-check p-3">
+                                                                    <li>
+                                                                        <input id="M" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="M"><span>M</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input id="L" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="L"><span>L</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input id="career-3" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="career-3"><span>XL</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input id="career-3" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="career-3"><span>XL</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input id="career-3" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="career-3"><span>XL</span></label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input id="career-3" type="checkbox" class="career-check" name="gender" value="male"><label
+                                                                            for="career-3"><span>XL</span></label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -462,10 +536,12 @@
 </footer>
     </div>
     <script src="./public/js/jquery.min.js"></script>
-    <script src="./public/js/simple.money.format.js"></script>
-    <script src="simple.money.format.js"></script>
-    <script src="./public/js/popper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/ciaoyuToggle.js"></script>
+    <script src="./public/js/ciaoyuToggle.min.js"></script>
+    <script src="./public/js/bootstrap-tagsinput.min.js"></script>
+    <script src="./public/js/simple.money.format.js"></script>
+    <script src="./public/js/popper.min.js"></script>
     <script src="./public/js/swiper.min.js"></script>
     <script src="./public/js/app.js"></script>
     <div id="fb-root"></div>

@@ -27,6 +27,9 @@ body{
             font-size: 1.5rem;
         }
     }
+    [data-ciaoyu-toggle] {
+        display: none;
+    }
 }
 #app{
     min-height: 100vh;
