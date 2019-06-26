@@ -237,6 +237,7 @@ body{
 
 .categlory-menu {
     position: relative;
+    transition: .3s ease-in-out all;
     li {
         display: flex;
     }
@@ -249,6 +250,10 @@ body{
         left: 100%;
         box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
         transition: .3s ease-in-out all;
+        @include max-sm {
+            position: static;
+            padding-left: 12px;
+        }
         
     }
     &__lv2 {
@@ -272,6 +277,9 @@ body{
         right: 6px;
         font-size: 16pt;
         color: red;
+        @include max-sm {
+            content: '';
+        }
     }
     .categlory-menu__lv1 {
         display: block;
@@ -279,6 +287,11 @@ body{
             left: 0;
             width: 100%;
         }
+    }
+}
+.categlory-menu__items {
+    @include max-sm {
+        flex-direction: column;
     }
 }
 .categlory-menu__lv1 li:hover {
@@ -296,7 +309,7 @@ body{
     .categlory-menu__lv2 {
         display: block;
         @include max-sm {
-            left: 0;
+            left: 0%;
             width: 100%;
         }
     }
