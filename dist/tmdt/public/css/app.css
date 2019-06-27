@@ -1166,6 +1166,9 @@ body [data-ciaoyu-toggle] {
   display: block;
 }
 
+.categlory-menu__lv1 li:hover::after {
+  content: "";
+}
 .categlory-menu__lv1 li:hover .categlory-menu__lv2 {
   display: block;
 }
