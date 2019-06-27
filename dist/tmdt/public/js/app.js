@@ -119,8 +119,8 @@ $(document).ready(function () {
       delay: 5000
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.swiper-button-next-logo',
+      prevEl: '.swiper-button-prev-logo'
     },
     breakpoints: {
       1025: {
@@ -163,8 +163,8 @@ $(document).ready(function () {
       delay: 5000
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.swiper-button-next-news',
+      prevEl: '.swiper-button-prev-news'
     },
     thumbs: {
       swiper: galleryThumbs

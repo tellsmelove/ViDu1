@@ -250,10 +250,6 @@ body{
         left: 100%;
         box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
         transition: .3s ease-in-out all;
-        @include max-sm {
-            position: static;
-            padding-left: 12px;
-        }
         
     }
     &__lv2 {

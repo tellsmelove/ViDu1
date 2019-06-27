@@ -954,6 +954,15 @@ ul.timeline > li:before {
   font-size: 13pt;
 }
 
+.logo-list .swiper-slide {
+  text-align: center;
+}
+.logo-list .swiper-slide img {
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+}
+
 body h1 {
   font-size: 2.25rem;
 }
@@ -1530,10 +1539,6 @@ body [data-ciaoyu-toggle] {
   }
   #cate_menu:hover #dropdown, #cate_menu.index #dropdown {
     height: 100vh !important;
-  }
-  .categlory-menu__lv1 {
-    position: static;
-    padding-left: 12px;
   }
   .categlory-menu li:hover:after {
     content: "";
