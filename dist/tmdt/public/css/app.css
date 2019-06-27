@@ -1451,6 +1451,25 @@ body [data-ciaoyu-toggle] {
 .footer-main .footer-body {
   flex-grow: 1;
 }
+
+.company-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.company-list .swiper-slide {
+  flex-direction: row;
+  flex: 0 0 12.5%;
+  border: 1px solid #ddd;
+}
+.company-list .swiper-slide img {
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+}
 @media screen and (max-width: 575px) {
   .card-title {
     padding: 6px 8px !important;
@@ -1544,6 +1563,11 @@ body [data-ciaoyu-toggle] {
   }
   .menulocal ul li a {
     border-bottom: 1px solid #fff;
+  }
+  .company-list .swiper-slide {
+    flex: 0 0 25%;
+    margin: 0px;
+    margin-bottom: 4px;
   }
 }
 @media screen and (max-width: 991px) {

@@ -603,4 +603,24 @@ body{
         flex-grow: 1;
     }
 }
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    .swiper-slide{
+        flex-direction: row;
+        flex: 0 0 12.5%;
+        border: 1px solid #ddd;
+        @include max-sm {
+            flex: 0 0 25%;
+            margin: 0px;
+            margin-bottom: 4px;
+        }
+        img {
+            height: 100px;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
 // #endregion

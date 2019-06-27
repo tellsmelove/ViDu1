@@ -17,6 +17,44 @@ $(document).ready(() => {
         $('.user_personal,.user_company').toggleClass('hidden');
 
     });
+    var swiper = new Swiper('.swiper-logo', {
+        slidesPerView: 8,
+        loop: true,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 5000
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            1025: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                simulateTouch: true,
+                autoplay: {
+                    delay: 5000
+                },
+            },
+            769: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                simulateTouch: true,
+                autoplay: {
+                    delay: 5000
+                },
+            },
+            440: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                simulateTouch: true,
+                autoplay: {
+                    delay: 5000
+                },
+            }
+        }
+    });
     var galleryThumbs = new Swiper('.gallery-thumbs-new', {
         spaceBetween: 10,
         slidesPerView: 1,
