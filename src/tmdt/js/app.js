@@ -67,6 +67,10 @@ $(document).ready(() => {
             delay: 5000
         },
         breakpoints: {
+            1025: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
             769: {
                 slidesPerView: 2,
                 spaceBetween: 20,

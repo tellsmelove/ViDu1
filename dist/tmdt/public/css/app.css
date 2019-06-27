@@ -945,6 +945,15 @@ ul.timeline > li:before {
   font-size: 12pt;
 }
 
+.body-style {
+  min-height: 160px;
+}
+
+.price {
+  color: #e5101d;
+  font-size: 13pt;
+}
+
 body h1 {
   font-size: 2.25rem;
 }
@@ -1231,7 +1240,7 @@ body [data-ciaoyu-toggle] {
   padding: 8px;
 }
 .sale-products-left {
-  height: 100px;
+  height: 80px;
   flex: 0 0 35%;
 }
 .sale-products-left img {
@@ -1443,6 +1452,9 @@ body [data-ciaoyu-toggle] {
   flex-grow: 1;
 }
 @media screen and (max-width: 575px) {
+  .card-title {
+    padding: 6px 8px !important;
+  }
   .card-top-news a {
     margin-left: 15px;
   }
@@ -1547,6 +1559,9 @@ body [data-ciaoyu-toggle] {
   .product-list-image {
     height: 200px;
   }
+  .body-style {
+    min-height: 150px;
+  }
   body h1 {
     font-size: 2.15rem;
   }
@@ -1558,6 +1573,12 @@ body [data-ciaoyu-toggle] {
   }
   #slider .swiper-container {
     height: 250px;
+  }
+  .sale-products {
+    min-height: 115px;
+  }
+  .sale-products-left {
+    flex: 0 0 30%;
   }
   .card-channels-text span {
     font-size: 10pt;
@@ -1598,5 +1619,11 @@ body [data-ciaoyu-toggle] {
   }
   #slider .swiper-container {
     height: 150px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .sale-products-right {
+    flex: 0 0 60%;
+    padding: 4px;
   }
 }

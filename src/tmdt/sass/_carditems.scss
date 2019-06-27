@@ -20,6 +20,9 @@ $product-card_price_old_weight: 900;
         @include text-color(#333, #fff);
         display: block;
         padding: 5px 15px;
+        @include max-sm {
+            padding: 6px 8px!important;
+        }
     }
     &-body{
         padding: 15px 0;

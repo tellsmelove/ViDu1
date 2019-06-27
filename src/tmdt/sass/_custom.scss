@@ -59,3 +59,13 @@
 .result {
     font-size: 12pt;
 }
+.body-style {
+    min-height: 160px;
+    @include max-lg {
+        min-height: 150px;
+    }
+}
+.price {
+    color: #e5101d;
+    font-size: 13pt;
+}
