@@ -629,6 +629,10 @@ ul.timeline > li:before {
   background-size: cover;
   background-position: center;
 }
+.product-slide img {
+  width: 100%;
+  height: 100%;
+}
 
 .gallery-top {
   height: 80%;
@@ -1184,9 +1188,6 @@ body [data-ciaoyu-toggle] {
   display: block;
 }
 
-.categlory-menu__lv1 li:hover::after {
-  content: "";
-}
 .categlory-menu__lv1 li:hover .categlory-menu__lv2 {
   display: block;
 }

@@ -291,9 +291,6 @@ body{
     }
 }
 .categlory-menu__lv1 li:hover {
-    &::after {
-        content: '';
-    }
     .categlory-menu__lv2 {
         display: block;
         @include max-sm {
