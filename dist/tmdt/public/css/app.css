@@ -279,7 +279,9 @@ input[type=number] {
 .old-price {
   color: rgba(128, 128, 128, 0.8);
 }
-
+.be-breadcrumb li {
+  display: inline-block;
+}
 .be-breadcrumb li:not(:last-child) a {
   display: inline-block;
   font-size: 0.875rem;
@@ -295,6 +297,10 @@ input[type=number] {
   font-family: Fontawesome;
   font-size: 10pt;
   margin: 0 10px;
+}
+.be-breadcrumb span {
+  font-size: 0.875rem;
+  color: black;
 }
 
 .header-title {
@@ -1490,6 +1496,9 @@ body [data-ciaoyu-toggle] {
   .card-top-news img {
     height: auto !important;
   }
+  .be-breadcrumb {
+    display: inline !important;
+  }
   .be-breadcrumb li:not(:last-child) a {
     font-size: 0.675rem;
   }
@@ -1498,6 +1507,9 @@ body [data-ciaoyu-toggle] {
   }
   .be-breadcrumb li:not(:first-child)::before {
     margin: 0 6px;
+  }
+  .be-breadcrumb span {
+    font-size: 0.675rem;
   }
   .title-porfolio {
     margin: 12px 0px;

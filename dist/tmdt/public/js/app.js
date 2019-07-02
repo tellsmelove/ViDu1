@@ -97,6 +97,7 @@ $(document).ready(function () {
   var navbar = $('#navbar');
   var toggle = $('[data-menu]');
   var close = $('.close-menu');
+  $('#zoom1').zoom();
   toggle.on('click', function (e) {
     e.preventDefault();
     $(navbar).toggleClass('active');

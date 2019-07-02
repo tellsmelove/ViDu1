@@ -222,7 +222,7 @@
                         <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
                             <li><a href="#">Trang chủ</a></li>
                             <li><a href="#">Sản phẩm</a></li>
-                            <li><a href="#">Máy đánh trứng</a></li>
+                            <li><span>Máy đánh trứng</span></li>
                         </ul>
                     </div>
                 </div>
@@ -238,8 +238,8 @@
                     <div class="col-md-5">
                         <div class="swiper-container swiper-product gallery-top">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide product-slide">
-                                    <img src="./public/images/maydanhtrung.jpg" alt="">
+                                <div class="swiper-slide product-slide zoom" id="zoom1">
+                                    <img src="./public/images/maydanhtrung.jpg" height="200" width="200" alt='Baby Wallper' />
                                 </div>
                                 <div class="swiper-slide product-slide">
                                     <img src="./public/images/ocung.jpg" alt="">
@@ -414,6 +414,9 @@
                         Vận hành êm ái<br>
                         Thiết kế hiện đại
                         <button value="123">Ok ne</button>
+                        <span >
+                            
+                        </span>
                     </div>
                 </div>
             </div>
@@ -433,7 +436,20 @@
         </div>
     </div>
 </section>
-
+<style>
+   	.zoom {
+display:inline-block;
+position: relative;
+}
+.zoom img {
+display: block;
+}
+.zoomImg {
+    width: 500px!important;
+    height: 500px!important;
+}
+.zoom img::selection { background-color: transparent; }
+</style>
 
         </div>
         <!-- SECTION  Footer -->
@@ -538,6 +554,7 @@
 </footer>
     </div>
     <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery.zoom.js"></script>
     <script src="./public/js/popper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
     <script src="./public/js/simple.money.format.js"></script>

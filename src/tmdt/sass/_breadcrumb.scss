@@ -1,4 +1,10 @@
 .be-breadcrumb {
+    @include max-sm {
+        display: inline!important;
+    }
+    li {
+        display: inline-block;
+    }
     li:not(:last-child) {
         a {
             display: inline-block;
@@ -29,5 +35,12 @@
                 margin: 0 6px;
             }
         }
+    }
+    span {
+        font-size: .875rem;
+        color: rgb(0, 0, 0);
+        @include max-sm {
+                font-size: .675rem;
+            }
     }
 }
