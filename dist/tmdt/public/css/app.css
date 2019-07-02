@@ -485,6 +485,14 @@ ul.timeline > li:before {
   font-weight: bold;
 }
 
+.btn span .fa-check {
+  opacity: 0;
+}
+
+.btn.active span .fa-check {
+  opacity: 1;
+}
+
 #payment h4 {
   font-size: 1.25rem;
 }

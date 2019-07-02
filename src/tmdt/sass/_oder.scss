@@ -37,3 +37,9 @@ ul.timeline > li:before {
         margin: 12px 0px;
     }
 }
+.btn span .fa-check {    			
+	opacity: 0;				
+}
+.btn.active span .fa-check {				
+	opacity: 1;				
+}

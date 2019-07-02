@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./public/css/bootstrap-tagsinput.css">
     <link rel="stylesheet" href="./public/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/bootstrap4-toggle.min.css">
     <link rel="stylesheet" href="./public/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/fontisto/fontisto.min.css">
@@ -285,7 +285,20 @@
             <div class="col-md-12 pb-3 ">
                 <div class="total bg-white border-top p-3">
                     <div class="row">
-                        <div class="col-md-4 offset-md-8">
+                        <div class="col-md-8">
+                            <div class="check-onoff py-3">
+                                <span>Tình trạng đơn hàng:</span><br>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                        <label class="custom-control-label" for="customCheck">
+                                            Check vào</label>
+                                    </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger font-weight-bold">
+                                Submit
+                            </button>
+                        </div>
+                        <div class="col-md-4">
                             <div class="row">
                                 <div class="col-md-6 col-6">
                                     Tổng tạm tính
@@ -479,13 +492,13 @@
 </footer>
     </div>
     <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/swiper.min.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
     <script src="./public/js/ciaoyuToggle.js"></script>
     <script src="./public/js/ciaoyuToggle.min.js"></script>
     <script src="./public/js/bootstrap-tagsinput.min.js"></script>
     <script src="./public/js/simple.money.format.js"></script>
     <script src="./public/js/popper.min.js"></script>
-    <script src="./public/js/swiper.min.js"></script>
     <script src="./public/js/app.js"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
