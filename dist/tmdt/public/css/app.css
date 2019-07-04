@@ -1497,6 +1497,16 @@ body [data-ciaoyu-toggle] {
   text-align: center;
   justify-content: center;
 }
+
+.title-footer h5 {
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.content-footer img {
+  margin: 5px 5px;
+}
+
 @media screen and (max-width: 575px) {
   .card-title {
     padding: 6px 8px !important;
@@ -1599,6 +1609,7 @@ body [data-ciaoyu-toggle] {
     margin-bottom: 4px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .card-top-news img {
     height: auto !important;
@@ -1637,6 +1648,7 @@ body [data-ciaoyu-toggle] {
     font-size: 10pt;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .contact-form {
     margin-top: 25px;
@@ -1651,6 +1663,7 @@ body [data-ciaoyu-toggle] {
     margin-top: 25px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .news-content-list img {
     height: auto !important;
@@ -1674,6 +1687,7 @@ body [data-ciaoyu-toggle] {
     height: 150px;
   }
 }
+
 @media screen and (max-width: 1199px) {
   .sale-products-right {
     flex: 0 0 60%;
