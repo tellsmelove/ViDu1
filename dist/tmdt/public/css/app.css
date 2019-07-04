@@ -364,6 +364,10 @@ input[type=number] {
   font-weight: 600;
 }
 
+.manage-list-product {
+  height: 200px;
+  overflow-y: auto;
+}
 .manage-list-product table thead {
   background-color: rgba(218, 218, 218, 0.1);
 }
@@ -1158,7 +1162,6 @@ body [data-ciaoyu-toggle] {
 
 .categlory-menu {
   position: relative;
-  transition: 0.3s ease-in-out all;
 }
 .categlory-menu li {
   display: -webkit-box;

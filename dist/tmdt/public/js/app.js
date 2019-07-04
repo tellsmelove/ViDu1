@@ -97,7 +97,6 @@ $(document).ready(function () {
   var navbar = $('#navbar');
   var toggle = $('[data-menu]');
   var close = $('.close-menu');
-  $('#zoom1').zoom();
   toggle.on('click', function (e) {
     e.preventDefault();
     $(navbar).toggleClass('active');
@@ -283,6 +282,7 @@ $(document).on('click', '.number-spinner button', function (e) {
 
   btn.closest('.number-spinner').find('input').val(newVal);
 });
+$('#zoom1').zoom();
 $('.money').simpleMoneyFormat();
 
 /***/ }),
