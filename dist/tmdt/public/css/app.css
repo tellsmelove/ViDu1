@@ -365,7 +365,7 @@ input[type=number] {
 }
 
 .manage-list-product {
-  height: 200px;
+  height: 320px;
   overflow-y: auto;
 }
 .manage-list-product table thead {
