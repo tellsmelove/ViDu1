@@ -101,4 +101,9 @@
     }
     .gallery-thumbs-new .swiper-slide-thumb-active {
       opacity: 1;
+      background-color: rgba(#ddd, .1);
+      
+      .thumb-title {
+        color: #000;
+      }
     }

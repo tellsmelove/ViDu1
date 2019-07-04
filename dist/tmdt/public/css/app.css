@@ -822,6 +822,10 @@ ul.timeline > li:before {
 
 .gallery-thumbs-new .swiper-slide-thumb-active {
   opacity: 1;
+  background-color: rgba(221, 221, 221, 0.1);
+}
+.gallery-thumbs-new .swiper-slide-thumb-active .thumb-title {
+  color: #000;
 }
 
 #news h1 {
@@ -895,6 +899,7 @@ ul.timeline > li:before {
 
 .thumb-img {
   flex: 0 0 20%;
+  margin-right: 4px;
 }
 .thumb-img img {
   height: 100%;
@@ -1609,6 +1614,9 @@ body [data-ciaoyu-toggle] {
     flex: 0 0 25%;
     margin: 0px;
     margin-bottom: 4px;
+  }
+  .title-footer h5 {
+    font-size: 11pt;
   }
 }
 @media screen and (max-width: 991px) {

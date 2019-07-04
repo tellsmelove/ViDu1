@@ -282,7 +282,7 @@ $(document).on('click', '.number-spinner button', function (e) {
 
   btn.closest('.number-spinner').find('input').val(newVal);
 });
-$('#zoom1').zoom();
+$('#zoom1,#zoom2,#zoom3,#zoom4').zoom();
 $('.money').simpleMoneyFormat();
 
 /***/ }),

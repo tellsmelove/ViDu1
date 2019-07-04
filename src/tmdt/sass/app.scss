@@ -619,6 +619,9 @@ body{
     h5 {
         font-size: 12pt;
         font-weight: 600;
+        @include max-sm {
+            font-size: 11pt;
+        }
     }
 }
 .content-footer {
