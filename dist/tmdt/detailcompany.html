@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font-awesome.css">
+    <link rel="stylesheet" href="./public/css/fontisto/fontisto.min.css">
+    <link rel="stylesheet" href="./public/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./public/css/app.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- SECTION  Header -->
+        <div class="topBar-user">
+    <div class="container">
+        <div class="d-flex flex-wrap">
+            <div class="flex-grow-1">
+
+            </div>
+            <div class="d-flex">
+                <div class="mr-2 text-white">
+                    <i class="fi fi-person" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="mr-2">
+                    <div class="text-white">
+                        Đăng nhập
+                    </div>
+                </a>
+                <div class="mr-2 text-white">
+                    <i class="fi fi-player-settings"></i>
+                </div>
+
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-white">
+                        Đăng ký
+                    </div>
+                </a>
+                <div class="dropdown-menu bg-light">
+                    <div class="p-2">
+                        <a href="http://google.com"
+                            class="w-100 res-link font-weight-bold"
+                            >Đăng ký nhà bán hàng</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="http://google.com"
+                            class="w-100 res-link font-weight-bold"
+                            >Đăng ký thành viên</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="header">
+    <div class="container">
+        <div class="row align-items-center py-2">
+            <div class="col-md-2 col-5">
+                <div id="logo">
+                    <a href="#" class="d-block">
+                        <img src="https://vungtaucity.com.vn/img/logo_top00.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="toggle" class="col-7 text-right d-block d-md-none">
+                <a href="#" class="text-white main-navbar-toggle" data-menu>
+                    <i class="fi fi-nav-icon-a"></i>
+                    <span class="text-uppercase">Menu</span>
+                </a>
+            </div>
+            <div class="col-lg-8 col-md-7 col-9 py-2 py-md-0">
+                <div class="form-search">
+                    <form action="" method="post">
+                        <div class="form-group m-0 d-flex flex-row">
+                            <input class="form-control-sm border-0 rounded-0 flex-grow-1" type="text" name="search"
+                                placeholder="Tìm sản phẩm, danh mục ...">
+                            <button class="btn btn-sm btn-warning rounded-0 d-inline px-3" type="submit">
+                                <i class="fi fi-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-3 py-2 py-md-0">
+                <div class="header-link row text-white align-items-center">
+                    <a href="#" id="cart" class="col-md-12 text-white">
+                        <div class="d-flex align-items-center cart-items">
+                            <div class="header-link-icons">
+                                <i class="fi fi-shopping-basket"></i>
+                            </div>
+                            <div class="flex-grow-1 flex-row d-none d-md-block">
+                                Giỏ hàng
+                            </div>
+                            <div class="">
+                                <label id="cart-number" class="bg-warning mb-0">0</label>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- SECTION  Body -->
+        <div id="body">
+            
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large text-uppercase d-md-inline-block d-block">
+                        Sản phẩm mới nhất
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-md-12">
+                <div class="product-list">
+                    <div class="row">
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-3 col-6 product-list--item">
+                            
+<div class="card card-hover border-0">
+    <div class="card-top text-center pt-2">
+        
+        <a href="#">
+            <img src="./public/images/maydanhtrung.jpg"
+                alt="Card image cap">
+        </a>
+        
+    </div>
+    <div class="card-body body-style py-2">
+        
+        <a href="#" class="card-title px-3">Máy Đánh Trứng Bluestone HMB-6333S</a>
+        
+        <div class="box-price px-1 px-md-3">
+            
+            <span class="price">579.000 đ</span>
+            
+            
+            <span class="text-secondary text-small">-28%</span>
+            
+        </div>
+        <div class="box-price px-1 px-md-3">
+            
+            <s class="old-price text-small">799.000 đ</s>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+        <!-- SECTION  Footer -->
+        <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="f-grid">
+                    <div class="f-grid__top">
+                        <img src="https://voso.vn/static/images/policy/policy_2.png" alt="">
+                    </div>
+                    <div class="f-grid__content">
+                        <h5>
+                            Vận chuyển toàn quốc
+                        </h5>
+                        <p>
+                            Chúng tôi giao hàng tới khắp các tỉnh thành trong nước, vùng sâu vùng xa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="f-grid">
+                    <div class="f-grid__top">
+                        <img src="https://voso.vn/static/images/policy/policy_3.png" alt="">
+                    </div>
+                    <div class="f-grid__content">
+                        <h5>
+                            Thanh toán an toàn
+                        </h5>
+                        <p>
+                            Thanh toán bằng các phương thức thanh toán an toàn và phổ biến nhất được sử dụng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="f-grid">
+                    <div class="f-grid__top">
+                        <img src="https://voso.vn/static/images/policy/policy_4.png" alt="">
+                    </div>
+                    <div class="f-grid__content">
+                        <h5>
+                            Niềm tin mua sắm
+                        </h5>
+                        <p>
+                            Bảo vệ người mua mua hàng của các Shop, doanh nghiệp từ thanh toán tới giao hàng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="f-grid">
+                    <div class="f-grid__top">
+                        <img src="https://voso.vn/static/images/policy/policy_5.png" alt="">
+                    </div>
+                    <div class="f-grid__content">
+                        <h5>
+                            Trợ giúp 24/7
+                        </h5>
+                        <p>
+                            Hỗ trợ cả ngày lẫn đêm cho trải nghiệm mua sắm suôn sẻ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="company pt-3">
+        <div class="d-flex flex-wrap py-3">
+            <div class="swiper-container swiper-logo">
+                <div class="swiper-wrapper logo-list">
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/logo2.png" alt="">
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-next-logo"></div>
+                <div class="swiper-button-prev swiper-button-next-logo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="footer-main py-4" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div id="logo-footer">
+                        <a href="#">
+                            <img src="https://vungtaucity.com.vn/img/logo_top00.png" alt="">
+                        </a>
+                    </div>
+                    <div class="py-2">
+                        <address>
+                            Địa chỉ: <span>78 Trần Hưng Đạo, phường 1, Tp Vũng Tàu</span>
+                        </address>
+                        <div class="phone">
+                            <span>Hotline:</span>
+                            <a href="#" style="color: #000;">0977663322</a>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <div class="content-footer">
+                            <p>
+                                <a href="#">
+                                    <img src="https://png.pngtree.com/element_our/sm/20180301/sm_5a9794da1b10e.png" alt="" width="50px">
+                                </a>
+                                <a href="#">
+                                    <img src="https://brasol.vn/public/uploads/1521176194-brasol.vn-logo-zalo-vector-logo-zalo-vector.png"
+                                        alt="" width="40px">
+                                </a>
+                                <a href="#">
+                                    <img src="https://cdn4.iconfinder.com/data/icons/online-menu/64/play_youtube_you_tube_video_music-512.png"
+                                        alt="" width="40px">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row pb-3 pb-md-0">
+                        <div class="col-md-6 col-6">
+                            <div class="title-footer">
+                                <h5 class="text-uppercase">Về Chúng Tôi</h5>
+                            </div>
+                            <div class="content-footer">
+                                <ul class="nolist">
+                                    <li>
+                                        <a href="#">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <div class="title-footer">
+                                <h5 class="text-uppercase">CHĂM SÓC KHÁCH HÀNG</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="fanpage">
+                        <div class="fb-page" data-href="https://www.facebook.com/Make-in-Vietnam-676735426130137/" data-tabs="timeline"
+                            data-width="" data-height="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                            data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/Make-in-Vietnam-676735426130137/" class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/Make-in-Vietnam-676735426130137/">Make in Vietnam</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-white bg-copyright text-center py-3">
+        <div class="copyright text-xnomal">
+            @Bản quyền thuộc nội dung trên website thuộc về tyhon.vn
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="./public/js/jquery.zoom.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <script src="./public/js/simple.money.format.js"></script>
+    <script src="./public/js/swiper.min.js"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=2046573405635669&autoLogAppEvents=1"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+
+</html>
