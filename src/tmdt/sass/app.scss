@@ -18,6 +18,7 @@
 // SECTION Global
 // #region Global
 body{
+    font-family: 'Roboto', sans-serif;  
     h1 {
         font-size: 2.25rem;
         @include max-lg {
@@ -262,42 +263,59 @@ body{
         box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
     }
 }
-.categlory-menu li:hover{
-    background-color: #eee;
-    
-    &:after {
-        content: '\f105';
-        font-family: FontAwesome;
-        position: absolute;
-        right: 6px;
-        font-size: 16pt;
-        color: red;
-        @include max-sm {
-            content: '';
+.categlory-menu {
+    li:hover {
+        background-color: #eee;
+        &:after {
+            content: '\f105';
+            font-family: FontAwesome;
+            position: absolute;
+            right: 6px;
+            font-size: 16pt;
+            color: red;
+        }
+        @include md {
+            .categlory-menu__lv1 {
+                display: block;
+            }
         }
     }
-    .categlory-menu__lv1 {
-        display: block;
-        @include max-sm {
-            left: 0;
-            width: 100%;
-        }
-    }
+    // li:active {
+    //     @include max-sm {
+    //         .categlory-menu__lv1 {
+    //             display: block;
+    //             left: 0;
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 }
+// .categlory-menu li:hover{
+//     background-color: #eee;
+    
+//     &:after {
+//         content: '\f105';
+//         font-family: FontAwesome;
+//         position: absolute;
+//         right: 6px;
+//         font-size: 16pt;
+//         color: red;
+//         @include max-sm {
+//             content: '';
+//         }
+//     }
+//     .categlory-menu__lv1 {
+//         display: block;
+//         @include max-sm {
+//             left: 0;
+//             width: 100%;
+//         }
+//     }
+// }
 .categlory-menu__items {
     @include max-sm {
         flex-direction: column;
     }
-}
-.categlory-menu__lv1 li:hover {
-    .categlory-menu__lv2 {
-        display: block;
-        @include max-sm {
-            left: 0;
-            width: 100%;
-        }
-    }
-
 }
 .categlory-menu__lv1 li:active {
     .categlory-menu__lv2 {
@@ -306,11 +324,6 @@ body{
             left: 0%;
             width: 100%;
         }
-    }
-}
-.categlory-menu__lv2 li:hover {
-    &::after {
-        content: '';
     }
 }
 .res-link {
@@ -364,7 +377,8 @@ body{
     background-color: #fff;
     border-radius: 8px;
     padding: 8px;
-    @include max-lg {
+    min-height: 125px;
+    @include max-md {
         min-height: 115px;
     }
     &-left {
@@ -394,6 +408,7 @@ body{
     color: #4e4d4d;
     text-transform: capitalize;
 }
+
 .sale-oldprice {
     color: #adaaaa;
     font-size: 11pt;
