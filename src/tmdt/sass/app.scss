@@ -362,6 +362,7 @@ body{
         padding: 0;
         &:not(:last-child){
             border-right: 1px dashed #ddd;
+            border-bottom: 1px dashed #ddd;
         }
         @include max-sm {
             border-bottom: 1px dashed rgba(#000, .2);

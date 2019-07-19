@@ -150,7 +150,7 @@ $(document).ready(function () {
     }
   });
   var swiper = new Swiper('.swiper-cate', {
-    slidesPerView: 8,
+    slidesPerView: 6,
     loop: true,
     spaceBetween: 20,
     autoplay: {
@@ -162,7 +162,7 @@ $(document).ready(function () {
     },
     breakpoints: {
       1025: {
-        slidesPerView: 6,
+        slidesPerView: 4,
         spaceBetween: 20,
         simulateTouch: true,
         autoplay: {
@@ -272,6 +272,17 @@ $(document).ready(function () {
 var swiper = new Swiper('.swiper-main', {
   loop: true,
   height: 280,
+  autoplay: {
+    delay: 3000
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+var swiper = new Swiper('.swiper-regions', {
+  loop: true,
+  height: 350,
   autoplay: {
     delay: 3000
   },

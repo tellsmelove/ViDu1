@@ -1,9 +1,16 @@
 {% extends 'layouts/default.html' %}
 
-{% block title %}Product{% endblock %}
+{% block title %}Regions{% endblock %}
 
 {% block content %}
 {% from "components/itemproduct.html" import product %}
+<section id="slider" class="bg-light">
+    <div class="container">
+        <div class="bg-regions">
+            <img src="http://www.chanhthu.com/slave/slide/1492839637_5.jpg" alt="">
+        </div>
+    </div>
+</section>
 <section class="bg-light">
     <div class="container">
         <div class="row">
@@ -12,7 +19,7 @@
                     <div class="be-text-large d-md-inline-block d-block">
                         <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
                             <li><a href="#">Trang chủ</a></li>
-                            <li><span>Beephone</span></li>
+                            <li><a href="#">Tây Bắc</a></li>
                         </ul>
                     </div>
                 </div>
@@ -20,78 +27,65 @@
         </div>
     </div>
 </section>
-<section id="products" class="bg-light pb-3">
+<section id="products" class="bg-light">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-4">
-                <div class="card-company">
-                    <div class="card-company-top">
-                        <h5 class="m-0 text-uppercase">Thương Hiệu</h5>
-                        <hr>
-                    </div>
-                    <div class="card-company-content pb-3">
-                        <a href="#" class="company-logo">
-                            <img src="https://www.seoclerk.com/pics/558390-11FO8A1505384509.png" alt="">
-                        </a>
-                        <span class="company-name">Beephone</span>
-                        <div class="company-time">
-                            <span>Ngày tham gia:</span><span>14/07/2019</span>
-                        </div>
-                        <div class="company-local">
-                            <span>Địa chỉ:</span><span>78 Trần Hưng Đạo, Phường 1, Tp Vũng Tàu</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-9 col-md-8 pt-1">
+            <div class="col-md-12">
                 <div class="d-md-inline-block text-md-left text-center text-danger title-content">
                     <div class="be-text-large text-uppercase d-md-inline-block d-block">
-                        Sản phẩm của <span>Beephone</span>
+                        Sàn Đặc Sản <span>Tây bắc</span>
                     </div>
                 </div>
                 <hr>
+            </div>
+            <div class="col-md-12">
                 <div class="product-list">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
-                        <div class="col-lg-4 col-md-6 col-6 product-list--item">
+                        <div class="col-md-3 col-6 product-list--item">
                             {{ product('Máy Đánh Trứng Bluestone HMB-6333S', '579.000 đ',  '799.000 đ', '-28%', './public/images/maydanhtrung.jpg') }}
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 py-3">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
 
+        </div>
+    </div>
+</section>
+<section class="py-3 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </section>
