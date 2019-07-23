@@ -57,8 +57,9 @@ $(document).ready(() => {
             }
         }
     });
+
     var swiper = new Swiper('.swiper-cate', {
-        slidesPerView: 6,
+        slidesPerView: 8,
         loop: true,
         spaceBetween: 20,
         autoplay: {
@@ -95,6 +96,47 @@ $(document).ready(() => {
             }
         }
     });
+
+    var swiper = new Swiper('.swiper-company', {
+        slidesPerView: 6,
+        loop: true,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 5000
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-company',
+            prevEl: '.swiper-button-prev-company',
+        },
+        breakpoints: {
+            1025: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                simulateTouch: true,
+                autoplay: {
+                    delay: 5000
+                },
+            },
+            769: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                simulateTouch: true,
+                autoplay: {
+                    delay: 5000
+                },
+            },
+            440: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                simulateTouch: true,
+                autoplay: {
+                    delay: 5000
+                },
+            }
+        }
+    }); 
+
+
     var galleryThumbs = new Swiper('.gallery-thumbs-new', {
         spaceBetween: 10,
         slidesPerView: 1,
