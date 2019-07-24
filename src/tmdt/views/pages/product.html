@@ -4,12 +4,24 @@
 
 {% block content %}
 {% from "components/itemproduct.html" import product %}
-
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-3 home-title">
+                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
+                    <div class="be-text-large d-md-inline-block d-block">
+                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><span>Sản phẩm theo tỉnh bà rịa vũng tàu</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="py-2">
     <div class="container">
-        <div class="title-company">
-            <h2>Thương Hiệu Liên Quan</h2>
-        </div>
         <div class="swiper-container swiper-company">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -132,29 +144,14 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mb-3 home-title">
-                <div class="d-md-inline-block text-md-left text-center text-primary title-content">
-                    <div class="be-text-large d-md-inline-block d-block">
-                        <ul class="nolist be-breadcrumb text-uppercase d-inline-flex">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Sản phẩm</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="products">
+
+<section id="products" class="py-3">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="d-md-inline-block text-md-left text-center text-primary title-content">
                     <div class="be-text-large text-uppercase d-md-inline-block d-block">
-                        Sản phẩm mới nhất
+                        Sản phẩm của doanh nghiệp bà rịa vũng tàu
                     </div>
                 </div>
                 <hr>

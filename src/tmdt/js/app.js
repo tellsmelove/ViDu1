@@ -102,7 +102,7 @@ $(document).ready(() => {
         loop: true,
         spaceBetween: 20,
         autoplay: {
-            delay: 5000
+            delay: 2000
         },
         navigation: {
             nextEl: '.swiper-button-next-company',
