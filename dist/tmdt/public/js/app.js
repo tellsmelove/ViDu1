@@ -111,44 +111,6 @@ $(document).ready(function () {
   $('.user-type-item input').change(function () {
     $('.user_personal,.user_company').toggleClass('hidden');
   });
-  var swiper = new Swiper('.swiper-logo', {
-    slidesPerView: 8,
-    loop: true,
-    spaceBetween: 10,
-    autoplay: {
-      delay: 5000
-    },
-    navigation: {
-      nextEl: '.swiper-button-next-logo',
-      prevEl: '.swiper-button-prev-logo'
-    },
-    breakpoints: {
-      1025: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        simulateTouch: true,
-        autoplay: {
-          delay: 5000
-        }
-      },
-      769: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        simulateTouch: true,
-        autoplay: {
-          delay: 5000
-        }
-      },
-      440: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        simulateTouch: true,
-        autoplay: {
-          delay: 5000
-        }
-      }
-    }
-  });
   var swiper = new Swiper('.swiper-cate', {
     slidesPerView: 8,
     loop: true,
@@ -178,7 +140,7 @@ $(document).ready(function () {
         }
       },
       440: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 20,
         simulateTouch: true,
         autoplay: {
@@ -216,7 +178,7 @@ $(document).ready(function () {
         }
       },
       440: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 20,
         simulateTouch: true,
         autoplay: {
@@ -318,17 +280,6 @@ var swiper = new Swiper('.swiper-main', {
     prevEl: '.swiper-button-prev'
   }
 });
-var swiper = new Swiper('.swiper-regions', {
-  loop: true,
-  height: 350,
-  autoplay: {
-    delay: 3000
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-});
 $(function () {
   $('.spinner .btn:first-of-type').on('click', function () {
     var btn = $(this);
@@ -371,6 +322,44 @@ $(document).on('click', '.number-spinner button', function (e) {
 });
 $('#zoom1,#zoom2,#zoom3,#zoom4').zoom();
 $('.money').simpleMoneyFormat();
+var swiper = new Swiper('.swiper-logo', {
+  slidesPerView: 8,
+  loop: true,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 5000
+  },
+  navigation: {
+    nextEl: '.swiper-button-next-logo',
+    prevEl: '.swiper-button-prev-logo'
+  },
+  breakpoints: {
+    1025: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      simulateTouch: true,
+      autoplay: {
+        delay: 5000
+      }
+    },
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      simulateTouch: true,
+      autoplay: {
+        delay: 5000
+      }
+    },
+    440: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      simulateTouch: true,
+      autoplay: {
+        delay: 5000
+      }
+    }
+  }
+});
 
 /***/ }),
 
