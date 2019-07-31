@@ -502,6 +502,7 @@ body{
 // #region Gift-card
 .gift-card{
     display: flex;
+    flex-direction: row;
     align-items: center;
     border-radius: 17px;
     overflow: hidden;
@@ -510,9 +511,11 @@ body{
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(#666, .2);
     @include max-sm {
+        flex-direction: column;
         text-align: center;
         justify-content: center;
         border-radius: 6px;
+        
     }
     &:hover{
         &::before{
@@ -537,8 +540,8 @@ body{
     }
 }
 .card-channels-icon {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     img {
         width: 100%;
         height: 100%;
@@ -548,12 +551,15 @@ body{
 }
 .card-channels-text {
     span {
-        color: #000;
+        color: #696969;
         font-size: 14pt;
         margin-left: 4px;
         padding: 4px;
         @include max-lg {
             font-size: 10pt;
+        }
+        @include max-sm {
+            font-size: 9pt!important;
         }
         
     }

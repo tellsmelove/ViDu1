@@ -1181,7 +1181,7 @@ ul.timeline > li:before {
   color: #fff;
   font-weight: 600;
   font-size: 13pt;
-  font-family: cursive;
+  font-family: cursive, "Montserrat", "Roboto Condensed", "Roboto Mono", sans-serif;
   align-items: center;
 }
 
@@ -1593,6 +1593,7 @@ body [data-ciaoyu-toggle] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   align-items: center;
   border-radius: 17px;
   overflow: hidden;
@@ -1622,8 +1623,8 @@ body [data-ciaoyu-toggle] {
 }
 
 .card-channels-icon {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 }
 .card-channels-icon img {
   width: 100%;
@@ -1632,7 +1633,7 @@ body [data-ciaoyu-toggle] {
 }
 
 .card-channels-text span {
-  color: #000;
+  color: #696969;
   font-size: 14pt;
   margin-left: 4px;
   padding: 4px;
@@ -1803,9 +1804,13 @@ body [data-ciaoyu-toggle] {
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   }
   .gift-card {
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     border-radius: 6px;
+  }
+  .card-channels-text span {
+    font-size: 9pt !important;
   }
   .menulocal ul li a {
     border-bottom: 1px solid #fff;
