@@ -1190,6 +1190,39 @@ ul.timeline > li:before {
   text-transform: uppercase;
 }
 
+.active-star {
+  color: yellow;
+}
+
+.card-guide {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(221, 221, 221, 0.5);
+  border-radius: 4px;
+}
+.card-guide-top h5 {
+  padding: 5px;
+  font-size: 12pt;
+  color: #0971ce;
+}
+.card-guide-top hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.card-guide-content ul li {
+  padding: 4px 4px 4px 6px;
+}
+.card-guide-content ul li::before {
+  content: ">";
+  color: #0971ce;
+  margin-right: 4px;
+}
+.card-guide-content li a {
+  color: #000;
+}
+.card-guide-content li a:hover {
+  color: #0971ce;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }

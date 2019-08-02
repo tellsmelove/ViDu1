@@ -281,3 +281,39 @@
         height: auto!important;
     }
 }
+.active-star {
+    color: yellow;
+}
+.card-guide {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(#ddd, .5);
+    border-radius: 4px;
+    &-top {
+        h5 {
+            padding: 5px;
+            font-size: 12pt;
+            color: #0971ce;
+        }
+        hr {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+    }
+    &-content {
+        ul li {
+            padding: 4px 4px 4px 6px;
+            &::before {
+                content: '>';
+                color: #0971ce;
+                margin-right: 4px;
+
+            }
+        }
+        li a {
+            color: #000;
+            &:hover {
+                color: #0971ce;
+            }
+        }
+    }
+}   
