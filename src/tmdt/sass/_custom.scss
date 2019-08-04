@@ -290,12 +290,14 @@
     border-radius: 4px;
     &-top {
         h5 {
-            padding: 5px;
+            padding: 16px 12px 16px 12px;
             font-size: 12pt;
-            color: #0971ce;
+            color: #B71C1C;
+            font-weight: 600;
+            font-family: 'Montserrat','Roboto Condensed','Roboto Mono', sans-serif;
         }
         hr {
-            margin-top: 4px;
+            margin-top: 0px;
             margin-bottom: 4px;
         }
     }
@@ -312,9 +314,38 @@
         }
         li a {
             color: #000;
+            font-family: 'Roboto Condensed','Roboto Mono', sans-serif;
             &:hover {
                 color: #0971ce;
             }
         }
     }
 }   
+.guide-title {
+    a {
+        font-size: 16pt;
+        font-weight: 600;
+        color: #000;
+        text-transform: uppercase;
+        &:hover {
+                color: #0971ce;
+            }
+        @include max-sm {
+            font-size: 13pt;
+        }
+    }
+}
+.box-title-guide {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    span {
+        text-transform: uppercase;
+        color: #B71C1C;
+        font-size: 20pt;
+        font-weight: 600;
+        @include max-lg {
+            font-size: 14pt;
+        }
+    }
+}
