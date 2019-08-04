@@ -1212,9 +1212,10 @@ ul.timeline > li:before {
   padding: 4px 4px 4px 6px;
 }
 .card-guide-content ul li::before {
-  content: ">";
-  color: #0971ce;
-  margin-right: 4px;
+  content: "\F105";
+  font-family: FontAwesome;
+  color: #ff0404;
+  margin-right: 6px;
 }
 .card-guide-content li a {
   color: #000;

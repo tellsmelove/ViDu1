@@ -303,9 +303,10 @@
         ul li {
             padding: 4px 4px 4px 6px;
             &::before {
-                content: '>';
-                color: #0971ce;
-                margin-right: 4px;
+                content: '\f105';
+                font-family: FontAwesome;
+                color: #ff0404;
+                margin-right: 6px;
 
             }
         }
