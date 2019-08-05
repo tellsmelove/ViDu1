@@ -349,3 +349,64 @@
         }
     }
 }
+.comment {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 8px;
+    &-star {
+        flex-grow: 1;
+    }
+    &-time{
+        display: inline-block;
+        font-size: 10pt;
+        color: #757575;
+        text-align: right;
+        justify-content: end;
+    }
+    &-name {
+        font-size: 10pt;
+        color: #757575;
+    }
+}
+.page-link {
+    color: rgb(71, 71, 71)!important;
+}
+.submit-comment {
+    textarea {
+        resize: none;
+    }
+}
+fieldset {
+    display: none;
+}
+.fieldset-block {
+    display: block!important;
+}
+.btn-submit {
+    display: none;
+}
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+    color: #ddd; 
+    float: right;
+}
+.rating > input:checked ~ label, 
+.rating:not(:checked) > label:hover, 
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } 
+
+.rating > input:checked + label:hover, 
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, 
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 

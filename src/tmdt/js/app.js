@@ -195,7 +195,9 @@ var swiper = new Swiper('.swiper-main', {
 });
 
 $(function () {
-
+    $('.textarea-sub').on('click', function(){
+        $('#fieldset, .btn-submit').addClass('fieldset-block');
+    });
     $('.spinner .btn:first-of-type').on('click', function () {
         var btn = $(this);
         var input = btn.closest('.spinner').find('input');
